@@ -25,9 +25,8 @@ int aeTiledMap::Init(aeRenderer* pRenderer, PresetsList* pPresets)
 	m_ppMapGrid = new aeMapTile*[m_nMapSize];
 
 	int index = 0, counter = 0;
-	int cost1, cost2, cost3;
-	int Position1, Position2, Position3;
-	aeMapPresets TempPreset;
+	
+	
 	for each (auto Preset in *pPresets)
 	{
 		if (Preset->GetPresetID() == static_cast<int>(PresetsID::MapPreset))
@@ -444,6 +443,54 @@ void aeTiledMap::MakeSearch(aePoint StartPosition, aePoint EndPosition)
 			aeInfluencePoint Point = aeInfluencePoint{ 1,StartPosition.x,StartPosition.y  };
 
 			((aeInfluenceCalculator*)AddOns[m_nPathFinder])->SetInfluencePoints(&Point, 1);
+		}
+	}
+}
+
+void aeTiledMap::MakeNoise()
+{
+	FractalNoise Noise(UIRand());
+
+	Noise.SetOctaves(TempPreset.m_nOctaves);
+	Noise.SetBaseFrequency(TempPreset.m_dFrequency);
+	Noise.SetScale(TempPreset.m_dScale);
+	Noise.SetPersistence(TempPreset.m_dPersistance);
+	Noise.SetLacunarity(TempPreset.m_dLacuranity);
+
+	double value;
+
+	std::vector<double> tempvec;
+
+	for (int32 i = 0; i < m_nMapSize; ++i)
+	{
+		m_ppMapGrid[i] = NULL;
+		m_ppMapGrid[i] = new aeMapTile[m_nMapSize];
+		for (int32 j = 0; j < m_nMapSize; ++j)
+		{
+			value = Noise.Noise(i, j, 0.5);
+
+			tempvec.push_back(value);
+
+			if (value <= TempPreset.m_fTopValue1)
+			{
+				m_ppMapGrid[i][j].Layer1ID = Position1;
+				m_ppMapGrid[i][j].Cost = cost1;
+			}
+			else if (value <= TempPreset.m_fTopValue2)
+			{
+				m_ppMapGrid[i][j].Layer1ID = Position2;
+				m_ppMapGrid[i][j].Cost = cost2;
+			}
+			else
+			{
+				m_ppMapGrid[i][j].Layer1ID = Position3;
+				m_ppMapGrid[i][j].Cost = cost3;
+			}
+			m_ppMapGrid[i][j].Layer2ID = -1;
+			m_ppMapGrid[i][j].Layer3ID = -1;
+			m_ppMapGrid[i][j].Layer4ID = -1;
+			m_ppMapGrid[i][j].Layer5ID = -1;
+			m_ppMapGrid[i][j].UpdateInfluence(0);
 		}
 	}
 }

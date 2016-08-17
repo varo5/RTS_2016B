@@ -127,6 +127,7 @@ void CWebListener::BindMethods(Awesomium::WebView * pWebView)
 		m_pMethodDispatcher->Bind(app_object, Awesomium::WSLit("Start"), JSDelegate(this, &CWebListener::OnStart));
 		m_pMethodDispatcher->Bind(app_object, Awesomium::WSLit("Stop"), JSDelegate(this, &CWebListener::OnStop));
 		m_pMethodDispatcher->Bind(app_object, Awesomium::WSLit("Reset"), JSDelegate(this, &CWebListener::OnReset));
+		m_pMethodDispatcher->Bind(app_object, Awesomium::WSLit("Noise"), JSDelegate(this, &CWebListener::Noise));
 
 		m_pMethodDispatcher->Bind(app_object, Awesomium::WSLit("ChangeBrush"), JSDelegate(this, &CWebListener::OnChangeBrush));
 		m_pMethodDispatcher->Bind(app_object, Awesomium::WSLit("ChangePathfinding"), JSDelegate(this, &CWebListener::OnChangePathfinding));
@@ -195,6 +196,11 @@ void CWebListener::OnReset(Awesomium::WebView * pCaller, const Awesomium::JSArra
 		Awesomium::JSValue a = args[i];
 	}
 
+}
+
+void CWebListener::Noise(Awesomium::WebView * pCaller, const Awesomium::JSArray & args)
+{
+	WorldHandle->Noise();
 }
 
 void CWebListener::OnChangeHeuristic(Awesomium::WebView * pCaller, const Awesomium::JSArray & args)

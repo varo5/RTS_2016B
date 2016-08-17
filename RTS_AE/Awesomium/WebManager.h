@@ -68,6 +68,7 @@ public:
 	void OnStart(Awesomium::WebView* pCaller, const Awesomium::JSArray& args);
 	void OnStop(Awesomium::WebView* pCaller, const Awesomium::JSArray& args);
 	void OnReset(Awesomium::WebView* pCaller, const Awesomium::JSArray& args);
+	void Noise(Awesomium::WebView* pCaller, const Awesomium::JSArray& args);
 
 	void OnChangeHeuristic(Awesomium::WebView* pCaller, const Awesomium::JSArray& args);
 	void OnChangePathfinding(Awesomium::WebView* pCaller, const Awesomium::JSArray& args);

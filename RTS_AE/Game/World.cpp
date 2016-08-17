@@ -130,6 +130,17 @@ void aeWorld::SetWindowDimensions(aeRect &WindowRect, aeRect &WorldRect)
 	Precalc();
 }
 
+void aeWorld::Noise()
+{
+	for each (auto object in m_aObjects)
+	{
+		if (object->Derivative)
+		{
+			((aeTiledMap*)object)->MakeNoise();
+		}
+	}
+}
+
 void aeWorld::Keyboard(uint8 key)
 {
 	static bool bGrid = false;

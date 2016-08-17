@@ -72,6 +72,7 @@ public:
 	void Render(aeRenderer * pRenderer);	
 	void SetWindowDimensions(aeRect &WindowRect, aeRect &WorldRect);
 
+	void Noise();
 	void Keyboard(uint8 key);
 	void Clic(aePoint& ClicPoint, int Button);
 	void CursorUpdate(aePoint& CursorPosition);

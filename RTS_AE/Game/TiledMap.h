@@ -70,6 +70,7 @@ public:
 	void SetPathFinder(int PathFinder);
 	void CameraReference(aeWorld* Camera);
 	void MakeSearch(aePoint StartPosition, aePoint EndPosition);
+	void MakeNoise();
 
 	int PositionOfOpenMask, PositionOfVisitedMask, PositionOfInfluenceMask;
 	int GetPathfinderID();
@@ -105,5 +106,8 @@ protected:
 	bool m_bIsometric;
 	bool m_bDebug;
 	int m_nPathFinder;
+	int cost1, cost2, cost3;
+	int Position1, Position2, Position3;
+	aeMapPresets TempPreset;
 };
 
