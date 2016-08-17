@@ -1,5 +1,5 @@
 #pragma once
-#define  DLL_BUILD
+
 
 #ifdef DLL_BUILD   
 #ifdef DLL_EXPORT   

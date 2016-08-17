@@ -1,5 +1,8 @@
 #pragma once
 #include <time.h>
+#include <vector>
+#include "GameObject.h"
+
 class aeTiledMap : public aeGameObject
 {
 public:
@@ -16,6 +19,8 @@ public:
 		uint8 Layer4ID;
 		uint8 Layer5ID;
 		int16 Cost;
+		
+		std::vector<aeGameObject*> GameObjectArray;
 
 		float GetInfluence();
 		void UpdateInfluence(float Influence);
@@ -84,7 +89,7 @@ protected:
 	int32 m_nTileSizeY;
 
 	
-
+	/** @brief	Precalc Size. */
 	aePoint m_PrecalcSize;
 
 	/** @brief	The camera. */

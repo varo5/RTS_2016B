@@ -24,7 +24,10 @@ int aeGUI::Init(InitVariables * pInitVariables)
 
 	std::string File = "file:///" + ws2s(pInitVariables->pszBinFilePath.c_str()) + ws2s(pInitVariables->pszFileName.c_str());
 
+	std::cout << File << std::endl;
+
 	m_pWebListener->Init(m_pRenderer->m_pRenderer, File.c_str(), m_DstRect.x, m_DstRect.y, m_DstRect.w, m_DstRect.h);
+	m_pWebListener->OnLoaded();
 
 
 	/*aeGUIObject* Menu = new aeGUIObject();
@@ -85,12 +88,11 @@ void aeGUI::Clic(aePoint & ClicPoint, int Button)
 	{
 	case VK_LBUTTON:
 	{
-		if (m_DstRect.HitTest(ClicPoint.x, ClicPoint.y - m_DstRect.y - 40))
-		{
+			m_pWebListener->m_pWebView->InjectMouseMove(ClicPoint.x, ClicPoint.y - m_DstRect.y - 40);
 			m_pWebListener->m_pWebView->InjectMouseDown(Awesomium::kMouseButton_Left);
 			m_pWebListener->m_pWebView->InjectMouseUp(Awesomium::kMouseButton_Left);
-		}
-		for each(auto Object in m_aObjects)
+
+		/*for each(auto Object in m_aObjects)
 		{
 			for each (auto AddOn in Object->AddOns)
 			{
@@ -102,7 +104,7 @@ void aeGUI::Clic(aePoint & ClicPoint, int Button)
 					}
 				}
 			}			
-		}
+		}*/
 		break;
 	}
 	default:

@@ -161,10 +161,12 @@ void CWebListener::OnInfluenceClick(Awesomium::WebView * pCaller, const Awesomiu
 	/*UIData* pData = new UIData();
 	pData->type = UI_INFLUENCEMAP;
 	g_MESSAGE()->PostMsg(new CMessage(MSG_UI_CHANGE, (void*)pData, 0));*/
+	
 }
 
 void CWebListener::OnStart(Awesomium::WebView * pCaller, const Awesomium::JSArray & args)
 {
+	std::cout << "si lo recibi" << std::endl;
 	for (int i = 0; i < args.size(); i++)
 	{
 		Awesomium::JSValue a = args[i];
