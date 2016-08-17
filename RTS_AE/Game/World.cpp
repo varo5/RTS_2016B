@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "World.h"
 
+aeWorld* WorldHandle = 0;
+
 aeWorld::aeWorld()
 {
 }
@@ -12,6 +14,7 @@ aeWorld::~aeWorld()
 
 int aeWorld::Init(InitVariables * pInitVariables)
 {
+	WorldHandle = this;
 	SetWindowDimensions(pInitVariables->WindowRect, pInitVariables->WorldRenderRect);
 	m_pSprites = pInitVariables->pSprites;
 	m_pPresets = pInitVariables->pPresetList;
@@ -147,34 +150,57 @@ void aeWorld::Clic(aePoint & ClicPoint, int Button)
 {
 	if (Button == VK_LBUTTON)
 	{
-		if (Click1 == nullptr)
+		int id = 0;
+		for each (auto object in m_aObjects)
 		{
-			aeVector2 temp = GetScreenToMapCoords(ClicPoint, m_CameraPosition, *GetCameraRect(), m_bIsometric);
-			Click1 = new aePoint();
-
-			Click1->x = temp.x;
-			Click1->y = temp.y;
+			if (object->Derivative)
+				id =((aeTiledMap*)object)->GetPathfinderID();
 		}
-		else if (Click2 == nullptr)
+		if (id != 1)
 		{
-			aeVector2 temp = GetScreenToMapCoords(ClicPoint, m_CameraPosition, *GetCameraRect(), m_bIsometric);
-			Click2 = new aePoint();
+			if (Click1 == nullptr)
+			{
+				aeVector2 temp = GetScreenToMapCoords(ClicPoint, m_CameraPosition, *GetCameraRect(), m_bIsometric);
+				Click1 = new aePoint();
 
-			Click2->x = temp.x;
-			Click2->y = temp.y;
+				Click1->x = temp.x;
+				Click1->y = temp.y;
+			}
+			else if (Click2 == nullptr)
+			{
+				aeVector2 temp = GetScreenToMapCoords(ClicPoint, m_CameraPosition, *GetCameraRect(), m_bIsometric);
+				Click2 = new aePoint();
 
+				Click2->x = temp.x;
+				Click2->y = temp.y;
+
+				for each (auto object in m_aObjects)
+				{
+					if (object->Derivative)
+						((aeTiledMap*)object)->MakeSearch(*Click1, *Click2);
+				}
+
+
+				delete Click1;
+				delete Click2;
+
+				Click1 = nullptr;
+				Click2 = nullptr;
+			}
+		}
+		else
+		{
 			for each (auto object in m_aObjects)
 			{
-				if(object->Derivative)
-					((aeTiledMap*)object)->MakeSearch(*Click1, *Click2);
+				if (object->Derivative)
+				{
+					aeVector2 temp = GetScreenToMapCoords(ClicPoint, m_CameraPosition, *GetCameraRect(), m_bIsometric);
+					aePoint Click;
+					Click.x = temp.x;
+					Click.y = temp.y;
+					((aeTiledMap*)object)->MakeSearch(Click, Click);
+				}
 			}
-			
-
-			delete Click1;
-			delete Click2;
-
-			Click1 = nullptr;
-			Click2 = nullptr;
 		}
 	}
 }

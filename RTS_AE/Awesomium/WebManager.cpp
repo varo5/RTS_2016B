@@ -3,6 +3,9 @@
 #include "Awesomium\\WebManager.h"
 #include "Awesomium\method_dispatcher.h"
 
+
+extern aeWorld* WorldHandle;
+
 CWebListener::CWebListener() : m_pWebView(nullptr)
 {
 }
@@ -161,6 +164,8 @@ void CWebListener::OnInfluenceClick(Awesomium::WebView * pCaller, const Awesomiu
 	/*UIData* pData = new UIData();
 	pData->type = UI_INFLUENCEMAP;
 	g_MESSAGE()->PostMsg(new CMessage(MSG_UI_CHANGE, (void*)pData, 0));*/
+	std::cout << "si lo recibi" << std::endl;
+	WorldHandle->Keyboard(49);
 	
 }
 
@@ -204,8 +209,11 @@ void CWebListener::OnChangePathfinding(Awesomium::WebView * pCaller, const Aweso
 	{
 		Awesomium::JSValue a = args[i];
 		auto temp = ToString(a.ToString());
-
 	}
+	Awesomium::JSValue a = args[0];
+	auto temp = ToString(a.ToString());
+	std::cout << "si lo recibi" << std::endl;
+	WorldHandle->Keyboard(49 + atoi(temp.c_str()));
 }
 
 void CWebListener::OnChangeBrush(Awesomium::WebView * pCaller, const Awesomium::JSArray & args)

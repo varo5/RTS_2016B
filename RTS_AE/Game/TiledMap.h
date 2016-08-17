@@ -72,6 +72,7 @@ public:
 	void MakeSearch(aePoint StartPosition, aePoint EndPosition);
 
 	int PositionOfOpenMask, PositionOfVisitedMask, PositionOfInfluenceMask;
+	int GetPathfinderID();
 	static int TileMapCreation(void * data, int argument_count, char ** argument_values, char ** pszColName);
 	static int InfluenceDefinition(void * data, int argument_count, char ** argument_values, char ** pszColName);
 	/************************************************************************************************************************/

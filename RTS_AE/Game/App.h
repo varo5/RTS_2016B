@@ -40,4 +40,3 @@ private:
 	float clickcounter;
 	float keyboardcounter;
 };
-

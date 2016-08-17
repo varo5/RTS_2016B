@@ -448,6 +448,11 @@ void aeTiledMap::MakeSearch(aePoint StartPosition, aePoint EndPosition)
 	}
 }
 
+int aeTiledMap::GetPathfinderID()
+{
+	return ((aePathFinder*)AddOns[m_nPathFinder])->GetID();
+}
+
 int aeTiledMap::TileMapCreation(void * data, int argument_count, char ** argument_values, char ** pszColName)
 {
 	std::map < std::string, std::string> GenericMapValues;
