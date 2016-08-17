@@ -1,0 +1,120 @@
+\hypertarget{class_c_animation_renderer}{}\section{C\+Animation\+Renderer Class Reference}
+\label{class_c_animation_renderer}\index{C\+Animation\+Renderer@{C\+Animation\+Renderer}}
+Inheritance diagram for C\+Animation\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_animation_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{class_c_animation_renderer_abf2ab0201171989cf7ad44846cf3e115}{Init} (\hyperlink{classae_base_class}{ae\+Base\+Class} $\ast$p\+Parent)
+\begin{DoxyCompactList}\small\item\em Initializes with the given parent pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_animation_renderer_a2ac2237cb706d2f6d45a88a86543e008}{Update} (float f\+Delta)
+\begin{DoxyCompactList}\small\item\em Updates the given f\+Delta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_animation_renderer_a272f2bac72c90d89a9ada38058fc3f0c}{Render} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Paints on the given renderer pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_animation_renderer_a4da67eb466b508135fe2ce38538f8ce0}{Destroy} ()\hypertarget{class_c_animation_renderer_a4da67eb466b508135fe2ce38538f8ce0}{}\label{class_c_animation_renderer_a4da67eb466b508135fe2ce38538f8ce0}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+virtual void {\bfseries Set\+Object} (void $\ast$Object, bool Mirrorx)\hypertarget{class_c_animation_renderer_a62384e0a387b6aa37ce99448f7b07f4b}{}\label{class_c_animation_renderer_a62384e0a387b6aa37ce99448f7b07f4b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries b\+Render}\hypertarget{class_c_animation_renderer_a3bb59d43ab8359500e5bd613cda99d50}{}\label{class_c_animation_renderer_a3bb59d43ab8359500e5bd613cda99d50}
+
+\item 
+uint8 {\bfseries Booleans}\hypertarget{class_c_animation_renderer_ab8ca07f77bb885dab14185ab31e6228e}{}\label{class_c_animation_renderer_ab8ca07f77bb885dab14185ab31e6228e}
+
+\item 
+float {\bfseries Current\+Time}\hypertarget{class_c_animation_renderer_ab36e10f877667f709d67d6f9d7bc9f11}{}\label{class_c_animation_renderer_ab36e10f877667f709d67d6f9d7bc9f11}
+
+\item 
+int {\bfseries Order\+Of\+Render}\hypertarget{class_c_animation_renderer_ab68b3daafdbbd9f33ec77b48384a7c00}{}\label{class_c_animation_renderer_ab68b3daafdbbd9f33ec77b48384a7c00}
+
+\item 
+bool {\bfseries MirrorX}\hypertarget{class_c_animation_renderer_a6417db8dcc583037136cc73c844817dd}{}\label{class_c_animation_renderer_a6417db8dcc583037136cc73c844817dd}
+
+\item 
+bool {\bfseries MirrorY}\hypertarget{class_c_animation_renderer_abbd0cd3acddcc7a3bfe38e2583ef30ca}{}\label{class_c_animation_renderer_abbd0cd3acddcc7a3bfe38e2583ef30ca}
+
+\item 
+ae\+Rect {\bfseries Render\+Rect}\hypertarget{class_c_animation_renderer_add36bcb728961d5f19254fe78eab7d50}{}\label{class_c_animation_renderer_add36bcb728961d5f19254fe78eab7d50}
+
+\item 
+ae\+Rect {\bfseries Source\+Rect}\hypertarget{class_c_animation_renderer_a167120445e1689108f12f6edcd2ed1c5}{}\label{class_c_animation_renderer_a167120445e1689108f12f6edcd2ed1c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{C\+Animation\+Renderer@{C\+Animation\+Renderer}!Init@{Init}}
+\index{Init@{Init}!C\+Animation\+Renderer@{C\+Animation\+Renderer}}
+\subsubsection[{\texorpdfstring{Init(ae\+Base\+Class $\ast$p\+Parent)}{Init(aeBaseClass *pParent)}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Animation\+Renderer\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Base\+Class} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_animation_renderer_abf2ab0201171989cf7ad44846cf3e115}{}\label{class_c_animation_renderer_abf2ab0201171989cf7ad44846cf3e115}
+
+
+Initializes with the given parent pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Parent} & If non-\/null, the parent pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_add_on_a0730c1446e548031f9a4e98435a54675}{ae\+Add\+On}.
+
+\index{C\+Animation\+Renderer@{C\+Animation\+Renderer}!Render@{Render}}
+\index{Render@{Render}!C\+Animation\+Renderer@{C\+Animation\+Renderer}}
+\subsubsection[{\texorpdfstring{Render(ae\+Renderer $\ast$p\+Renderer)}{Render(aeRenderer *pRenderer)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Animation\+Renderer\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_animation_renderer_a272f2bac72c90d89a9ada38058fc3f0c}{}\label{class_c_animation_renderer_a272f2bac72c90d89a9ada38058fc3f0c}
+
+
+Paints on the given renderer pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & The renderer pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classae_add_on_ab6bed56009b9c92df8ae017a27587dc3}{ae\+Add\+On}.
+
+\index{C\+Animation\+Renderer@{C\+Animation\+Renderer}!Update@{Update}}
+\index{Update@{Update}!C\+Animation\+Renderer@{C\+Animation\+Renderer}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)}{Update(float fDelta)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Animation\+Renderer\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_animation_renderer_a2ac2237cb706d2f6d45a88a86543e008}{}\label{class_c_animation_renderer_a2ac2237cb706d2f6d45a88a86543e008}
+
+
+Updates the given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta time. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_add_on_a51caa4b8680206495ea671e71991e231}{ae\+Add\+On}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Animation\+Renderer.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Animation\+Renderer.\+cpp\end{DoxyCompactItemize}

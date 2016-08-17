@@ -1,0 +1,87 @@
+\hypertarget{class_c_timer}{}\section{C\+Timer Class Reference}
+\label{class_c_timer}\index{C\+Timer@{C\+Timer}}
+
+
+A high resolution timer.  
+
+
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_timer_a93e4d770fd09f5e1b984768620cc52bf}{C\+Timer} ()\hypertarget{class_c_timer_a93e4d770fd09f5e1b984768620cc52bf}{}\label{class_c_timer_a93e4d770fd09f5e1b984768620cc52bf}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_timer_afd3f6595928cd20f7faaece75f017733}{$\sim$\+C\+Timer} ()\hypertarget{class_c_timer_afd3f6595928cd20f7faaece75f017733}{}\label{class_c_timer_afd3f6595928cd20f7faaece75f017733}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_timer_a775f01598e65e4d59409eb3514a8eb11}{Init} ()\hypertarget{class_c_timer_a775f01598e65e4d59409eb3514a8eb11}{}\label{class_c_timer_a775f01598e65e4d59409eb3514a8eb11}
+
+\begin{DoxyCompactList}\small\item\em Initializes the timer. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_timer_ad0bd5b01b4a6acfacb5a492ecffbad94}{Update} ()\hypertarget{class_c_timer_ad0bd5b01b4a6acfacb5a492ecffbad94}{}\label{class_c_timer_ad0bd5b01b4a6acfacb5a492ecffbad94}
+
+\begin{DoxyCompactList}\small\item\em Updates the delta time since last update and adds it up to the total time. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_timer_a9cdca2cee77fc97b399ee5f0b11d02c9}{Set\+Time\+Scale} (float New\+Time\+Scale)
+\begin{DoxyCompactList}\small\item\em Sets the time scale, for which it will multiply the delta time every update. In case of receiving a negative number, it will set the time scale to zero. \end{DoxyCompactList}\item 
+float \hyperlink{class_c_timer_abc630a6dd6715464d6027923343ff6de}{Time} ()
+\begin{DoxyCompactList}\small\item\em Returns the time since Init. \end{DoxyCompactList}\item 
+float \hyperlink{class_c_timer_a6f240a3026d4983924fba84735f19ae5}{delta\+Time} ()
+\begin{DoxyCompactList}\small\item\em Returns the delta time between update calls. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A high resolution timer. 
+
+\subsection{Member Function Documentation}
+\index{C\+Timer@{C\+Timer}!delta\+Time@{delta\+Time}}
+\index{delta\+Time@{delta\+Time}!C\+Timer@{C\+Timer}}
+\subsubsection[{\texorpdfstring{delta\+Time()}{deltaTime()}}]{\setlength{\rightskip}{0pt plus 5cm}float C\+Timer\+::delta\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_timer_a6f240a3026d4983924fba84735f19ae5}{}\label{class_c_timer_a6f240a3026d4983924fba84735f19ae5}
+
+
+Returns the delta time between update calls. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+\index{C\+Timer@{C\+Timer}!Set\+Time\+Scale@{Set\+Time\+Scale}}
+\index{Set\+Time\+Scale@{Set\+Time\+Scale}!C\+Timer@{C\+Timer}}
+\subsubsection[{\texorpdfstring{Set\+Time\+Scale(float New\+Time\+Scale)}{SetTimeScale(float NewTimeScale)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Timer\+::\+Set\+Time\+Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{New\+Time\+Scale}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_timer_a9cdca2cee77fc97b399ee5f0b11d02c9}{}\label{class_c_timer_a9cdca2cee77fc97b399ee5f0b11d02c9}
+
+
+Sets the time scale, for which it will multiply the delta time every update. In case of receiving a negative number, it will set the time scale to zero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Time\+Scale} & The new time scale. \\
+\hline
+\end{DoxyParams}
+\index{C\+Timer@{C\+Timer}!Time@{Time}}
+\index{Time@{Time}!C\+Timer@{C\+Timer}}
+\subsubsection[{\texorpdfstring{Time()}{Time()}}]{\setlength{\rightskip}{0pt plus 5cm}float C\+Timer\+::\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_timer_abc630a6dd6715464d6027923343ff6de}{}\label{class_c_timer_abc630a6dd6715464d6027923343ff6de}
+
+
+Returns the time since Init. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/\hyperlink{_timer_8h}{Timer.\+h}\end{DoxyCompactItemize}

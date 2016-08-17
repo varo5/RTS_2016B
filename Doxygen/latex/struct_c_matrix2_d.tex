@@ -1,0 +1,436 @@
+\hypertarget{struct_c_matrix2_d}{}\section{C\+Matrix2D Struct Reference}
+\label{struct_c_matrix2_d}\index{C\+Matrix2D@{C\+Matrix2D}}
+
+
+This structure is a 2x2 matrix of float values. This is an old structure, better use \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}.  
+
+
+
+
+{\ttfamily \#include $<$Matrix2\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_matrix2_d_a284beaa85a289a5a3bd14853fd583b0a}{C\+Matrix2D} (const \hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \&Reference\+Matrix)\hypertarget{struct_c_matrix2_d_a284beaa85a289a5a3bd14853fd583b0a}{}\label{struct_c_matrix2_d_a284beaa85a289a5a3bd14853fd583b0a}
+
+\begin{DoxyCompactList}\small\item\em Create a copy of another 2x2 matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix2_d_a7786e4eddbd0d1d98b1138751de40c4c}{C\+Matrix2D} (float Matrix\+Position00, float Matrix\+Position01, float Matrix\+Position10, float Matrix\+Position11)\hypertarget{struct_c_matrix2_d_a7786e4eddbd0d1d98b1138751de40c4c}{}\label{struct_c_matrix2_d_a7786e4eddbd0d1d98b1138751de40c4c}
+
+\begin{DoxyCompactList}\small\item\em Create a new Matrix from given values. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Col} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Reference\+Vector, int Column\+Number)\hypertarget{struct_c_matrix2_d_a0b371d33c0d14659f43d4492c6de9a03}{}\label{struct_c_matrix2_d_a0b371d33c0d14659f43d4492c6de9a03}
+
+\item 
+void {\bfseries Set\+Row} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Reference\+Vector, int Row\+Number)\hypertarget{struct_c_matrix2_d_ae87843415b1cefd3eb126300d04f0ee5}{}\label{struct_c_matrix2_d_ae87843415b1cefd3eb126300d04f0ee5}
+
+\item 
+\hyperlink{struct_c_vector2_d}{C\+Vector2D} {\bfseries Get\+Col} (int Column\+Number)\hypertarget{struct_c_matrix2_d_abcdb904b459175227fe2bb0b2f5eea89}{}\label{struct_c_matrix2_d_abcdb904b459175227fe2bb0b2f5eea89}
+
+\item 
+\hyperlink{struct_c_vector2_d}{C\+Vector2D} {\bfseries Get\+Row} (int Row\+Number)\hypertarget{struct_c_matrix2_d_a988b0510eabd9ca5ad468e1cdebdec9e}{}\label{struct_c_matrix2_d_a988b0510eabd9ca5ad468e1cdebdec9e}
+
+\item 
+\hyperlink{struct_c_vector2_d}{C\+Vector2D} {\bfseries operator$\ast$} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Reference\+Vector)\hypertarget{struct_c_matrix2_d_a410e1788212de8ad607fd2cef82b9330}{}\label{struct_c_matrix2_d_a410e1788212de8ad607fd2cef82b9330}
+
+\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} {\bfseries operator+} (\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \&Reference\+Matrix)\hypertarget{struct_c_matrix2_d_abd92fb2cb31631edf9887ff4fb2100ca}{}\label{struct_c_matrix2_d_abd92fb2cb31631edf9887ff4fb2100ca}
+
+\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} {\bfseries operator-\/} (\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \&Reference\+Matrix)\hypertarget{struct_c_matrix2_d_a3a99e5bcc1f64e88b15cc1769940c396}{}\label{struct_c_matrix2_d_a3a99e5bcc1f64e88b15cc1769940c396}
+
+\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} {\bfseries operator$\ast$} (\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \&Reference\+Matrix)\hypertarget{struct_c_matrix2_d_a6f4c16d27530d1153152da8dde4beca9}{}\label{struct_c_matrix2_d_a6f4c16d27530d1153152da8dde4beca9}
+
+\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} {\bfseries operator$\ast$} (float Coefficient)\hypertarget{struct_c_matrix2_d_ad8b25e20da7af7e77c2c09bb29a78538}{}\label{struct_c_matrix2_d_ad8b25e20da7af7e77c2c09bb29a78538}
+
+\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} {\bfseries operator/} (float Divider)\hypertarget{struct_c_matrix2_d_a7f5a093a52f8015bf4e6f6bc376680a9}{}\label{struct_c_matrix2_d_a7f5a093a52f8015bf4e6f6bc376680a9}
+
+\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \& {\bfseries operator+=} (\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \&Reference\+Matrix)\hypertarget{struct_c_matrix2_d_a0524f77a34a61f0789929cd2619857aa}{}\label{struct_c_matrix2_d_a0524f77a34a61f0789929cd2619857aa}
+
+\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \& {\bfseries operator-\/=} (\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \&Reference\+Matrix)\hypertarget{struct_c_matrix2_d_ac1fa758e4b96f7da89b7df7c68b7d54e}{}\label{struct_c_matrix2_d_ac1fa758e4b96f7da89b7df7c68b7d54e}
+
+\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \& {\bfseries operator$\ast$=} (\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \&Reference\+Matrix)\hypertarget{struct_c_matrix2_d_ae57c024d4dee37eaf8ad467e8e6edbe7}{}\label{struct_c_matrix2_d_ae57c024d4dee37eaf8ad467e8e6edbe7}
+
+\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \& {\bfseries operator$\ast$=} (float Coefficient)\hypertarget{struct_c_matrix2_d_ab1915d2a4f1cd5a197216bea1a041ec3}{}\label{struct_c_matrix2_d_ab1915d2a4f1cd5a197216bea1a041ec3}
+
+\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \& {\bfseries operator/=} (float Divider)\hypertarget{struct_c_matrix2_d_ab7835a34247ba7aa56a8c233fb4edf2e}{}\label{struct_c_matrix2_d_ab7835a34247ba7aa56a8c233fb4edf2e}
+
+\item 
+float \hyperlink{struct_c_matrix2_d_ad9e33d9f2035bda7b0e1ed484029135c}{Det} ()
+\begin{DoxyCompactList}\small\item\em Obtains the determinant of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_vector2_d}{C\+Vector2D} \hyperlink{struct_c_matrix2_d_a2bf2c20d1549add01acdf9acdd501263}{Cramer} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Reference\+Vector)
+\begin{DoxyCompactList}\small\item\em Uses Cramer\textquotesingle{}s rule for the solution of an equation system. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \hyperlink{struct_c_matrix2_d_a7c9085859bacdeb6a331012cdf896925}{Transpose} ()
+\begin{DoxyCompactList}\small\item\em Obtain the transposed matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \hyperlink{struct_c_matrix2_d_a07414e0afc6732c9896a2b4661f11d1c}{Cofactor} ()
+\begin{DoxyCompactList}\small\item\em Obtains the cofactor matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \hyperlink{struct_c_matrix2_d_a95c1abe54b279ba1b925cc0fa9c23080}{Adjunct} ()
+\begin{DoxyCompactList}\small\item\em Obtains the adjunct matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \hyperlink{struct_c_matrix2_d_ae1b182689b62351fb0f9d5a763d405e6}{Inverse} ()
+\begin{DoxyCompactList}\small\item\em Obtains the inverse matrix of this matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \hyperlink{struct_c_matrix2_d_a2892b38c4ca0677846e6dd2aad3e9933}{Zero} ()
+\begin{DoxyCompactList}\small\item\em Returns an empty matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \hyperlink{struct_c_matrix2_d_a09f735cdd645ceff639fca65002b8cee}{Identity} ()
+\begin{DoxyCompactList}\small\item\em Returns an identity matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \hyperlink{struct_c_matrix2_d_ab1027aeee1183723c7962f90e4f25478}{Scaling\+Matrix} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Scale\+Vector)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \hyperlink{struct_c_matrix2_d_aa05689545b315e57446c47c4e3ff0cec}{Scaling\+Matrix} (float Scale\+Factor)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a scale factor. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix2_d}{C\+Matrix2D} \hyperlink{struct_c_matrix2_d_ac426bd307bf097833d8411fb313134e7}{Rotation\+Matrix} (float Radians\+Of\+Rotation)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix from an angle. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_vector2_d}{C\+Vector2D} \hyperlink{struct_c_matrix2_d_a89051c85ef7a467476827e948491a7d6}{Rotate} (float Radians\+Of\+Rotation, \hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Vector\+To\+Rotate)
+\begin{DoxyCompactList}\small\item\em Returns the rotated vector given an angle. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_vector2_d}{C\+Vector2D} \hyperlink{struct_c_matrix2_d_aca00561812d200d1a6f34eef07c2dec8}{Rotate} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Vector\+To\+Rotate, \hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Vector\+Adding\+Rotation)
+\begin{DoxyCompactList}\small\item\em Returns the rotated vector given another vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_vector2_d}{C\+Vector2D} \hyperlink{struct_c_matrix2_d_a14c8ff4e88154c65c82917130a294028}{Homogeneous\+Transformation} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Vector\+To\+Transform, \hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Translation\+Vector, \hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Scale\+Vector, \hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Vector\+Adding\+Rotation)
+\begin{DoxyCompactList}\small\item\em Homogeneous transformation. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_vector2_d}{C\+Vector2D} \hyperlink{struct_c_matrix2_d_ad4f221de368265a80651077ae0852d22}{Homogeneous\+Transformation} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Vector\+To\+Transform, \hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Translation\+Vector, \hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Scale\+Vector, float Radians\+Of\+Rotation)
+\begin{DoxyCompactList}\small\item\em Homogeneous transformation. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_vector2_d}{C\+Vector2D} \hyperlink{struct_c_matrix2_d_a7fd61cf2fc8cfce70f2712c634f2ac85}{Homogeneous\+Transformation} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Vector\+To\+Transform, \hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Translation\+Vector, float Scale\+Factor, float Radians\+Of\+Rotation)
+\begin{DoxyCompactList}\small\item\em Homogeneous transformation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries m\+\_\+f00}\hypertarget{struct_c_matrix2_d_a49293e75c06aa61500219c1e846dbf09}{}\label{struct_c_matrix2_d_a49293e75c06aa61500219c1e846dbf09}
+
+\item 
+float {\bfseries m\+\_\+f01}\hypertarget{struct_c_matrix2_d_ae864b8358f0fe75578b318fa626e1c5b}{}\label{struct_c_matrix2_d_ae864b8358f0fe75578b318fa626e1c5b}
+
+\item 
+float {\bfseries m\+\_\+f10}\hypertarget{struct_c_matrix2_d_a7d450fe443a4d6fb5041690b3f0513cc}{}\label{struct_c_matrix2_d_a7d450fe443a4d6fb5041690b3f0513cc}
+
+\item 
+float {\bfseries m\+\_\+f11}\hypertarget{struct_c_matrix2_d_a35cdeddb7220cdda6bfccbea643a70cf}{}\label{struct_c_matrix2_d_a35cdeddb7220cdda6bfccbea643a70cf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure is a 2x2 matrix of float values. This is an old structure, better use \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+
+\begin{DoxyAuthor}{Author}
+Alvaro Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/05/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\+Matrix2D@{C\+Matrix2D}!Adjunct@{Adjunct}}
+\index{Adjunct@{Adjunct}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Adjunct()}{Adjunct()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix2D} C\+Matrix2\+D\+::\+Adjunct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix2_d_a95c1abe54b279ba1b925cc0fa9c23080}{}\label{struct_c_matrix2_d_a95c1abe54b279ba1b925cc0fa9c23080}
+
+
+Obtains the adjunct matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix2_d}{C\+Matrix2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Cofactor@{Cofactor}}
+\index{Cofactor@{Cofactor}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Cofactor()}{Cofactor()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix2D} C\+Matrix2\+D\+::\+Cofactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix2_d_a07414e0afc6732c9896a2b4661f11d1c}{}\label{struct_c_matrix2_d_a07414e0afc6732c9896a2b4661f11d1c}
+
+
+Obtains the cofactor matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix2_d}{C\+Matrix2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Cramer@{Cramer}}
+\index{Cramer@{Cramer}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Cramer(\+C\+Vector2\+D \&\+Reference\+Vector)}{Cramer(CVector2D &ReferenceVector)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vector2D} C\+Matrix2\+D\+::\+Cramer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector2D} \&}]{Reference\+Vector}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix2_d_a2bf2c20d1549add01acdf9acdd501263}{}\label{struct_c_matrix2_d_a2bf2c20d1549add01acdf9acdd501263}
+
+
+Uses Cramer\textquotesingle{}s rule for the solution of an equation system. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Reference\+Vector} & The reference vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_vector2_d}{C\+Vector2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Det@{Det}}
+\index{Det@{Det}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Det()}{Det()}}]{\setlength{\rightskip}{0pt plus 5cm}float C\+Matrix2\+D\+::\+Det (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix2_d_ad9e33d9f2035bda7b0e1ed484029135c}{}\label{struct_c_matrix2_d_ad9e33d9f2035bda7b0e1ed484029135c}
+
+
+Obtains the determinant of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Homogeneous\+Transformation@{Homogeneous\+Transformation}}
+\index{Homogeneous\+Transformation@{Homogeneous\+Transformation}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Homogeneous\+Transformation(\+C\+Vector2\+D \&\+Vector\+To\+Transform, C\+Vector2\+D \&\+Translation\+Vector, C\+Vector2\+D \&\+Scale\+Vector, C\+Vector2\+D \&\+Vector\+Adding\+Rotation)}{HomogeneousTransformation(CVector2D &VectorToTransform, CVector2D &TranslationVector, CVector2D &ScaleVector, CVector2D &VectorAddingRotation)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vector2D} C\+Matrix2\+D\+::\+Homogeneous\+Transformation (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector2D} \&}]{Vector\+To\+Transform, }
+\item[{{\bf C\+Vector2D} \&}]{Translation\+Vector, }
+\item[{{\bf C\+Vector2D} \&}]{Scale\+Vector, }
+\item[{{\bf C\+Vector2D} \&}]{Vector\+Adding\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix2_d_a14c8ff4e88154c65c82917130a294028}{}\label{struct_c_matrix2_d_a14c8ff4e88154c65c82917130a294028}
+
+
+Homogeneous transformation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Vector\+To\+Transform} & The vector to transform. \\
+\hline
+\mbox{\tt in,out}  & {\em Translation\+Vector} & The translation vector. \\
+\hline
+\mbox{\tt in,out}  & {\em Scale\+Vector} & The scale vector. \\
+\hline
+\mbox{\tt in,out}  & {\em Vector\+Adding\+Rotation} & The vector adding rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_vector2_d}{C\+Vector2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Homogeneous\+Transformation@{Homogeneous\+Transformation}}
+\index{Homogeneous\+Transformation@{Homogeneous\+Transformation}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Homogeneous\+Transformation(\+C\+Vector2\+D \&\+Vector\+To\+Transform, C\+Vector2\+D \&\+Translation\+Vector, C\+Vector2\+D \&\+Scale\+Vector, float Radians\+Of\+Rotation)}{HomogeneousTransformation(CVector2D &VectorToTransform, CVector2D &TranslationVector, CVector2D &ScaleVector, float RadiansOfRotation)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vector2D} C\+Matrix2\+D\+::\+Homogeneous\+Transformation (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector2D} \&}]{Vector\+To\+Transform, }
+\item[{{\bf C\+Vector2D} \&}]{Translation\+Vector, }
+\item[{{\bf C\+Vector2D} \&}]{Scale\+Vector, }
+\item[{float}]{Radians\+Of\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix2_d_ad4f221de368265a80651077ae0852d22}{}\label{struct_c_matrix2_d_ad4f221de368265a80651077ae0852d22}
+
+
+Homogeneous transformation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Vector\+To\+Transform} & The vector to transform. \\
+\hline
+\mbox{\tt in,out}  & {\em Translation\+Vector} & The translation vector. \\
+\hline
+\mbox{\tt in,out}  & {\em Scale\+Vector} & The scale vector. \\
+\hline
+ & {\em Radians\+Of\+Rotation} & The radians of rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_vector2_d}{C\+Vector2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Homogeneous\+Transformation@{Homogeneous\+Transformation}}
+\index{Homogeneous\+Transformation@{Homogeneous\+Transformation}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Homogeneous\+Transformation(\+C\+Vector2\+D \&\+Vector\+To\+Transform, C\+Vector2\+D \&\+Translation\+Vector, float Scale\+Factor, float Radians\+Of\+Rotation)}{HomogeneousTransformation(CVector2D &VectorToTransform, CVector2D &TranslationVector, float ScaleFactor, float RadiansOfRotation)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vector2D} C\+Matrix2\+D\+::\+Homogeneous\+Transformation (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector2D} \&}]{Vector\+To\+Transform, }
+\item[{{\bf C\+Vector2D} \&}]{Translation\+Vector, }
+\item[{float}]{Scale\+Factor, }
+\item[{float}]{Radians\+Of\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix2_d_a7fd61cf2fc8cfce70f2712c634f2ac85}{}\label{struct_c_matrix2_d_a7fd61cf2fc8cfce70f2712c634f2ac85}
+
+
+Homogeneous transformation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Vector\+To\+Transform} & The vector to transform. \\
+\hline
+\mbox{\tt in,out}  & {\em Translation\+Vector} & The translation vector. \\
+\hline
+ & {\em Scale\+Factor} & The scale factor. \\
+\hline
+ & {\em Radians\+Of\+Rotation} & The radians of rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_vector2_d}{C\+Vector2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Identity@{Identity}}
+\index{Identity@{Identity}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Identity()}{Identity()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix2D} C\+Matrix2\+D\+::\+Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{struct_c_matrix2_d_a09f735cdd645ceff639fca65002b8cee}{}\label{struct_c_matrix2_d_a09f735cdd645ceff639fca65002b8cee}
+
+
+Returns an identity matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Inverse()}{Inverse()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix2D} C\+Matrix2\+D\+::\+Inverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix2_d_ae1b182689b62351fb0f9d5a763d405e6}{}\label{struct_c_matrix2_d_ae1b182689b62351fb0f9d5a763d405e6}
+
+
+Obtains the inverse matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix2_d}{C\+Matrix2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Rotate(float Radians\+Of\+Rotation, C\+Vector2\+D \&\+Vector\+To\+Rotate)}{Rotate(float RadiansOfRotation, CVector2D &VectorToRotate)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vector2D} C\+Matrix2\+D\+::\+Rotate (
+\begin{DoxyParamCaption}
+\item[{float}]{Radians\+Of\+Rotation, }
+\item[{{\bf C\+Vector2D} \&}]{Vector\+To\+Rotate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix2_d_a89051c85ef7a467476827e948491a7d6}{}\label{struct_c_matrix2_d_a89051c85ef7a467476827e948491a7d6}
+
+
+Returns the rotated vector given an angle. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em Radians\+Of\+Rotation} & The radians of rotation. \\
+\hline
+\mbox{\tt in,out}  & {\em Vector\+To\+Rotate} & The vector to rotate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_vector2_d}{C\+Vector2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Rotate(\+C\+Vector2\+D \&\+Vector\+To\+Rotate, C\+Vector2\+D \&\+Vector\+Adding\+Rotation)}{Rotate(CVector2D &VectorToRotate, CVector2D &VectorAddingRotation)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vector2D} C\+Matrix2\+D\+::\+Rotate (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector2D} \&}]{Vector\+To\+Rotate, }
+\item[{{\bf C\+Vector2D} \&}]{Vector\+Adding\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix2_d_aca00561812d200d1a6f34eef07c2dec8}{}\label{struct_c_matrix2_d_aca00561812d200d1a6f34eef07c2dec8}
+
+
+Returns the rotated vector given another vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Vector\+To\+Rotate} & The vector to rotate. \\
+\hline
+\mbox{\tt in,out}  & {\em Vector\+Adding\+Rotation} & The vector adding rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_vector2_d}{C\+Vector2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Rotation\+Matrix@{Rotation\+Matrix}}
+\index{Rotation\+Matrix@{Rotation\+Matrix}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Rotation\+Matrix(float Radians\+Of\+Rotation)}{RotationMatrix(float RadiansOfRotation)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix2D} C\+Matrix2\+D\+::\+Rotation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{Radians\+Of\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix2_d_ac426bd307bf097833d8411fb313134e7}{}\label{struct_c_matrix2_d_ac426bd307bf097833d8411fb313134e7}
+
+
+Creates a rotation matrix from an angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Radians\+Of\+Rotation} & The radians of rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix2_d}{C\+Matrix2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(\+C\+Vector2\+D \&\+Scale\+Vector)}{ScalingMatrix(CVector2D &ScaleVector)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix2D} C\+Matrix2\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector2D} \&}]{Scale\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix2_d_ab1027aeee1183723c7962f90e4f25478}{}\label{struct_c_matrix2_d_ab1027aeee1183723c7962f90e4f25478}
+
+
+Creates a scaling matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Scale\+Vector} & The scale vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix2_d}{C\+Matrix2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(float Scale\+Factor)}{ScalingMatrix(float ScaleFactor)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix2D} C\+Matrix2\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{Scale\+Factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix2_d_aa05689545b315e57446c47c4e3ff0cec}{}\label{struct_c_matrix2_d_aa05689545b315e57446c47c4e3ff0cec}
+
+
+Creates a scaling matrix from a scale factor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scale\+Factor} & The scale factor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix2_d}{C\+Matrix2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Transpose()}{Transpose()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix2D} C\+Matrix2\+D\+::\+Transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix2_d_a7c9085859bacdeb6a331012cdf896925}{}\label{struct_c_matrix2_d_a7c9085859bacdeb6a331012cdf896925}
+
+
+Obtain the transposed matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix2_d}{C\+Matrix2D}. 
+\end{DoxyReturn}
+\index{C\+Matrix2D@{C\+Matrix2D}!Zero@{Zero}}
+\index{Zero@{Zero}!C\+Matrix2D@{C\+Matrix2D}}
+\subsubsection[{\texorpdfstring{Zero()}{Zero()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix2D} C\+Matrix2\+D\+::\+Zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{struct_c_matrix2_d_a2892b38c4ca0677846e6dd2aad3e9933}{}\label{struct_c_matrix2_d_a2892b38c4ca0677846e6dd2aad3e9933}
+
+
+Returns an empty matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Math/Matrix2\+D.\+h\end{DoxyCompactItemize}

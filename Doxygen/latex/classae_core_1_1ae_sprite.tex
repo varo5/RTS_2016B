@@ -1,0 +1,444 @@
+\hypertarget{classae_core_1_1ae_sprite}{}\section{ae\+Core\+:\+:ae\+Sprite Class Reference}
+\label{classae_core_1_1ae_sprite}\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+
+
+This class reads and displays images given by the user.  
+
+
+
+
+{\ttfamily \#include $<$Sprite.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classae_core_1_1ae_sprite_af0831df244e64f7286384f7505e263d9}{ae\+Sprite} ()\hypertarget{classae_core_1_1ae_sprite_af0831df244e64f7286384f7505e263d9}{}\label{classae_core_1_1ae_sprite_af0831df244e64f7286384f7505e263d9}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classae_core_1_1ae_sprite_abae79605805258977e20e0dd4e86e2f4}{$\sim$ae\+Sprite} ()\hypertarget{classae_core_1_1ae_sprite_abae79605805258977e20e0dd4e86e2f4}{}\label{classae_core_1_1ae_sprite_abae79605805258977e20e0dd4e86e2f4}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classae_core_1_1ae_sprite_a47c5c7900491b50bc27e0ff4f9604612}{Load\+Image\+From\+File} (\hyperlink{namespaceae_core_ad6f85aacc0d1fdd85e458e2413e60010}{ae\+String} psz\+File\+Name, \hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Loads image from file. \end{DoxyCompactList}\item 
+bool \hyperlink{classae_core_1_1ae_sprite_a78a94a3b8e133c094935ef37470d2c43}{Load\+Image\+From\+Text} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer, \hyperlink{classae_core_1_1ae_font}{ae\+Font} $\ast$p\+Font, \hyperlink{namespaceae_core_ad6f85aacc0d1fdd85e458e2413e60010}{ae\+String} \&psz\+Text, int Size)
+\begin{DoxyCompactList}\small\item\em Loads image from text. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_sprite_a40fc5810e02f0314c4005e1b28164389}{Free} ()\hypertarget{classae_core_1_1ae_sprite_a40fc5810e02f0314c4005e1b28164389}{}\label{classae_core_1_1ae_sprite_a40fc5810e02f0314c4005e1b28164389}
+
+\begin{DoxyCompactList}\small\item\em Frees this object. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_sprite_aad4b4308c569dadfed99de71bd921978}{Set\+Color} (\hyperlink{structae_core_1_1ae_r_g_b}{ae\+R\+GB} rgb\+Color)
+\begin{DoxyCompactList}\small\item\em Sets a color. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_sprite_ad980068b083f6fc02cb87d8be4fa40f5}{Set\+Blend\+Mode} (int blending)
+\begin{DoxyCompactList}\small\item\em Sets blend mode. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_sprite_a926c9e48628fbc48eb5566d4ed61e474}{Set\+Alpha} (\hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} alpha)
+\begin{DoxyCompactList}\small\item\em Sets an alpha. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_sprite_a192f6b1813ee98b22ddbba28a81406d3}{Render} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$Renderer, int x, int y, \hyperlink{structae_core_1_1ae_point}{ae\+Point} $\ast$p\+Size=N\+U\+LL, \hyperlink{structae_core_1_1ae_rect}{ae\+Rect} $\ast$p\+Rect\+Source=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Renders this object. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_sprite_a369bf559adcd3e29b0afd99c24db5b3f}{Render\+Ex} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$Renderer, int x, int y, \hyperlink{structae_core_1_1ae_point}{ae\+Point} $\ast$p\+Size=N\+U\+LL, \hyperlink{structae_core_1_1ae_rect}{ae\+Rect} $\ast$p\+Rect\+Source=N\+U\+LL, int Flip=0, \hyperlink{structae_core_1_1ae_point}{ae\+Point} $\ast$p\+Center=N\+U\+LL, float Angle=0.\+0f)
+\begin{DoxyCompactList}\small\item\em Renders this object. \end{DoxyCompactList}\item 
+int \hyperlink{classae_core_1_1ae_sprite_aaaec389bd44191ed8796fa75373a402b}{Height} ()
+\begin{DoxyCompactList}\small\item\em Gets the height. \end{DoxyCompactList}\item 
+int \hyperlink{classae_core_1_1ae_sprite_a311d1c6b6dc0fe388f46ca46905f28a6}{Width} ()
+\begin{DoxyCompactList}\small\item\em Gets the width. \end{DoxyCompactList}\item 
+\hyperlink{structae_core_1_1ae_point}{ae\+Point} \hyperlink{classae_core_1_1ae_sprite_ad46bd4ad56230400d629fa05211d2b10}{Get\+Size} ()
+\begin{DoxyCompactList}\small\item\em Gets the size. \end{DoxyCompactList}\item 
+int \hyperlink{classae_core_1_1ae_sprite_adcef90ab9c0eb35dbe3386ac81de7e1f}{Get\+ID} ()
+\begin{DoxyCompactList}\small\item\em Gets the identifier. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_sprite_ab5aa44b474a501f757ad446a292fa5aa}{Set\+As\+Render\+Target} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer, int w, int h)
+\begin{DoxyCompactList}\small\item\em Sets as render target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classae_core_1_1ae_sprite}{ae\+Sprite} $\ast$ \hyperlink{classae_core_1_1ae_sprite_a21ae55423867b80c2e8db783cfdbaad6}{Create\+Sprite} (\hyperlink{namespaceae_core_ad6f85aacc0d1fdd85e458e2413e60010}{ae\+String} psz\+Path, \hyperlink{namespaceae_core_ad6f85aacc0d1fdd85e458e2413e60010}{ae\+String} psz\+Name, \hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer, int ID)
+\begin{DoxyCompactList}\small\item\em Creates a sprite. \end{DoxyCompactList}\item 
+static \hyperlink{classae_core_1_1ae_sprite}{ae\+Sprite} $\ast$ \hyperlink{classae_core_1_1ae_sprite_addce4be06369bd7996a06f279292329c}{Create\+Target\+Renderer} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer, int w, int h)
+\begin{DoxyCompactList}\small\item\em Creates target renderer. \end{DoxyCompactList}\item 
+static \hyperlink{classae_core_1_1ae_sprite}{ae\+Sprite} $\ast$ \hyperlink{classae_core_1_1ae_sprite_a12ba14c6c0c3a429334faee5ce9ff23f}{Create\+Text\+Image} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer, \hyperlink{classae_core_1_1ae_font}{ae\+Font} $\ast$p\+Font, \hyperlink{namespaceae_core_ad6f85aacc0d1fdd85e458e2413e60010}{ae\+String} \&psz\+Text, int Size)
+\begin{DoxyCompactList}\small\item\em Creates an image from text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceae_core_ad6f85aacc0d1fdd85e458e2413e60010}{ae\+String} {\bfseries Name}\hypertarget{classae_core_1_1ae_sprite_aef9b53797a7e7f79533b59b69f5957fb}{}\label{classae_core_1_1ae_sprite_aef9b53797a7e7f79533b59b69f5957fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries ae\+Renderer}\hypertarget{classae_core_1_1ae_sprite_a49b84ec66b2f0146e385d8f4982f4875}{}\label{classae_core_1_1ae_sprite_a49b84ec66b2f0146e385d8f4982f4875}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class reads and displays images given by the user. 
+
+\subsection{Member Function Documentation}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Create\+Sprite@{Create\+Sprite}}
+\index{Create\+Sprite@{Create\+Sprite}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Create\+Sprite(ae\+String psz\+Path, ae\+String psz\+Name, ae\+Renderer $\ast$p\+Renderer, int I\+D)}{CreateSprite(aeString pszPath, aeString pszName, aeRenderer *pRenderer, int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Sprite} $\ast$ ae\+Core\+::ae\+Sprite\+::\+Create\+Sprite (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+String}}]{psz\+Path, }
+\item[{{\bf ae\+String}}]{psz\+Name, }
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer, }
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_core_1_1ae_sprite_a21ae55423867b80c2e8db783cfdbaad6}{}\label{classae_core_1_1ae_sprite_a21ae55423867b80c2e8db783cfdbaad6}
+
+
+Creates a sprite. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em psz\+Path} & Path of the file. \\
+\hline
+ & {\em psz\+Name} & The name. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+ & {\em ID} & If non-\/null, the transaction color.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new sprite.
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em psz\+Path} & Path of the file. \\
+\hline
+ & {\em psz\+Name} & The name. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+ & {\em ID} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new sprite. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Create\+Target\+Renderer@{Create\+Target\+Renderer}}
+\index{Create\+Target\+Renderer@{Create\+Target\+Renderer}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Create\+Target\+Renderer(ae\+Renderer $\ast$p\+Renderer, int w, int h)}{CreateTargetRenderer(aeRenderer *pRenderer, int w, int h)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Sprite} $\ast$ ae\+Core\+::ae\+Sprite\+::\+Create\+Target\+Renderer (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer, }
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_core_1_1ae_sprite_addce4be06369bd7996a06f279292329c}{}\label{classae_core_1_1ae_sprite_addce4be06369bd7996a06f279292329c}
+
+
+Creates target renderer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+ & {\em w} & The width. \\
+\hline
+ & {\em h} & The height.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null if it fails, else the new target renderer. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Create\+Text\+Image@{Create\+Text\+Image}}
+\index{Create\+Text\+Image@{Create\+Text\+Image}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Create\+Text\+Image(ae\+Renderer $\ast$p\+Renderer, ae\+Font $\ast$p\+Font, ae\+String \&psz\+Text, int Size)}{CreateTextImage(aeRenderer *pRenderer, aeFont *pFont, aeString &pszText, int Size)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Sprite} $\ast$ ae\+Core\+::ae\+Sprite\+::\+Create\+Text\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer, }
+\item[{{\bf ae\+Font} $\ast$}]{p\+Font, }
+\item[{{\bf ae\+String} \&}]{psz\+Text, }
+\item[{int}]{Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_core_1_1ae_sprite_a12ba14c6c0c3a429334faee5ce9ff23f}{}\label{classae_core_1_1ae_sprite_a12ba14c6c0c3a429334faee5ce9ff23f}
+
+
+Creates an image from text. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Font} & If non-\/null, the font. \\
+\hline
+\mbox{\tt in,out}  & {\em psz\+Text} & The text. \\
+\hline
+ & {\em Size} & The size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null if it fails, else the new text image. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Get\+ID@{Get\+ID}}
+\index{Get\+ID@{Get\+ID}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Get\+I\+D()}{GetID()}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Core\+::ae\+Sprite\+::\+Get\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_adcef90ab9c0eb35dbe3386ac81de7e1f}{}\label{classae_core_1_1ae_sprite_adcef90ab9c0eb35dbe3386ac81de7e1f}
+
+
+Gets the identifier. 
+
+\begin{DoxyReturn}{Returns}
+The identifier. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Get\+Size()}{GetSize()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+Point} ae\+Core\+::ae\+Sprite\+::\+Get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_ad46bd4ad56230400d629fa05211d2b10}{}\label{classae_core_1_1ae_sprite_ad46bd4ad56230400d629fa05211d2b10}
+
+
+Gets the size. 
+
+\begin{DoxyReturn}{Returns}
+The size. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Height@{Height}}
+\index{Height@{Height}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Height()}{Height()}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Core\+::ae\+Sprite\+::\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_aaaec389bd44191ed8796fa75373a402b}{}\label{classae_core_1_1ae_sprite_aaaec389bd44191ed8796fa75373a402b}
+
+
+Gets the height. 
+
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Load\+Image\+From\+File@{Load\+Image\+From\+File}}
+\index{Load\+Image\+From\+File@{Load\+Image\+From\+File}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Load\+Image\+From\+File(ae\+String psz\+File\+Name, ae\+Renderer $\ast$p\+Renderer)}{LoadImageFromFile(aeString pszFileName, aeRenderer *pRenderer)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ae\+Core\+::ae\+Sprite\+::\+Load\+Image\+From\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+String}}]{psz\+File\+Name, }
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_a47c5c7900491b50bc27e0ff4f9604612}{}\label{classae_core_1_1ae_sprite_a47c5c7900491b50bc27e0ff4f9604612}
+
+
+Loads image from file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em psz\+File\+Name} & Filename of the file. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Load\+Image\+From\+Text@{Load\+Image\+From\+Text}}
+\index{Load\+Image\+From\+Text@{Load\+Image\+From\+Text}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Load\+Image\+From\+Text(ae\+Renderer $\ast$p\+Renderer, ae\+Font $\ast$p\+Font, ae\+String \&psz\+Text, int Size)}{LoadImageFromText(aeRenderer *pRenderer, aeFont *pFont, aeString &pszText, int Size)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ae\+Core\+::ae\+Sprite\+::\+Load\+Image\+From\+Text (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer, }
+\item[{{\bf ae\+Font} $\ast$}]{p\+Font, }
+\item[{{\bf ae\+String} \&}]{psz\+Text, }
+\item[{int}]{Size}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_a78a94a3b8e133c094935ef37470d2c43}{}\label{classae_core_1_1ae_sprite_a78a94a3b8e133c094935ef37470d2c43}
+
+
+Loads image from text. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Font} & If non-\/null, the font. \\
+\hline
+\mbox{\tt in,out}  & {\em psz\+Text} & The text. \\
+\hline
+ & {\em Size} & The size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Render@{Render}}
+\index{Render@{Render}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Render(ae\+Renderer $\ast$\+Renderer, int x, int y, ae\+Point $\ast$p\+Size=\+N\+U\+L\+L, ae\+Rect $\ast$p\+Rect\+Source=\+N\+U\+L\+L)}{Render(aeRenderer *Renderer, int x, int y, aePoint *pSize=NULL, aeRect *pRectSource=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Sprite\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{Renderer, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{{\bf ae\+Point} $\ast$}]{p\+Size = {\ttfamily NULL}, }
+\item[{{\bf ae\+Rect} $\ast$}]{p\+Rect\+Source = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_a192f6b1813ee98b22ddbba28a81406d3}{}\label{classae_core_1_1ae_sprite_a192f6b1813ee98b22ddbba28a81406d3}
+
+
+Renders this object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Renderer} & The renderer. \\
+\hline
+ & {\em x} & The x coordinate. \\
+\hline
+ & {\em y} & The y coordinate. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Size} & If non-\/null, the size. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Rect\+Source} & If non-\/null, the rectangle source.\\
+\hline
+\mbox{\tt in,out}  & {\em Renderer} & If non-\/null, the renderer. \\
+\hline
+ & {\em x} & The x coordinate. \\
+\hline
+ & {\em y} & The y coordinate. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Size} & (Optional) If non-\/null, the size. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Rect\+Source} & (Optional) If non-\/null, the rectangle source. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Render\+Ex@{Render\+Ex}}
+\index{Render\+Ex@{Render\+Ex}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Render\+Ex(ae\+Renderer $\ast$\+Renderer, int x, int y, ae\+Point $\ast$p\+Size=\+N\+U\+L\+L, ae\+Rect $\ast$p\+Rect\+Source=\+N\+U\+L\+L, int Flip=0, ae\+Point $\ast$p\+Center=\+N\+U\+L\+L, float Angle=0.\+0f)}{RenderEx(aeRenderer *Renderer, int x, int y, aePoint *pSize=NULL, aeRect *pRectSource=NULL, int Flip=0, aePoint *pCenter=NULL, float Angle=0.0f)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Sprite\+::\+Render\+Ex (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{Renderer, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{{\bf ae\+Point} $\ast$}]{p\+Size = {\ttfamily NULL}, }
+\item[{{\bf ae\+Rect} $\ast$}]{p\+Rect\+Source = {\ttfamily NULL}, }
+\item[{int}]{Flip = {\ttfamily 0}, }
+\item[{{\bf ae\+Point} $\ast$}]{p\+Center = {\ttfamily NULL}, }
+\item[{float}]{Angle = {\ttfamily 0.0f}}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_a369bf559adcd3e29b0afd99c24db5b3f}{}\label{classae_core_1_1ae_sprite_a369bf559adcd3e29b0afd99c24db5b3f}
+
+
+Renders this object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Renderer} & The renderer. \\
+\hline
+ & {\em x} & The x coordinate. \\
+\hline
+ & {\em y} & The y coordinate. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Size} & If non-\/null, the size. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Rect\+Source} & If non-\/null, the rectangle source. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Center} & If non-\/null, the center. \\
+\hline
+ & {\em Flip} & The flip. \\
+\hline
+ & {\em Angle} & The angle.\\
+\hline
+\mbox{\tt in,out}  & {\em Renderer} & If non-\/null, the renderer. \\
+\hline
+ & {\em x} & The x coordinate. \\
+\hline
+ & {\em y} & The y coordinate. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Size} & (Optional) If non-\/null, the size. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Rect\+Source} & (Optional) If non-\/null, the rectangle source. \\
+\hline
+ & {\em Flip} & The flip. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Center} & (Optional) If non-\/null, the center. \\
+\hline
+ & {\em Angle} & The angle. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Set\+Alpha@{Set\+Alpha}}
+\index{Set\+Alpha@{Set\+Alpha}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Set\+Alpha(uint8 alpha)}{SetAlpha(uint8 alpha)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Sprite\+::\+Set\+Alpha (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{alpha}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_a926c9e48628fbc48eb5566d4ed61e474}{}\label{classae_core_1_1ae_sprite_a926c9e48628fbc48eb5566d4ed61e474}
+
+
+Sets an alpha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alpha} & The alpha. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Set\+As\+Render\+Target@{Set\+As\+Render\+Target}}
+\index{Set\+As\+Render\+Target@{Set\+As\+Render\+Target}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Set\+As\+Render\+Target(ae\+Renderer $\ast$p\+Renderer, int w, int h)}{SetAsRenderTarget(aeRenderer *pRenderer, int w, int h)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Sprite\+::\+Set\+As\+Render\+Target (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer, }
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_ab5aa44b474a501f757ad446a292fa5aa}{}\label{classae_core_1_1ae_sprite_ab5aa44b474a501f757ad446a292fa5aa}
+
+
+Sets as render target. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+ & {\em w} & The width. \\
+\hline
+ & {\em h} & The height. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Set\+Blend\+Mode@{Set\+Blend\+Mode}}
+\index{Set\+Blend\+Mode@{Set\+Blend\+Mode}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Set\+Blend\+Mode(int blending)}{SetBlendMode(int blending)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Sprite\+::\+Set\+Blend\+Mode (
+\begin{DoxyParamCaption}
+\item[{int}]{blending}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_ad980068b083f6fc02cb87d8be4fa40f5}{}\label{classae_core_1_1ae_sprite_ad980068b083f6fc02cb87d8be4fa40f5}
+
+
+Sets blend mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em blending} & The blending. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Set\+Color@{Set\+Color}}
+\index{Set\+Color@{Set\+Color}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Set\+Color(ae\+R\+G\+B rgb\+Color)}{SetColor(aeRGB rgbColor)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Sprite\+::\+Set\+Color (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+R\+GB}}]{rgb\+Color}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_aad4b4308c569dadfed99de71bd921978}{}\label{classae_core_1_1ae_sprite_aad4b4308c569dadfed99de71bd921978}
+
+
+Sets a color. 
+
+Sets a color modifier.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rgb\+Color} & The R\+GB color. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}!Width@{Width}}
+\index{Width@{Width}!ae\+Core\+::ae\+Sprite@{ae\+Core\+::ae\+Sprite}}
+\subsubsection[{\texorpdfstring{Width()}{Width()}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Core\+::ae\+Sprite\+::\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_sprite_a311d1c6b6dc0fe388f46ca46905f28a6}{}\label{classae_core_1_1ae_sprite_a311d1c6b6dc0fe388f46ca46905f28a6}
+
+
+Gets the width. 
+
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Graphics/\hyperlink{_sprite_8h}{Sprite.\+h}\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Graphics/\hyperlink{_sprite_8cpp}{Sprite.\+cpp}\end{DoxyCompactItemize}

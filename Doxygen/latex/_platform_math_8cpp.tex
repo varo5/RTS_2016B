@@ -1,0 +1,34 @@
+\hypertarget{_platform_math_8cpp}{}\section{C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Math/\+Platform\+Math.cpp File Reference}
+\label{_platform_math_8cpp}\index{C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Math/\+Platform\+Math.\+cpp@{C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Math/\+Platform\+Math.\+cpp}}
+
+
+Implements the platform mathematics class.  
+
+
+{\ttfamily \#include \char`\"{}ae\+Core\+Std.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Platform\+Math.\+h\char`\"{}}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceae_core}{ae\+Core}
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceae_core_a2c863d5b4c10a1e2b3a082d21aa556d5}{ae\+Core\+::\+S\+Rand\+Init} (int32 Seed)
+\begin{DoxyCompactList}\small\item\em Function to set the initial value of the seed. \end{DoxyCompactList}\item 
+float \hyperlink{namespaceae_core_aefa36e8f9f0e8a5f96a3a08349ecaf33}{ae\+Core\+::\+S\+Rand} ()
+\begin{DoxyCompactList}\small\item\em Generates a random float in the range from 0 to 1 using the S\+Rand\+Init seed. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceae_core_aa028dd1f50f9d79db1ccf58ddc64b729}{ae\+Core\+::\+Gauss\+Random\+Pair} (float \&result\+\_\+a, float \&result\+\_\+b, float d\+Mean, float d\+Std\+Deviation)
+\begin{DoxyCompactList}\small\item\em Generates two random numbers using the polar form of the Box-\/\+Muller algorithm. \end{DoxyCompactList}\item 
+float \hyperlink{namespaceae_core_a0d7dbd2dd241e6f9741502777fd5fb25}{ae\+Core\+::\+Gauss\+Random} (float d\+Mean, float d\+Std\+Deviation)
+\begin{DoxyCompactList}\small\item\em Return one Gaussian random number. \end{DoxyCompactList}\item 
+ae\+Point \hyperlink{namespaceae_core_a5134c200abd7d0125caf1f1d6258f78d}{ae\+Core\+::\+Get\+Map\+To\+Screen\+Coords} (ae\+Vector2 Point, ae\+Vector2 Camera\+Position, ae\+Rect Screen\+Precalc, bool Isometric)
+\begin{DoxyCompactList}\small\item\em Gets map to screen coordinates. \end{DoxyCompactList}\item 
+ae\+Vector2 \hyperlink{namespaceae_core_afe966a085ebb2ecbbb1953302ec3ed7e}{ae\+Core\+::\+Get\+Screen\+To\+Map\+Coords} (ae\+Point Point, ae\+Vector2 Camera\+Position, ae\+Rect Screen\+Precalc, bool Isometric)
+\begin{DoxyCompactList}\small\item\em Gets screen to map coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements the platform mathematics class. 
+

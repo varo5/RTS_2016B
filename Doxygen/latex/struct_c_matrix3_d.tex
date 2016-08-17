@@ -1,0 +1,463 @@
+\hypertarget{struct_c_matrix3_d}{}\section{C\+Matrix3D Struct Reference}
+\label{struct_c_matrix3_d}\index{C\+Matrix3D@{C\+Matrix3D}}
+
+
+This structure is a 3x3 matrix of float values.  
+
+
+
+
+{\ttfamily \#include $<$Matrix3\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_matrix3_d_afc29d9e0be5fbd9158024ff0f704eaaf}{C\+Matrix3D} (const \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \&Reference\+Matrix)\hypertarget{struct_c_matrix3_d_afc29d9e0be5fbd9158024ff0f704eaaf}{}\label{struct_c_matrix3_d_afc29d9e0be5fbd9158024ff0f704eaaf}
+
+\begin{DoxyCompactList}\small\item\em Create a copy of another 2x2 matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix3_d_a814e4772ce6cc9f80beea003423f3140}{C\+Matrix3D} (float \+\_\+00, float \+\_\+01=0, float \+\_\+02=0, float \+\_\+10=0, float \+\_\+11=1, float \+\_\+12=0, float \+\_\+20=0, float \+\_\+21=0, float \+\_\+22=1)\hypertarget{struct_c_matrix3_d_a814e4772ce6cc9f80beea003423f3140}{}\label{struct_c_matrix3_d_a814e4772ce6cc9f80beea003423f3140}
+
+\begin{DoxyCompactList}\small\item\em Create a new Matrix from given values. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Col} (\hyperlink{struct_c_vector3_d}{C\+Vector3D} \&Reference\+Vector, int Column\+Number)\hypertarget{struct_c_matrix3_d_ab964eb4cac748dd26e2eb1c18843f73e}{}\label{struct_c_matrix3_d_ab964eb4cac748dd26e2eb1c18843f73e}
+
+\item 
+void {\bfseries Set\+Row} (\hyperlink{struct_c_vector3_d}{C\+Vector3D} \&Reference\+Vector, int Row\+Number)\hypertarget{struct_c_matrix3_d_aaadd25cc4201844649d38b10a2844bd5}{}\label{struct_c_matrix3_d_aaadd25cc4201844649d38b10a2844bd5}
+
+\item 
+\hyperlink{struct_c_vector3_d}{C\+Vector3D} {\bfseries Get\+Col} (int Column\+Number)\hypertarget{struct_c_matrix3_d_a025e42aa557163781a6bd30d753095aa}{}\label{struct_c_matrix3_d_a025e42aa557163781a6bd30d753095aa}
+
+\item 
+\hyperlink{struct_c_vector3_d}{C\+Vector3D} {\bfseries Get\+Row} (int Row\+Number)\hypertarget{struct_c_matrix3_d_a8b1bffc33043d7989df6a4df006b3eb9}{}\label{struct_c_matrix3_d_a8b1bffc33043d7989df6a4df006b3eb9}
+
+\item 
+\hyperlink{struct_c_vector3_d}{C\+Vector3D} {\bfseries operator$\ast$} (\hyperlink{struct_c_vector3_d}{C\+Vector3D} \&Reference\+Vector)\hypertarget{struct_c_matrix3_d_a90b5eb6db4a2f7faf45812ec3464ea3a}{}\label{struct_c_matrix3_d_a90b5eb6db4a2f7faf45812ec3464ea3a}
+
+\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} {\bfseries operator+} (\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \&Reference\+Matrix)\hypertarget{struct_c_matrix3_d_a0b41873eeb0e460d42706625c017454c}{}\label{struct_c_matrix3_d_a0b41873eeb0e460d42706625c017454c}
+
+\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} {\bfseries operator-\/} (\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \&Reference\+Matrix)\hypertarget{struct_c_matrix3_d_a230bdd9fe359e23c4111b8684e05d5bf}{}\label{struct_c_matrix3_d_a230bdd9fe359e23c4111b8684e05d5bf}
+
+\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} {\bfseries operator$\ast$} (\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \&Reference\+Matrix)\hypertarget{struct_c_matrix3_d_a4335d6c0d9ae960e33c6685d5035daf2}{}\label{struct_c_matrix3_d_a4335d6c0d9ae960e33c6685d5035daf2}
+
+\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} {\bfseries operator$\ast$} (float Coefficient)\hypertarget{struct_c_matrix3_d_a39015d8b25349c80d68ddd2001657223}{}\label{struct_c_matrix3_d_a39015d8b25349c80d68ddd2001657223}
+
+\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} {\bfseries operator/} (float Divider)\hypertarget{struct_c_matrix3_d_a1e8b6fbe6a5d1ecd1a4b20fb6de85c73}{}\label{struct_c_matrix3_d_a1e8b6fbe6a5d1ecd1a4b20fb6de85c73}
+
+\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \& {\bfseries operator+=} (\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \&Reference\+Matrix)\hypertarget{struct_c_matrix3_d_abcd57fa1403859ab42f9529b07725d70}{}\label{struct_c_matrix3_d_abcd57fa1403859ab42f9529b07725d70}
+
+\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \& {\bfseries operator-\/=} (\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \&Reference\+Matrix)\hypertarget{struct_c_matrix3_d_a28f6f2589d276a857b4a3b65369c9449}{}\label{struct_c_matrix3_d_a28f6f2589d276a857b4a3b65369c9449}
+
+\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \& {\bfseries operator$\ast$=} (\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \&Reference\+Matrix)\hypertarget{struct_c_matrix3_d_a9c194e210ce8821a3494946ed0bcf550}{}\label{struct_c_matrix3_d_a9c194e210ce8821a3494946ed0bcf550}
+
+\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \& {\bfseries operator$\ast$=} (float Coefficient)\hypertarget{struct_c_matrix3_d_a4be77bf64567ae47906c052f6ec18683}{}\label{struct_c_matrix3_d_a4be77bf64567ae47906c052f6ec18683}
+
+\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \& {\bfseries operator/=} (float Divider)\hypertarget{struct_c_matrix3_d_ab6a53825db21c5777032d4c7d3b3933b}{}\label{struct_c_matrix3_d_ab6a53825db21c5777032d4c7d3b3933b}
+
+\item 
+float \hyperlink{struct_c_matrix3_d_ada0f0cc1d05bab82dcdda89af4d62616}{Det} ()
+\begin{DoxyCompactList}\small\item\em Obtains the determinant of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_vector3_d}{C\+Vector3D} \hyperlink{struct_c_matrix3_d_a9911c4211c2c0bf5b5b471f903d8bdec}{Cramer} (\hyperlink{struct_c_vector3_d}{C\+Vector3D} \&Reference\+Vector)
+\begin{DoxyCompactList}\small\item\em Uses Cramer\textquotesingle{}s rule for the solution of an equation system. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_ae34a579fdd8f790cc32e4b706a6c3aa0}{Transpose} ()
+\begin{DoxyCompactList}\small\item\em Obtain the transposed matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_a42606870cac788a68bde0f702ac18bb4}{Cofactor} ()
+\begin{DoxyCompactList}\small\item\em Obtains the cofactor matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_a048194634711d7344fb1a9d7b6996e08}{Adjunct} ()
+\begin{DoxyCompactList}\small\item\em Obtains the adjunct matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_a4ffab5f3f688032789317bebc7cace23}{Inverse} ()
+\begin{DoxyCompactList}\small\item\em Obtains the transposed matrix of this matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_af6f7e29ad61b3a421ecc97e5d2335f29}{Zero} ()
+\begin{DoxyCompactList}\small\item\em Returns an empty matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_acbf589653e47eabc34701de5da140078}{Identity} ()
+\begin{DoxyCompactList}\small\item\em Returns an identity matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_ae606643e71ab5fcebe385a5c4939b1ea}{Translation\+Matrix} (\hyperlink{struct_c_vector3_d}{C\+Vector3D} \&Translation\+Vector)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_ae12af4679c317709594a54e1f10ba6e8}{Translation\+Matrix} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Translation\+Vector)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_a3bfa9150ec62b71046ce4c82a7a739cc}{Translation\+Matrix} (float X, float Y)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix from 2 parameters. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_a272ec702964168c4e9a092bccbf99122}{Scaling\+Matrix} (\hyperlink{struct_c_vector3_d}{C\+Vector3D} \&Scale\+Vector)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_a796a421e8899a83d081e45368811f3bd}{Scaling\+Matrix} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&Scale\+Vector)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_ab9ff18305b2466966e388daf345d4bf3}{Scaling\+Matrix} (float Scale\+Factor)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a scale factor. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_a2cb589e97f1bb2a3d43581372a6c6487}{Scaling\+Matrix} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from 2 scale factors. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_a94cb71f5a3148d6933eaf831032145fe}{RotationX} (float theta)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix from an angle to rotate on the X axis. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_ab8badf53c5fa4f760a450e321a851807}{RotationY} (float theta)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix from an angle to rotate on the Y axis. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix3_d}{C\+Matrix3D} \hyperlink{struct_c_matrix3_d_ae0665c00512b46d2a2ad87caf18bdfdb}{RotationZ} (float theta)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix from an angle to rotate on the Z axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>float {\bfseries m\_f00}\\
+\>\>float {\bfseries m\_f01}\\
+\>\>float {\bfseries m\_f02}\\
+\>\>float {\bfseries m\_f10}\\
+\>\>float {\bfseries m\_f11}\\
+\>\>float {\bfseries m\_f12}\\
+\>\>float {\bfseries m\_f20}\\
+\>\>float {\bfseries m\_f21}\\
+\>\>float {\bfseries m\_f22}\\
+\>\} \hypertarget{union_c_matrix3_d_1_1_0D16_a955e79a4034129f2c9ad182f3bf90d44}{}\label{union_c_matrix3_d_1_1_0D16_a955e79a4034129f2c9ad182f3bf90d44}
+\\
+\>\>\>{\em A structure meant to save the matrix as individual values. }\\
+\>float \hyperlink{struct_c_matrix3_d_adddcdbd58ad99abfa98076b31c026e15}{v} \mbox{[}9\mbox{]}\\
+\>\>\>{\em A 9 times float array. }\\
+\>float \hyperlink{struct_c_matrix3_d_a00047d8f1cf369069d9bda938c3f10c0}{m} \mbox{[}3\mbox{]}\mbox{[}3\mbox{]}\\
+\>\>\>{\em A 3x3 float array. }\\
+\}; \hypertarget{struct_c_matrix3_d_ae841689b6907efeb039a8da1863406ba}{}\label{struct_c_matrix3_d_ae841689b6907efeb039a8da1863406ba}
+\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Is the union between individual values and their array and matrix form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure is a 3x3 matrix of float values. 
+
+\begin{DoxyAuthor}{Author}
+Alvaro Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/05/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\+Matrix3D@{C\+Matrix3D}!Adjunct@{Adjunct}}
+\index{Adjunct@{Adjunct}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Adjunct()}{Adjunct()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Adjunct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix3_d_a048194634711d7344fb1a9d7b6996e08}{}\label{struct_c_matrix3_d_a048194634711d7344fb1a9d7b6996e08}
+
+
+Obtains the adjunct matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Cofactor@{Cofactor}}
+\index{Cofactor@{Cofactor}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Cofactor()}{Cofactor()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Cofactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix3_d_a42606870cac788a68bde0f702ac18bb4}{}\label{struct_c_matrix3_d_a42606870cac788a68bde0f702ac18bb4}
+
+
+Obtains the cofactor matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Cramer@{Cramer}}
+\index{Cramer@{Cramer}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Cramer(\+C\+Vector3\+D \&\+Reference\+Vector)}{Cramer(CVector3D &ReferenceVector)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vector3D} C\+Matrix3\+D\+::\+Cramer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector3D} \&}]{Reference\+Vector}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix3_d_a9911c4211c2c0bf5b5b471f903d8bdec}{}\label{struct_c_matrix3_d_a9911c4211c2c0bf5b5b471f903d8bdec}
+
+
+Uses Cramer\textquotesingle{}s rule for the solution of an equation system. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Reference\+Vector} & The reference vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_vector3_d}{C\+Vector3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Det@{Det}}
+\index{Det@{Det}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Det()}{Det()}}]{\setlength{\rightskip}{0pt plus 5cm}float C\+Matrix3\+D\+::\+Det (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix3_d_ada0f0cc1d05bab82dcdda89af4d62616}{}\label{struct_c_matrix3_d_ada0f0cc1d05bab82dcdda89af4d62616}
+
+
+Obtains the determinant of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Identity@{Identity}}
+\index{Identity@{Identity}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Identity()}{Identity()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_acbf589653e47eabc34701de5da140078}{}\label{struct_c_matrix3_d_acbf589653e47eabc34701de5da140078}
+
+
+Returns an identity matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Inverse()}{Inverse()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Inverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix3_d_a4ffab5f3f688032789317bebc7cace23}{}\label{struct_c_matrix3_d_a4ffab5f3f688032789317bebc7cace23}
+
+
+Obtains the transposed matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!RotationX@{RotationX}}
+\index{RotationX@{RotationX}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Rotation\+X(float theta)}{RotationX(float theta)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+RotationX (
+\begin{DoxyParamCaption}
+\item[{float}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_a94cb71f5a3148d6933eaf831032145fe}{}\label{struct_c_matrix3_d_a94cb71f5a3148d6933eaf831032145fe}
+
+
+Creates a rotation matrix from an angle to rotate on the X axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & The radians of rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!RotationY@{RotationY}}
+\index{RotationY@{RotationY}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Rotation\+Y(float theta)}{RotationY(float theta)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+RotationY (
+\begin{DoxyParamCaption}
+\item[{float}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_ab8badf53c5fa4f760a450e321a851807}{}\label{struct_c_matrix3_d_ab8badf53c5fa4f760a450e321a851807}
+
+
+Creates a rotation matrix from an angle to rotate on the Y axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & The radians of rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!RotationZ@{RotationZ}}
+\index{RotationZ@{RotationZ}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Rotation\+Z(float theta)}{RotationZ(float theta)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+RotationZ (
+\begin{DoxyParamCaption}
+\item[{float}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_ae0665c00512b46d2a2ad87caf18bdfdb}{}\label{struct_c_matrix3_d_ae0665c00512b46d2a2ad87caf18bdfdb}
+
+
+Creates a rotation matrix from an angle to rotate on the Z axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & The radians of rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(\+C\+Vector3\+D \&\+Scale\+Vector)}{ScalingMatrix(CVector3D &ScaleVector)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector3D} \&}]{Scale\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_a272ec702964168c4e9a092bccbf99122}{}\label{struct_c_matrix3_d_a272ec702964168c4e9a092bccbf99122}
+
+
+Creates a scaling matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Scale\+Vector} & The scale factor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(\+C\+Vector2\+D \&\+Scale\+Vector)}{ScalingMatrix(CVector2D &ScaleVector)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector2D} \&}]{Scale\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_a796a421e8899a83d081e45368811f3bd}{}\label{struct_c_matrix3_d_a796a421e8899a83d081e45368811f3bd}
+
+
+Creates a scaling matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Scale\+Vector} & The scale factor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(float Scale\+Factor)}{ScalingMatrix(float ScaleFactor)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{Scale\+Factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_ab9ff18305b2466966e388daf345d4bf3}{}\label{struct_c_matrix3_d_ab9ff18305b2466966e388daf345d4bf3}
+
+
+Creates a scaling matrix from a scale factor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scale\+Factor} & The scale factor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(float x, float y)}{ScalingMatrix(float x, float y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_a2cb589e97f1bb2a3d43581372a6c6487}{}\label{struct_c_matrix3_d_a2cb589e97f1bb2a3d43581372a6c6487}
+
+
+Creates a scaling matrix from 2 scale factors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Translation\+Matrix@{Translation\+Matrix}}
+\index{Translation\+Matrix@{Translation\+Matrix}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Translation\+Matrix(\+C\+Vector3\+D \&\+Translation\+Vector)}{TranslationMatrix(CVector3D &TranslationVector)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector3D} \&}]{Translation\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_ae606643e71ab5fcebe385a5c4939b1ea}{}\label{struct_c_matrix3_d_ae606643e71ab5fcebe385a5c4939b1ea}
+
+
+Creates a translation matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Translation\+Vector} & The translation vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Translation\+Matrix@{Translation\+Matrix}}
+\index{Translation\+Matrix@{Translation\+Matrix}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Translation\+Matrix(\+C\+Vector2\+D \&\+Translation\+Vector)}{TranslationMatrix(CVector2D &TranslationVector)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector2D} \&}]{Translation\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_ae12af4679c317709594a54e1f10ba6e8}{}\label{struct_c_matrix3_d_ae12af4679c317709594a54e1f10ba6e8}
+
+
+Creates a translation matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Translation\+Vector} & The translation vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Translation\+Matrix@{Translation\+Matrix}}
+\index{Translation\+Matrix@{Translation\+Matrix}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Translation\+Matrix(float X, float Y)}{TranslationMatrix(float X, float Y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{X, }
+\item[{float}]{Y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_a3bfa9150ec62b71046ce4c82a7a739cc}{}\label{struct_c_matrix3_d_a3bfa9150ec62b71046ce4c82a7a739cc}
+
+
+Creates a translation matrix from 2 parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & The X coordinate. \\
+\hline
+{\em Y} & The Y coordinate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Transpose()}{Transpose()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix3_d_ae34a579fdd8f790cc32e4b706a6c3aa0}{}\label{struct_c_matrix3_d_ae34a579fdd8f790cc32e4b706a6c3aa0}
+
+
+Obtain the transposed matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+\index{C\+Matrix3D@{C\+Matrix3D}!Zero@{Zero}}
+\index{Zero@{Zero}!C\+Matrix3D@{C\+Matrix3D}}
+\subsubsection[{\texorpdfstring{Zero()}{Zero()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix3D} C\+Matrix3\+D\+::\+Zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix3_d_af6f7e29ad61b3a421ecc97e5d2335f29}{}\label{struct_c_matrix3_d_af6f7e29ad61b3a421ecc97e5d2335f29}
+
+
+Returns an empty matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix3_d}{C\+Matrix3D}. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Math/Matrix3\+D.\+h\end{DoxyCompactItemize}

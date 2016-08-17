@@ -1,0 +1,122 @@
+\hypertarget{class_c_add_on}{}\section{C\+Add\+On Class Reference}
+\label{class_c_add_on}\index{C\+Add\+On@{C\+Add\+On}}
+
+
+An add on.  
+
+
+
+
+{\ttfamily \#include $<$Add\+On.\+h$>$}
+
+Inheritance diagram for C\+Add\+On\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_c_add_on}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{_add_on_8h_a10abdd289149f0a510d47930d565b1ea}{Add\+On\+Id} \hyperlink{class_c_add_on_ade32fcee89c330f6c04bb0654a97d269}{Get\+Add\+On\+ID} ()=0
+\begin{DoxyCompactList}\small\item\em Gets add on identifier. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_add_on_a46d1ab2cbbf46f8df800baff1d053f2b}{Init} (\hyperlink{class_c_base_class}{C\+Base\+Class} $\ast$p\+Parent)=0
+\begin{DoxyCompactList}\small\item\em Initializes with the given parent pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_add_on_af7d49c59fd975bcc7b98e14f437cc1ae}{Update} (float f\+Delta)=0
+\begin{DoxyCompactList}\small\item\em Updates the given f\+Delta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_add_on_a7b087304403fcf8581ba9668c4b08f0b}{Render} (ae\+Renderer $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Paints on the given renderer pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_add_on_acad6668a72b1f9e4018376239b367583}{Destroy} ()=0\hypertarget{class_c_add_on_acad6668a72b1f9e4018376239b367583}{}\label{class_c_add_on_acad6668a72b1f9e4018376239b367583}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_add_on_8h_a10abdd289149f0a510d47930d565b1ea}{Add\+On\+Id} {\bfseries m\+\_\+n\+Add\+On\+ID}\hypertarget{class_c_add_on_adb277daf857fd09ae3a8b0153dfb6650}{}\label{class_c_add_on_adb277daf857fd09ae3a8b0153dfb6650}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An add on. 
+
+\subsection{Member Function Documentation}
+\index{C\+Add\+On@{C\+Add\+On}!Get\+Add\+On\+ID@{Get\+Add\+On\+ID}}
+\index{Get\+Add\+On\+ID@{Get\+Add\+On\+ID}!C\+Add\+On@{C\+Add\+On}}
+\subsubsection[{\texorpdfstring{Get\+Add\+On\+I\+D()=0}{GetAddOnID()=0}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Add\+On\+Id} C\+Add\+On\+::\+Get\+Add\+On\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_c_add_on_ade32fcee89c330f6c04bb0654a97d269}{}\label{class_c_add_on_ade32fcee89c330f6c04bb0654a97d269}
+
+
+Gets add on identifier. 
+
+\begin{DoxyReturn}{Returns}
+The add on identifier. 
+\end{DoxyReturn}
+\index{C\+Add\+On@{C\+Add\+On}!Init@{Init}}
+\index{Init@{Init}!C\+Add\+On@{C\+Add\+On}}
+\subsubsection[{\texorpdfstring{Init(\+C\+Base\+Class $\ast$p\+Parent)=0}{Init(CBaseClass *pParent)=0}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Add\+On\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Base\+Class} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_c_add_on_a46d1ab2cbbf46f8df800baff1d053f2b}{}\label{class_c_add_on_a46d1ab2cbbf46f8df800baff1d053f2b}
+
+
+Initializes with the given parent pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Parent} & If non-\/null, the parent pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_c_unit_a5570c90c87296cf2e3ad9a7ace4c8445}{C\+Unit}, \hyperlink{classae_sprite_renderer_adabf45edf71da4b6e5c059e868c5206c}{ae\+Sprite\+Renderer}, and \hyperlink{class_c_animation_renderer_a49f9d4fc805f0168c368a2cda7e8a236}{C\+Animation\+Renderer}.
+
+\index{C\+Add\+On@{C\+Add\+On}!Render@{Render}}
+\index{Render@{Render}!C\+Add\+On@{C\+Add\+On}}
+\subsubsection[{\texorpdfstring{Render(ae\+Renderer $\ast$p\+Renderer)}{Render(aeRenderer *pRenderer)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Add\+On\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{ae\+Renderer $\ast$}]{p\+Renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_c_add_on_a7b087304403fcf8581ba9668c4b08f0b}{}\label{class_c_add_on_a7b087304403fcf8581ba9668c4b08f0b}
+
+
+Paints on the given renderer pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & The renderer pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_c_animation_renderer_a272f2bac72c90d89a9ada38058fc3f0c}{C\+Animation\+Renderer}.
+
+\index{C\+Add\+On@{C\+Add\+On}!Update@{Update}}
+\index{Update@{Update}!C\+Add\+On@{C\+Add\+On}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)=0}{Update(float fDelta)=0}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Add\+On\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_c_add_on_af7d49c59fd975bcc7b98e14f437cc1ae}{}\label{class_c_add_on_af7d49c59fd975bcc7b98e14f437cc1ae}
+
+
+Updates the given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta time. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_c_unit_a5f46103027aaf83b2b47c0711640bd69}{C\+Unit}, \hyperlink{classae_sprite_renderer_a65ea9a0ad3452271d2d5b8c140a7eff7}{ae\+Sprite\+Renderer}, and \hyperlink{class_c_animation_renderer_a2ac2237cb706d2f6d45a88a86543e008}{C\+Animation\+Renderer}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/\hyperlink{_add_on_8h}{Add\+On.\+h}\end{DoxyCompactItemize}

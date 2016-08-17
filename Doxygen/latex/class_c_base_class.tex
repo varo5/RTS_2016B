@@ -1,0 +1,99 @@
+\hypertarget{class_c_base_class}{}\section{C\+Base\+Class Class Reference}
+\label{class_c_base_class}\index{C\+Base\+Class@{C\+Base\+Class}}
+
+
+A base class.  
+
+
+
+
+{\ttfamily \#include $<$Base\+Class.\+h$>$}
+
+Inheritance diagram for C\+Base\+Class\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.478261cm]{class_c_base_class}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_base_class_ab7c1315b9a0b6fcddcc831dad831c66d}{C\+Base\+Class} ()\hypertarget{class_c_base_class_ab7c1315b9a0b6fcddcc831dad831c66d}{}\label{class_c_base_class_ab7c1315b9a0b6fcddcc831dad831c66d}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_base_class_a5c809a7bff97cf75ce8e5a5c19da9415}{$\sim$\+C\+Base\+Class} ()\hypertarget{class_c_base_class_a5c809a7bff97cf75ce8e5a5c19da9415}{}\label{class_c_base_class_a5c809a7bff97cf75ce8e5a5c19da9415}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_base_class_af464de761ce11bf6dd36d4cc9003a94f}{Destroy} ()=0\hypertarget{class_c_base_class_af464de761ce11bf6dd36d4cc9003a94f}{}\label{class_c_base_class_af464de761ce11bf6dd36d4cc9003a94f}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+\hyperlink{_base_class_8h_ac6d3f9b8222b0a76b65c9d705b613083}{Class\+Id} \hyperlink{class_c_base_class_a33c3359d236e4e36cc9cd6e91674685c}{Get\+Class\+ID} ()
+\begin{DoxyCompactList}\small\item\em Gets the identifier. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_base_class_a05cb6dce0188032d41a3bce485e5827e}{Set\+As\+Parent} (\hyperlink{class_c_base_class}{C\+Base\+Class} $\ast$p\+New\+Parent)
+\begin{DoxyCompactList}\small\item\em Sets as parent. \end{DoxyCompactList}\item 
+\hyperlink{class_c_base_class}{C\+Base\+Class} $\ast$ \hyperlink{class_c_base_class_af9eaea801818518986d2f2e8e790a885}{Get\+Parent} ()
+\begin{DoxyCompactList}\small\item\em Gets the parent of this item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_base_class_8h_ac6d3f9b8222b0a76b65c9d705b613083}{Class\+Id} \hyperlink{class_c_base_class_a6aa4d3fe8a5deab4014e41e0415bf6c1}{m\+\_\+n\+Class\+ID}\hypertarget{class_c_base_class_a6aa4d3fe8a5deab4014e41e0415bf6c1}{}\label{class_c_base_class_a6aa4d3fe8a5deab4014e41e0415bf6c1}
+
+\begin{DoxyCompactList}\small\item\em Identifier for the class. \end{DoxyCompactList}\item 
+\hyperlink{class_c_base_class}{C\+Base\+Class} $\ast$ \hyperlink{class_c_base_class_a9fc232b3c6e85e26685106ef02a983ce}{m\+\_\+p\+Parent}\hypertarget{class_c_base_class_a9fc232b3c6e85e26685106ef02a983ce}{}\label{class_c_base_class_a9fc232b3c6e85e26685106ef02a983ce}
+
+\begin{DoxyCompactList}\small\item\em The parent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A base class. 
+
+\subsection{Member Function Documentation}
+\index{C\+Base\+Class@{C\+Base\+Class}!Get\+Class\+ID@{Get\+Class\+ID}}
+\index{Get\+Class\+ID@{Get\+Class\+ID}!C\+Base\+Class@{C\+Base\+Class}}
+\subsubsection[{\texorpdfstring{Get\+Class\+I\+D()}{GetClassID()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Class\+Id} C\+Base\+Class\+::\+Get\+Class\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_base_class_a33c3359d236e4e36cc9cd6e91674685c}{}\label{class_c_base_class_a33c3359d236e4e36cc9cd6e91674685c}
+
+
+Gets the identifier. 
+
+\begin{DoxyReturn}{Returns}
+The identifier. 
+\end{DoxyReturn}
+\index{C\+Base\+Class@{C\+Base\+Class}!Get\+Parent@{Get\+Parent}}
+\index{Get\+Parent@{Get\+Parent}!C\+Base\+Class@{C\+Base\+Class}}
+\subsubsection[{\texorpdfstring{Get\+Parent()}{GetParent()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Base\+Class} $\ast$ C\+Base\+Class\+::\+Get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_base_class_af9eaea801818518986d2f2e8e790a885}{}\label{class_c_base_class_af9eaea801818518986d2f2e8e790a885}
+
+
+Gets the parent of this item. 
+
+\begin{DoxyReturn}{Returns}
+null if it fails, else the parent. 
+\end{DoxyReturn}
+\index{C\+Base\+Class@{C\+Base\+Class}!Set\+As\+Parent@{Set\+As\+Parent}}
+\index{Set\+As\+Parent@{Set\+As\+Parent}!C\+Base\+Class@{C\+Base\+Class}}
+\subsubsection[{\texorpdfstring{Set\+As\+Parent(\+C\+Base\+Class $\ast$p\+New\+Parent)}{SetAsParent(CBaseClass *pNewParent)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Class\+::\+Set\+As\+Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Base\+Class} $\ast$}]{p\+New\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_base_class_a05cb6dce0188032d41a3bce485e5827e}{}\label{class_c_base_class_a05cb6dce0188032d41a3bce485e5827e}
+
+
+Sets as parent. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+New\+Parent} & If non-\/null, the new parent. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/\hyperlink{_base_class_8h}{Base\+Class.\+h}\end{DoxyCompactItemize}

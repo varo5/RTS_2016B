@@ -1,0 +1,123 @@
+\hypertarget{classae_add_on}{}\section{ae\+Add\+On Class Reference}
+\label{classae_add_on}\index{ae\+Add\+On@{ae\+Add\+On}}
+
+
+An add on.  
+
+
+
+
+{\ttfamily \#include $<$Add\+On.\+h$>$}
+
+Inheritance diagram for ae\+Add\+On\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.430556cm]{classae_add_on}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_add_on_8h_a10abdd289149f0a510d47930d565b1ea}{Add\+On\+Id} \hyperlink{classae_add_on_a083d2b190df05e023fe65a70514a409f}{Get\+Add\+On\+ID} ()
+\begin{DoxyCompactList}\small\item\em Gets add on identifier. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classae_add_on_a0730c1446e548031f9a4e98435a54675}{Init} (\hyperlink{classae_base_class}{ae\+Base\+Class} $\ast$p\+Parent)=0
+\begin{DoxyCompactList}\small\item\em Initializes with the given parent pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_add_on_a51caa4b8680206495ea671e71991e231}{Update} (float f\+Delta)=0
+\begin{DoxyCompactList}\small\item\em Updates the given f\+Delta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_add_on_ab6bed56009b9c92df8ae017a27587dc3}{Render} (ae\+Renderer $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Paints on the given renderer pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_add_on_a35cc5d72d19587868c9424603046b331}{Destroy} ()=0\hypertarget{classae_add_on_a35cc5d72d19587868c9424603046b331}{}\label{classae_add_on_a35cc5d72d19587868c9424603046b331}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_add_on_8h_a10abdd289149f0a510d47930d565b1ea}{Add\+On\+Id} {\bfseries m\+\_\+n\+Add\+On\+ID}\hypertarget{classae_add_on_acbdd558468d6df44cb95b8581be8d11b}{}\label{classae_add_on_acbdd558468d6df44cb95b8581be8d11b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An add on. 
+
+\subsection{Member Function Documentation}
+\index{ae\+Add\+On@{ae\+Add\+On}!Get\+Add\+On\+ID@{Get\+Add\+On\+ID}}
+\index{Get\+Add\+On\+ID@{Get\+Add\+On\+ID}!ae\+Add\+On@{ae\+Add\+On}}
+\subsubsection[{\texorpdfstring{Get\+Add\+On\+I\+D()}{GetAddOnID()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Add\+On\+Id} ae\+Add\+On\+::\+Get\+Add\+On\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_add_on_a083d2b190df05e023fe65a70514a409f}{}\label{classae_add_on_a083d2b190df05e023fe65a70514a409f}
+
+
+Gets add on identifier. 
+
+\begin{DoxyReturn}{Returns}
+The add on identifier. 
+\end{DoxyReturn}
+\index{ae\+Add\+On@{ae\+Add\+On}!Init@{Init}}
+\index{Init@{Init}!ae\+Add\+On@{ae\+Add\+On}}
+\subsubsection[{\texorpdfstring{Init(ae\+Base\+Class $\ast$p\+Parent)=0}{Init(aeBaseClass *pParent)=0}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Add\+On\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Base\+Class} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classae_add_on_a0730c1446e548031f9a4e98435a54675}{}\label{classae_add_on_a0730c1446e548031f9a4e98435a54675}
+
+
+Initializes with the given parent pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Parent} & If non-\/null, the parent pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classae_a_star_path_finder_ad8de2ad34565b3870ab6ed8c7235cd71}{ae\+A\+Star\+Path\+Finder}, \hyperlink{classae_dijkstra_path_finder_a0cc9454fad1387bba68f879afb1f2526}{ae\+Dijkstra\+Path\+Finder}, \hyperlink{classae_path_finder_a3395375f3de8f3f55d7b780ff6815806}{ae\+Path\+Finder}, \hyperlink{class_c_unit_a092b74e62d924b87deead104dbc08e01}{C\+Unit}, \hyperlink{classae_bst_f_s_path_finder_a83e0028b1394744dc56b703532a88b40}{ae\+Bst\+F\+S\+Path\+Finder}, \hyperlink{classae_b_f_s_path_finder_a23a16f3e98f5c9fc3a6f56a26a7bf170}{ae\+B\+F\+S\+Path\+Finder}, \hyperlink{classae_influence_calculator_ab2607b3e3750770bb23d7e8c4610a49c}{ae\+Influence\+Calculator}, \hyperlink{classae_d_f_s_path_finder_a520c7725e3322b43fd7320da622c1b75}{ae\+D\+F\+S\+Path\+Finder}, \hyperlink{class_c_animation_renderer_abf2ab0201171989cf7ad44846cf3e115}{C\+Animation\+Renderer}, and \hyperlink{classae_sprite_renderer_a97a72a34026e64766a0ab4840376cd76}{ae\+Sprite\+Renderer}.
+
+\index{ae\+Add\+On@{ae\+Add\+On}!Render@{Render}}
+\index{Render@{Render}!ae\+Add\+On@{ae\+Add\+On}}
+\subsubsection[{\texorpdfstring{Render(ae\+Renderer $\ast$p\+Renderer)}{Render(aeRenderer *pRenderer)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Add\+On\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{ae\+Renderer $\ast$}]{p\+Renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classae_add_on_ab6bed56009b9c92df8ae017a27587dc3}{}\label{classae_add_on_ab6bed56009b9c92df8ae017a27587dc3}
+
+
+Paints on the given renderer pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & The renderer pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classae_a_star_path_finder_abfe51663cc9eb452b02b80f335d1c7b0}{ae\+A\+Star\+Path\+Finder}, \hyperlink{classae_dijkstra_path_finder_a75779c09b89c1262cc216f081763927d}{ae\+Dijkstra\+Path\+Finder}, \hyperlink{classae_bst_f_s_path_finder_a6c3646502a67f145cd849392918b4c4b}{ae\+Bst\+F\+S\+Path\+Finder}, \hyperlink{classae_b_f_s_path_finder_a21efc2e873dd066f012ce0ef972a4a85}{ae\+B\+F\+S\+Path\+Finder}, \hyperlink{classae_influence_calculator_a9c48a833f9f81303ec212a9a17d83920}{ae\+Influence\+Calculator}, \hyperlink{classae_d_f_s_path_finder_a2dc1c27f419be5b7a3e94c8be93aede6}{ae\+D\+F\+S\+Path\+Finder}, \hyperlink{class_c_animation_renderer_a272f2bac72c90d89a9ada38058fc3f0c}{C\+Animation\+Renderer}, and \hyperlink{classae_sprite_renderer_a1583eea9478f23549cf9355091542d6a}{ae\+Sprite\+Renderer}.
+
+\index{ae\+Add\+On@{ae\+Add\+On}!Update@{Update}}
+\index{Update@{Update}!ae\+Add\+On@{ae\+Add\+On}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)=0}{Update(float fDelta)=0}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Add\+On\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classae_add_on_a51caa4b8680206495ea671e71991e231}{}\label{classae_add_on_a51caa4b8680206495ea671e71991e231}
+
+
+Updates the given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta time. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classae_a_star_path_finder_a21c5d9395cfb810272c89310d037fe15}{ae\+A\+Star\+Path\+Finder}, \hyperlink{classae_dijkstra_path_finder_a400f2f0645f9939bc11c140b3e6cf3d8}{ae\+Dijkstra\+Path\+Finder}, \hyperlink{classae_bst_f_s_path_finder_a27dd4200f183349f605407278de0d086}{ae\+Bst\+F\+S\+Path\+Finder}, \hyperlink{classae_b_f_s_path_finder_a00ddec6c4b37a3df127d1354cbc37635}{ae\+B\+F\+S\+Path\+Finder}, \hyperlink{classae_influence_calculator_af1e3be3558a8e0e0638959ca41734abd}{ae\+Influence\+Calculator}, \hyperlink{classae_d_f_s_path_finder_a7751f27e031719afee45bfd29731b969}{ae\+D\+F\+S\+Path\+Finder}, \hyperlink{class_c_unit_a5f46103027aaf83b2b47c0711640bd69}{C\+Unit}, \hyperlink{class_c_animation_renderer_a2ac2237cb706d2f6d45a88a86543e008}{C\+Animation\+Renderer}, and \hyperlink{classae_sprite_renderer_a65ea9a0ad3452271d2d5b8c140a7eff7}{ae\+Sprite\+Renderer}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/\hyperlink{_add_on_8h}{Add\+On.\+h}\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Add\+On.\+cpp\end{DoxyCompactItemize}

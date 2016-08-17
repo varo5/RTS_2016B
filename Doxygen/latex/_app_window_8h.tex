@@ -1,0 +1,60 @@
+\hypertarget{_app_window_8h}{}\section{C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Graphics/\+App\+Window.h File Reference}
+\label{_app_window_8h}\index{C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Graphics/\+App\+Window.\+h@{C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Graphics/\+App\+Window.\+h}}
+
+
+Declares the application Windows Form.  
+
+
+{\ttfamily \#include $<$Windows.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L\+\_\+ttf.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L\+\_\+image.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Renderer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../\+Basic\+Classes.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classae_core_1_1ae_app_window}{ae\+Core\+::ae\+App\+Window}
+\begin{DoxyCompactList}\small\item\em This class purpose is to create a client window where the entire program will display. \end{DoxyCompactList}\item 
+struct \hyperlink{structae_core_1_1ae_app_window_1_1_on_load}{ae\+Core\+::ae\+App\+Window\+::\+On\+Load}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceae_core}{ae\+Core}
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642e}{ae\+Core\+::\+Window\+Flags} \+: uint16 \{ \\*
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642eac7cb47fe75b31167b7d8135b6d3538e7}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+EN} = 0x00000001, 
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642eadea4b20851100b7211bb456518feef46}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+O\+P\+E\+N\+GL} = 0x00000002, 
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642ea63c0e4bb4dd1394771eb32f78d9118fd}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+S\+H\+O\+WN} = 0x00000004, 
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642eabe3973126d0f7ab2871155232c60e694}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+H\+I\+D\+D\+EN} = 0x00000008, 
+\\*
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642ea280b7580def4664af4655b9cfd2eb79a}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+B\+O\+R\+D\+E\+R\+L\+E\+SS} = 0x00000010, 
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642eafdc98c9638aa168e4127cd093f5fb669}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+R\+E\+S\+I\+Z\+A\+B\+LE} = 0x00000020, 
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642ea4f5800351acfd91672d23ebdbf4cbf9c}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+M\+I\+N\+I\+M\+I\+Z\+ED} = 0x00000040, 
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642eabd32d53c78346f06f176de017d99acce}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+M\+A\+X\+I\+M\+I\+Z\+ED} = 0x00000080, 
+\\*
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642eadc3ae5b884772002a35117f02d180002}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+I\+N\+P\+U\+T\+\_\+\+G\+R\+A\+B\+B\+ED} = 0x00000100, 
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642ea7b28e867de277942e11b6f1714a4a204}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+I\+N\+P\+U\+T\+\_\+\+F\+O\+C\+US} = 0x00000200, 
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642ea26c33004d772f01602c9a52433ba7b16}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+M\+O\+U\+S\+E\+\_\+\+F\+O\+C\+US} = 0x00000400, 
+{\bfseries W\+I\+N\+D\+O\+W\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N\+\_\+\+D\+E\+S\+K\+T\+OP} = (W\+I\+N\+D\+O\+W\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+EN $\vert$ 0x00001000), 
+\\*
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642eae6c714d673eba7126eb3913a51fe847e}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+F\+O\+R\+E\+I\+GN} = 0x00000800, 
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642ea3ec6e3bc70c8b497aa64c31b746081d4}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+A\+L\+L\+O\+W\+\_\+\+H\+I\+G\+H\+D\+PI} = 0x00002000, 
+\hyperlink{namespaceae_core_acdd369cfd195794193a8bd62815a642eaad7e5439b9b863e32d197e9cebd53a30}{ae\+Core\+::\+Window\+Flags\+::\+W\+I\+N\+D\+O\+W\+\_\+\+M\+O\+U\+S\+E\+\_\+\+C\+A\+P\+T\+U\+RE} = 0x00004000
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Declares the application Windows Form. 
+
+\begin{DoxyAuthor}{Author}
+Alvaro Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/05/2016 
+\end{DoxyDate}

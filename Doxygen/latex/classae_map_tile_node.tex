@@ -1,0 +1,71 @@
+\hypertarget{classae_map_tile_node}{}\section{ae\+Map\+Tile\+Node Class Reference}
+\label{classae_map_tile_node}\index{ae\+Map\+Tile\+Node@{ae\+Map\+Tile\+Node}}
+Inheritance diagram for ae\+Map\+Tile\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classae_map_tile_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries ae\+Map\+Tile\+Node} (const int32 x, const int32 y, \hyperlink{classae_map_tile_node}{ae\+Map\+Tile\+Node} $\ast$parent, const bool visited, const int32 cost)\hypertarget{classae_map_tile_node_a476b29ad543cb1c001f4117da3bc04c9}{}\label{classae_map_tile_node_a476b29ad543cb1c001f4117da3bc04c9}
+
+\item 
+{\bfseries ae\+Map\+Tile\+Node} (const \hyperlink{classae_map_tile_node}{ae\+Map\+Tile\+Node} \&copy)\hypertarget{classae_map_tile_node_a7f77906699c1648ec41acce383044fcf}{}\label{classae_map_tile_node_a7f77906699c1648ec41acce383044fcf}
+
+\item 
+virtual \hyperlink{classae_map_tile_node}{ae\+Map\+Tile\+Node} \& {\bfseries operator=} (const \hyperlink{classae_map_tile_node}{ae\+Map\+Tile\+Node} \&rhs)\hypertarget{classae_map_tile_node_a8e092f03e147e59a721f418ac01bda79}{}\label{classae_map_tile_node_a8e092f03e147e59a721f418ac01bda79}
+
+\item 
+virtual bool {\bfseries operator==} (const \hyperlink{classae_map_tile_node}{ae\+Map\+Tile\+Node} \&rhs)\hypertarget{classae_map_tile_node_a5c968db5b5580d8c0b6be554418d9c30}{}\label{classae_map_tile_node_a5c968db5b5580d8c0b6be554418d9c30}
+
+\item 
+virtual bool {\bfseries operator$<$} (const \hyperlink{classae_map_tile_node}{ae\+Map\+Tile\+Node} \&rhs)\hypertarget{classae_map_tile_node_a73cd36e1fa79e1486bdfc3480c27711d}{}\label{classae_map_tile_node_a73cd36e1fa79e1486bdfc3480c27711d}
+
+\item 
+virtual bool {\bfseries operator$>$} (const \hyperlink{classae_map_tile_node}{ae\+Map\+Tile\+Node} \&rhs)\hypertarget{classae_map_tile_node_af2f48e1ef88b17c57d420a4cc565ccde}{}\label{classae_map_tile_node_af2f48e1ef88b17c57d420a4cc565ccde}
+
+\item 
+void {\bfseries Set\+Parent} (\hyperlink{classae_map_tile_node}{ae\+Map\+Tile\+Node} $\ast$parent)\hypertarget{classae_map_tile_node_aa4cb85eddd3946b7f3bf2908487391bd}{}\label{classae_map_tile_node_aa4cb85eddd3946b7f3bf2908487391bd}
+
+\item 
+void {\bfseries Set\+Visited} (const bool visited)\hypertarget{classae_map_tile_node_a3d795d12dfca638d69352ee31265e7ef}{}\label{classae_map_tile_node_a3d795d12dfca638d69352ee31265e7ef}
+
+\item 
+bool {\bfseries Get\+Visited} () const \hypertarget{classae_map_tile_node_a243689baa5ecef13f46f8ed3e797e772}{}\label{classae_map_tile_node_a243689baa5ecef13f46f8ed3e797e772}
+
+\item 
+virtual void {\bfseries Set\+Cost} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} cost)\hypertarget{classae_map_tile_node_a076c949c338a01d53d6496c375fadd9b}{}\label{classae_map_tile_node_a076c949c338a01d53d6496c375fadd9b}
+
+\item 
+virtual \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} {\bfseries Get\+Cost} () const \hypertarget{classae_map_tile_node_a31b806242d821f4ce62174094858b659}{}\label{classae_map_tile_node_a31b806242d821f4ce62174094858b659}
+
+\item 
+bool {\bfseries Equals} (const \hyperlink{classae_map_tile_node}{ae\+Map\+Tile\+Node} \&rhs) const \hypertarget{classae_map_tile_node_a472307fed8aac17c894eabbccdee6e9e}{}\label{classae_map_tile_node_a472307fed8aac17c894eabbccdee6e9e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int32 {\bfseries m\+\_\+x}\hypertarget{classae_map_tile_node_a570f1e8a2a2b66e90f514935ec155d76}{}\label{classae_map_tile_node_a570f1e8a2a2b66e90f514935ec155d76}
+
+\item 
+int32 {\bfseries m\+\_\+y}\hypertarget{classae_map_tile_node_acd2a5abd41dff0834271fa9c83c7e857}{}\label{classae_map_tile_node_acd2a5abd41dff0834271fa9c83c7e857}
+
+\item 
+int32 {\bfseries m\+\_\+cost}\hypertarget{classae_map_tile_node_a63625c9702e0380960791a7033803e33}{}\label{classae_map_tile_node_a63625c9702e0380960791a7033803e33}
+
+\item 
+bool {\bfseries m\+\_\+visited}\hypertarget{classae_map_tile_node_af0ad3f1b0e3cb5309323ee59c60c668e}{}\label{classae_map_tile_node_af0ad3f1b0e3cb5309323ee59c60c668e}
+
+\item 
+\hyperlink{classae_map_tile_node}{ae\+Map\+Tile\+Node} $\ast$ {\bfseries m\+\_\+parent}\hypertarget{classae_map_tile_node_ad53935b025ed63a79b92d14578ec257e}{}\label{classae_map_tile_node_ad53935b025ed63a79b92d14578ec257e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/\hyperlink{_map_tile_node_8h}{Map\+Tile\+Node.\+h}\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/\hyperlink{_map_tile_node_8cpp}{Map\+Tile\+Node.\+cpp}\end{DoxyCompactItemize}

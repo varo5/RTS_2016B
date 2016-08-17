@@ -1,0 +1,143 @@
+\hypertarget{classae_core_1_1ae_renderer}{}\section{ae\+Core\+:\+:ae\+Renderer Class Reference}
+\label{classae_core_1_1ae_renderer}\index{ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}}
+
+
+Stores the window renderer so it can be passed along.  
+
+
+
+
+{\ttfamily \#include $<$Renderer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classae_core_1_1ae_renderer_aa98c12f7aeba64e6cd32856ce35b26f4}{ae\+Renderer} ()\hypertarget{classae_core_1_1ae_renderer_aa98c12f7aeba64e6cd32856ce35b26f4}{}\label{classae_core_1_1ae_renderer_aa98c12f7aeba64e6cd32856ce35b26f4}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classae_core_1_1ae_renderer_ac336fe39ee36736b5cfbf47c665a5ad2}{$\sim$ae\+Renderer} ()\hypertarget{classae_core_1_1ae_renderer_ac336fe39ee36736b5cfbf47c665a5ad2}{}\label{classae_core_1_1ae_renderer_ac336fe39ee36736b5cfbf47c665a5ad2}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_renderer_ad274612bff58ca4707d7e573e48bc0cd}{Clear} ()\hypertarget{classae_core_1_1ae_renderer_ad274612bff58ca4707d7e573e48bc0cd}{}\label{classae_core_1_1ae_renderer_ad274612bff58ca4707d7e573e48bc0cd}
+
+\begin{DoxyCompactList}\small\item\em Clears this object to its blank/initial state. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_renderer_afbc2091d48c14b36f25a2f42b1ff5b04}{Destroy} ()\hypertarget{classae_core_1_1ae_renderer_afbc2091d48c14b36f25a2f42b1ff5b04}{}\label{classae_core_1_1ae_renderer_afbc2091d48c14b36f25a2f42b1ff5b04}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+\hyperlink{structae_core_1_1ae_r_g_b_quad}{ae\+R\+G\+B\+Quad} \hyperlink{classae_core_1_1ae_renderer_a3463e48a8794b6ba83ecba3c2d8d3424}{Set\+Render\+Draw\+Color} (\hyperlink{structae_core_1_1ae_r_g_b_quad}{ae\+R\+G\+B\+Quad} Color)
+\begin{DoxyCompactList}\small\item\em Sets render draw color. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_renderer_a763bb052c5cea701ec12ab77a164ea5d}{Draw\+Line} (\hyperlink{structae_core_1_1ae_point}{ae\+Point} Start, \hyperlink{structae_core_1_1ae_point}{ae\+Point} End)
+\begin{DoxyCompactList}\small\item\em Draw line. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_renderer_ac821b51f9396c9a279dc1bcdf7744560}{Draw\+Rect} (\hyperlink{structae_core_1_1ae_rect}{ae\+Rect} Rectangle)
+\begin{DoxyCompactList}\small\item\em Draw rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_renderer_aa30f051d2ee663a9efc401fc62dcc8a9}{Draw\+Point} (\hyperlink{structae_core_1_1ae_point}{ae\+Point} Point)
+\begin{DoxyCompactList}\small\item\em Draw point. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_renderer_a5a069b5046deab1ad7cb87aa1fdb891b}{Render\+Target} (\hyperlink{classae_core_1_1ae_sprite}{ae\+Sprite} $\ast$Target)
+\begin{DoxyCompactList}\small\item\em Renders the target described by Target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries ae\+Sprite}\hypertarget{classae_core_1_1ae_renderer_a450e94d8bab3fa5d26d3663ba55b8ba3}{}\label{classae_core_1_1ae_renderer_a450e94d8bab3fa5d26d3663ba55b8ba3}
+
+\item 
+class {\bfseries ae\+App\+Window}\hypertarget{classae_core_1_1ae_renderer_a663f64030555362890326e0b793c8839}{}\label{classae_core_1_1ae_renderer_a663f64030555362890326e0b793c8839}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores the window renderer so it can be passed along. 
+
+\subsection{Member Function Documentation}
+\index{ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}!Draw\+Line@{Draw\+Line}}
+\index{Draw\+Line@{Draw\+Line}!ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}}
+\subsubsection[{\texorpdfstring{Draw\+Line(ae\+Point Start, ae\+Point End)}{DrawLine(aePoint Start, aePoint End)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Renderer\+::\+Draw\+Line (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Point}}]{Start, }
+\item[{{\bf ae\+Point}}]{End}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_renderer_a763bb052c5cea701ec12ab77a164ea5d}{}\label{classae_core_1_1ae_renderer_a763bb052c5cea701ec12ab77a164ea5d}
+
+
+Draw line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Start} & The start. \\
+\hline
+{\em End} & The end. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}!Draw\+Point@{Draw\+Point}}
+\index{Draw\+Point@{Draw\+Point}!ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}}
+\subsubsection[{\texorpdfstring{Draw\+Point(ae\+Point Point)}{DrawPoint(aePoint Point)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Renderer\+::\+Draw\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Point}}]{Point}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_renderer_aa30f051d2ee663a9efc401fc62dcc8a9}{}\label{classae_core_1_1ae_renderer_aa30f051d2ee663a9efc401fc62dcc8a9}
+
+
+Draw point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Point} & The point. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}!Draw\+Rect@{Draw\+Rect}}
+\index{Draw\+Rect@{Draw\+Rect}!ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}}
+\subsubsection[{\texorpdfstring{Draw\+Rect(ae\+Rect Rectangle)}{DrawRect(aeRect Rectangle)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Renderer\+::\+Draw\+Rect (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Rect}}]{Rectangle}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_renderer_ac821b51f9396c9a279dc1bcdf7744560}{}\label{classae_core_1_1ae_renderer_ac821b51f9396c9a279dc1bcdf7744560}
+
+
+Draw rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Rectangle} & The Rectangle. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}!Render\+Target@{Render\+Target}}
+\index{Render\+Target@{Render\+Target}!ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}}
+\subsubsection[{\texorpdfstring{Render\+Target(ae\+Sprite $\ast$\+Target)}{RenderTarget(aeSprite *Target)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Renderer\+::\+Render\+Target (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Sprite} $\ast$}]{Target}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_renderer_a5a069b5046deab1ad7cb87aa1fdb891b}{}\label{classae_core_1_1ae_renderer_a5a069b5046deab1ad7cb87aa1fdb891b}
+
+
+Renders the target described by Target. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Target} & If non-\/null, target for the. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}!Set\+Render\+Draw\+Color@{Set\+Render\+Draw\+Color}}
+\index{Set\+Render\+Draw\+Color@{Set\+Render\+Draw\+Color}!ae\+Core\+::ae\+Renderer@{ae\+Core\+::ae\+Renderer}}
+\subsubsection[{\texorpdfstring{Set\+Render\+Draw\+Color(ae\+R\+G\+B\+Quad Color)}{SetRenderDrawColor(aeRGBQuad Color)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+R\+G\+B\+Quad} ae\+Core\+::ae\+Renderer\+::\+Set\+Render\+Draw\+Color (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+R\+G\+B\+Quad}}]{Color}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_renderer_a3463e48a8794b6ba83ecba3c2d8d3424}{}\label{classae_core_1_1ae_renderer_a3463e48a8794b6ba83ecba3c2d8d3424}
+
+
+Sets render draw color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Color} & The color.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{structae_core_1_1ae_r_g_b_quad}{ae\+R\+G\+B\+Quad}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Graphics/\hyperlink{_renderer_8h}{Renderer.\+h}\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Graphics/Renderer.\+cpp\end{DoxyCompactItemize}

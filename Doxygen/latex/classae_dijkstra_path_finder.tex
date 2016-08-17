@@ -1,0 +1,154 @@
+\hypertarget{classae_dijkstra_path_finder}{}\section{ae\+Dijkstra\+Path\+Finder Class Reference}
+\label{classae_dijkstra_path_finder}\index{ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}}
+Inheritance diagram for ae\+Dijkstra\+Path\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classae_dijkstra_path_finder}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structae_dijkstra_path_finder_1_1_node_dist}{Node\+Dist}
+\item 
+struct \hyperlink{structae_dijkstra_path_finder_1_1_tile_compare}{Tile\+Compare}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries ae\+Dijkstra\+Path\+Finder} (\hyperlink{classae_tiled_map}{ae\+Tiled\+Map} $\ast$p\+Map)\hypertarget{classae_dijkstra_path_finder_acc5e17fae2b26a51e2b5017cc79ee776}{}\label{classae_dijkstra_path_finder_acc5e17fae2b26a51e2b5017cc79ee776}
+
+\item 
+virtual int \hyperlink{classae_dijkstra_path_finder_a0cc9454fad1387bba68f879afb1f2526}{Init} (\hyperlink{classae_base_class}{ae\+Base\+Class} $\ast$p\+Parent)
+\begin{DoxyCompactList}\small\item\em Initializes with the given parent pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_dijkstra_path_finder_ad9639e3ff07de514f28124f7318ebe33}{Destroy} ()\hypertarget{classae_dijkstra_path_finder_ad9639e3ff07de514f28124f7318ebe33}{}\label{classae_dijkstra_path_finder_ad9639e3ff07de514f28124f7318ebe33}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_dijkstra_path_finder_a400f2f0645f9939bc11c140b3e6cf3d8}{Update} (float f\+Delta)
+\begin{DoxyCompactList}\small\item\em Updates the given f\+Delta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_dijkstra_path_finder_a75779c09b89c1262cc216f081763927d}{Render} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Renders the given Renderer pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_dijkstra_path_finder_a19def2693faf239d6c8cf36a573d3ab9}{Reset} ()\hypertarget{classae_dijkstra_path_finder_a19def2693faf239d6c8cf36a573d3ab9}{}\label{classae_dijkstra_path_finder_a19def2693faf239d6c8cf36a573d3ab9}
+
+\begin{DoxyCompactList}\small\item\em Resets this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classae_dijkstra_path_finder_a06cbc7f3215eb10e66bffc69cd051dae}{Visit\+Grid\+Node} (\hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y)
+\begin{DoxyCompactList}\small\item\em Marks a node as visited. \end{DoxyCompactList}\item 
+virtual Walk\+State\+ID \hyperlink{classae_dijkstra_path_finder_a14ca862aa79790d77d1df8d54f99aa39}{Give\+A\+Step} ()
+\begin{DoxyCompactList}\small\item\em Give a step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}!Give\+A\+Step@{Give\+A\+Step}}
+\index{Give\+A\+Step@{Give\+A\+Step}!ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Give\+A\+Step()}{GiveAStep()}}]{\setlength{\rightskip}{0pt plus 5cm}Walk\+State\+ID ae\+Dijkstra\+Path\+Finder\+::\+Give\+A\+Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classae_dijkstra_path_finder_a14ca862aa79790d77d1df8d54f99aa39}{}\label{classae_dijkstra_path_finder_a14ca862aa79790d77d1df8d54f99aa39}
+
+
+Give a step. 
+
+\begin{DoxyReturn}{Returns}
+A Walk\+State\+ID. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classae_path_finder_a49332ee3be744cac1ece9ffd503ca218}{ae\+Path\+Finder}.
+
+\index{ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}!Init@{Init}}
+\index{Init@{Init}!ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Init(ae\+Base\+Class $\ast$p\+Parent)}{Init(aeBaseClass *pParent)}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Dijkstra\+Path\+Finder\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Base\+Class} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_dijkstra_path_finder_a0cc9454fad1387bba68f879afb1f2526}{}\label{classae_dijkstra_path_finder_a0cc9454fad1387bba68f879afb1f2526}
+
+
+Initializes with the given parent pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Parent} & If non-\/null, the parent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classae_path_finder_a3395375f3de8f3f55d7b780ff6815806}{ae\+Path\+Finder}.
+
+\index{ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}!Render@{Render}}
+\index{Render@{Render}!ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Render(ae\+Renderer $\ast$p\+Renderer)}{Render(aeRenderer *pRenderer)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Dijkstra\+Path\+Finder\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_dijkstra_path_finder_a75779c09b89c1262cc216f081763927d}{}\label{classae_dijkstra_path_finder_a75779c09b89c1262cc216f081763927d}
+
+
+Renders the given Renderer pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classae_add_on_ab6bed56009b9c92df8ae017a27587dc3}{ae\+Add\+On}.
+
+\index{ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}!Update@{Update}}
+\index{Update@{Update}!ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)}{Update(float fDelta)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Dijkstra\+Path\+Finder\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_dijkstra_path_finder_a400f2f0645f9939bc11c140b3e6cf3d8}{}\label{classae_dijkstra_path_finder_a400f2f0645f9939bc11c140b3e6cf3d8}
+
+
+Updates the given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_add_on_a51caa4b8680206495ea671e71991e231}{ae\+Add\+On}.
+
+\index{ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}!Visit\+Grid\+Node@{Visit\+Grid\+Node}}
+\index{Visit\+Grid\+Node@{Visit\+Grid\+Node}!ae\+Dijkstra\+Path\+Finder@{ae\+Dijkstra\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Visit\+Grid\+Node(int32 x, int32 y)}{VisitGridNode(int32 x, int32 y)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Dijkstra\+Path\+Finder\+::\+Visit\+Grid\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{x, }
+\item[{{\bf int32}}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classae_dijkstra_path_finder_a06cbc7f3215eb10e66bffc69cd051dae}{}\label{classae_dijkstra_path_finder_a06cbc7f3215eb10e66bffc69cd051dae}
+
+
+Marks a node as visited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_path_finder_a4ccfa19ff344b9f4827dbeab18c4efab}{ae\+Path\+Finder}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Dijkstra.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Dijkstra.\+cpp\end{DoxyCompactItemize}

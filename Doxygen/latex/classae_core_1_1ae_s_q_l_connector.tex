@@ -1,0 +1,106 @@
+\hypertarget{classae_core_1_1ae_s_q_l_connector}{}\section{ae\+Core\+:\+:ae\+S\+Q\+L\+Connector Class Reference}
+\label{classae_core_1_1ae_s_q_l_connector}\index{ae\+Core\+::ae\+S\+Q\+L\+Connector@{ae\+Core\+::ae\+S\+Q\+L\+Connector}}
+
+
+A S\+QL connector. This class purpose is to create a connection to the database using S\+QL commands.  
+
+
+
+
+{\ttfamily \#include $<$S\+Q\+L\+Connector.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classae_core_1_1ae_s_q_l_connector_af604e8c8435901e15f496a76762f36b7}{Open\+Database} (const \hyperlink{namespaceae_core_a052c557709e5ab43db521b23085fd916}{T\+C\+H\+AR} $\ast$file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Receives the file path or file name in case in the same carpet, opens the connection to the database to start making query requests. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_s_q_l_connector_a4b5f3e5b93afe08ed5fa09e9e8f349ed}{Close\+Database} ()\hypertarget{classae_core_1_1ae_s_q_l_connector_a4b5f3e5b93afe08ed5fa09e9e8f349ed}{}\label{classae_core_1_1ae_s_q_l_connector_a4b5f3e5b93afe08ed5fa09e9e8f349ed}
+
+\begin{DoxyCompactList}\small\item\em Closes the connection to the database. \end{DoxyCompactList}\item 
+int \hyperlink{classae_core_1_1ae_s_q_l_connector_ac1d0350ad470ed0210039d6be34f3382}{Query\+Database} (const \hyperlink{namespaceae_core_a052c557709e5ab43db521b23085fd916}{T\+C\+H\+AR} $\ast$sql\+\_\+query, int($\ast$Query\+Callback)(void $\ast$, int, char $\ast$$\ast$, char $\ast$$\ast$), void $\ast$Non\+Static\+Object)
+\begin{DoxyCompactList}\small\item\em Executes a query request of a list and passes along a function that executes per line of the list. \end{DoxyCompactList}\item 
+int \hyperlink{classae_core_1_1ae_s_q_l_connector_afde051a9349eb109bd118abe87bfcb11}{Exec\+Statement} (const \hyperlink{namespaceae_core_a052c557709e5ab43db521b23085fd916}{T\+C\+H\+AR} $\ast$sql\+\_\+query, int Size)
+\begin{DoxyCompactList}\small\item\em Executes any kind of query request, it receives the command and the length in characters of the command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A S\+QL connector. This class purpose is to create a connection to the database using S\+QL commands. 
+
+\begin{DoxyAuthor}{Author}
+Alvaro Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/05/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{ae\+Core\+::ae\+S\+Q\+L\+Connector@{ae\+Core\+::ae\+S\+Q\+L\+Connector}!Exec\+Statement@{Exec\+Statement}}
+\index{Exec\+Statement@{Exec\+Statement}!ae\+Core\+::ae\+S\+Q\+L\+Connector@{ae\+Core\+::ae\+S\+Q\+L\+Connector}}
+\subsubsection[{\texorpdfstring{Exec\+Statement(const T\+C\+H\+A\+R $\ast$sql\+\_\+query, int Size)}{ExecStatement(const TCHAR *sql_query, int Size)}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Core\+::ae\+S\+Q\+L\+Connector\+::\+Exec\+Statement (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+C\+H\+AR} $\ast$}]{sql\+\_\+query, }
+\item[{int}]{Size}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_s_q_l_connector_afde051a9349eb109bd118abe87bfcb11}{}\label{classae_core_1_1ae_s_q_l_connector_afde051a9349eb109bd118abe87bfcb11}
+
+
+Executes any kind of query request, it receives the command and the length in characters of the command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql\+\_\+query} & The S\+QL query. \\
+\hline
+{\em Size} & The size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+S\+Q\+L\+Connector@{ae\+Core\+::ae\+S\+Q\+L\+Connector}!Open\+Database@{Open\+Database}}
+\index{Open\+Database@{Open\+Database}!ae\+Core\+::ae\+S\+Q\+L\+Connector@{ae\+Core\+::ae\+S\+Q\+L\+Connector}}
+\subsubsection[{\texorpdfstring{Open\+Database(const T\+C\+H\+A\+R $\ast$file\+\_\+name)}{OpenDatabase(const TCHAR *file_name)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+S\+Q\+L\+Connector\+::\+Open\+Database (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+C\+H\+AR} $\ast$}]{file\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_s_q_l_connector_af604e8c8435901e15f496a76762f36b7}{}\label{classae_core_1_1ae_s_q_l_connector_af604e8c8435901e15f496a76762f36b7}
+
+
+Receives the file path or file name in case in the same carpet, opens the connection to the database to start making query requests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & Name of the file. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+S\+Q\+L\+Connector@{ae\+Core\+::ae\+S\+Q\+L\+Connector}!Query\+Database@{Query\+Database}}
+\index{Query\+Database@{Query\+Database}!ae\+Core\+::ae\+S\+Q\+L\+Connector@{ae\+Core\+::ae\+S\+Q\+L\+Connector}}
+\subsubsection[{\texorpdfstring{Query\+Database(const T\+C\+H\+A\+R $\ast$sql\+\_\+query, int($\ast$\+Query\+Callback)(void $\ast$, int, char $\ast$$\ast$, char $\ast$$\ast$), void $\ast$\+Non\+Static\+Object)}{QueryDatabase(const TCHAR *sql_query, int(*QueryCallback)(void *, int, char **, char **), void *NonStaticObject)}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Core\+::ae\+S\+Q\+L\+Connector\+::\+Query\+Database (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+C\+H\+AR} $\ast$}]{sql\+\_\+query, }
+\item[{int($\ast$)(void $\ast$, int, char $\ast$$\ast$, char $\ast$$\ast$)}]{Query\+Callback, }
+\item[{void $\ast$}]{Non\+Static\+Object}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_s_q_l_connector_ac1d0350ad470ed0210039d6be34f3382}{}\label{classae_core_1_1ae_s_q_l_connector_ac1d0350ad470ed0210039d6be34f3382}
+
+
+Executes a query request of a list and passes along a function that executes per line of the list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em sql\+\_\+query} & The S\+QL query. \\
+\hline
+\mbox{\tt in,out}  & {\em Query\+Callback} & If non-\/null, the query callback. \\
+\hline
+\mbox{\tt in,out}  & {\em Non\+Static\+Object} & If non-\/null, the non static object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The database. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+S\+Q\+L/\hyperlink{_s_q_l_connector_8h}{S\+Q\+L\+Connector.\+h}\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+S\+Q\+L/\hyperlink{_s_q_l_connector_8cpp}{S\+Q\+L\+Connector.\+cpp}\end{DoxyCompactItemize}

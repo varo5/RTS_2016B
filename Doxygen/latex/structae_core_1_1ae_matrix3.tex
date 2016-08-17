@@ -1,0 +1,464 @@
+\hypertarget{structae_core_1_1ae_matrix3}{}\section{ae\+Core\+:\+:ae\+Matrix3 Struct Reference}
+\label{structae_core_1_1ae_matrix3}\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+
+
+This structure is a 3x3 matrix of float values.  
+
+
+
+
+{\ttfamily \#include $<$Matrix3.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structae_core_1_1ae_matrix3_ae6db4e959d0cbfbfe741c3c6a479dcae}{ae\+Matrix3} (const \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \&Reference\+Matrix)\hypertarget{structae_core_1_1ae_matrix3_ae6db4e959d0cbfbfe741c3c6a479dcae}{}\label{structae_core_1_1ae_matrix3_ae6db4e959d0cbfbfe741c3c6a479dcae}
+
+\begin{DoxyCompactList}\small\item\em Create a copy of another 2x2 matrix. \end{DoxyCompactList}\item 
+\hyperlink{structae_core_1_1ae_matrix3_ab2f2c69ccb0dfad3daa9baa444fccd00}{ae\+Matrix3} (float \+\_\+00, float \+\_\+01=0, float \+\_\+02=0, float \+\_\+10=0, float \+\_\+11=1, float \+\_\+12=0, float \+\_\+20=0, float \+\_\+21=0, float \+\_\+22=1)\hypertarget{structae_core_1_1ae_matrix3_ab2f2c69ccb0dfad3daa9baa444fccd00}{}\label{structae_core_1_1ae_matrix3_ab2f2c69ccb0dfad3daa9baa444fccd00}
+
+\begin{DoxyCompactList}\small\item\em Create a new Matrix from given values. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Col} (\hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3} \&Reference\+Vector, int Column\+Number)\hypertarget{structae_core_1_1ae_matrix3_a2b0dd3c1ceb10107c8871e33adde3f47}{}\label{structae_core_1_1ae_matrix3_a2b0dd3c1ceb10107c8871e33adde3f47}
+
+\item 
+void {\bfseries Set\+Row} (\hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3} \&Reference\+Vector, int Row\+Number)\hypertarget{structae_core_1_1ae_matrix3_a0a3df9088e467cd240b12b92421bcb62}{}\label{structae_core_1_1ae_matrix3_a0a3df9088e467cd240b12b92421bcb62}
+
+\item 
+\hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3} {\bfseries Get\+Col} (int Column\+Number)\hypertarget{structae_core_1_1ae_matrix3_aec1281aaae26af580cacfa86d6fc06a9}{}\label{structae_core_1_1ae_matrix3_aec1281aaae26af580cacfa86d6fc06a9}
+
+\item 
+\hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3} {\bfseries Get\+Row} (int Row\+Number)\hypertarget{structae_core_1_1ae_matrix3_a6ca53eed248289f7d6775cd0521de62b}{}\label{structae_core_1_1ae_matrix3_a6ca53eed248289f7d6775cd0521de62b}
+
+\item 
+\hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3} {\bfseries operator$\ast$} (\hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3} \&Reference\+Vector)\hypertarget{structae_core_1_1ae_matrix3_a75869d5a5f5c32d4172d7b2e945c241f}{}\label{structae_core_1_1ae_matrix3_a75869d5a5f5c32d4172d7b2e945c241f}
+
+\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} {\bfseries operator+} (\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \&Reference\+Matrix)\hypertarget{structae_core_1_1ae_matrix3_a0a15766b9f4fb71772aeafc5be6b6af4}{}\label{structae_core_1_1ae_matrix3_a0a15766b9f4fb71772aeafc5be6b6af4}
+
+\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} {\bfseries operator-\/} (\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \&Reference\+Matrix)\hypertarget{structae_core_1_1ae_matrix3_a322077f4ede52405f119de321eac9c97}{}\label{structae_core_1_1ae_matrix3_a322077f4ede52405f119de321eac9c97}
+
+\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} {\bfseries operator$\ast$} (\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \&Reference\+Matrix)\hypertarget{structae_core_1_1ae_matrix3_ab83a8b194e37159e5d3be7f82e946711}{}\label{structae_core_1_1ae_matrix3_ab83a8b194e37159e5d3be7f82e946711}
+
+\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} {\bfseries operator$\ast$} (float Coefficient)\hypertarget{structae_core_1_1ae_matrix3_a31bc65cdd5a33c2a2174331e59343fa3}{}\label{structae_core_1_1ae_matrix3_a31bc65cdd5a33c2a2174331e59343fa3}
+
+\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} {\bfseries operator/} (float Divider)\hypertarget{structae_core_1_1ae_matrix3_a703743917ec8ae4a8c7731de507c0d9f}{}\label{structae_core_1_1ae_matrix3_a703743917ec8ae4a8c7731de507c0d9f}
+
+\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} {\bfseries operator+=} (\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \&Reference\+Matrix)\hypertarget{structae_core_1_1ae_matrix3_a5c02f34881c81411422c7151c086396c}{}\label{structae_core_1_1ae_matrix3_a5c02f34881c81411422c7151c086396c}
+
+\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} {\bfseries operator-\/=} (\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \&Reference\+Matrix)\hypertarget{structae_core_1_1ae_matrix3_a75389cc09bd49677dc68c40277f76709}{}\label{structae_core_1_1ae_matrix3_a75389cc09bd49677dc68c40277f76709}
+
+\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} {\bfseries operator$\ast$=} (\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \&Reference\+Matrix)\hypertarget{structae_core_1_1ae_matrix3_ab12b5138f5e8064817b255b145aac965}{}\label{structae_core_1_1ae_matrix3_ab12b5138f5e8064817b255b145aac965}
+
+\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} {\bfseries operator$\ast$=} (float Coefficient)\hypertarget{structae_core_1_1ae_matrix3_ac67bc97a44c94e67b67483adcda15662}{}\label{structae_core_1_1ae_matrix3_ac67bc97a44c94e67b67483adcda15662}
+
+\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} {\bfseries operator/=} (float Divider)\hypertarget{structae_core_1_1ae_matrix3_a33932f8767e11c82ce5f7b836bacba96}{}\label{structae_core_1_1ae_matrix3_a33932f8767e11c82ce5f7b836bacba96}
+
+\item 
+float \hyperlink{structae_core_1_1ae_matrix3_ae4c2757efb47769dbeb24e65db2ceea4}{Det} ()
+\begin{DoxyCompactList}\small\item\em Obtains the determinant of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3} \hyperlink{structae_core_1_1ae_matrix3_ae2c041d8f63ffe9790c8ffe7fa07a39a}{Cramer} (\hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3} \&Reference\+Vector)
+\begin{DoxyCompactList}\small\item\em Uses Cramer\textquotesingle{}s rule for the solution of an equation system. \end{DoxyCompactList}\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a05be8551f23506aa3eb5856e9a84b0dd}{Transpose} ()
+\begin{DoxyCompactList}\small\item\em Obtain the transposed matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_aff995dc5d1f6fea6c9fb79901e552806}{Cofactor} ()
+\begin{DoxyCompactList}\small\item\em Obtains the cofactor matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a5a5977b809c70665b8ae74ec2478b0ab}{Adjunct} ()
+\begin{DoxyCompactList}\small\item\em Obtains the adjunct matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a3cd375176637d7da7262a7627eac1cdd}{Inverse} ()
+\begin{DoxyCompactList}\small\item\em Obtains the transposed matrix of this matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a029f4b68fa7e2901ed65fb0d64e64a18}{Zero} ()
+\begin{DoxyCompactList}\small\item\em Returns an empty matrix. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_ab6a48e3b08b761ac11aedcdd706fd846}{Identity} ()
+\begin{DoxyCompactList}\small\item\em Returns an identity matrix. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a334964d8152fe8e1b65efcb60d7c8846}{Translation\+Matrix} (\hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3} \&Translation\+Vector)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a46258dc1190c86544355a8dcb1685105}{Translation\+Matrix} (\hyperlink{structae_core_1_1ae_vector2}{ae\+Vector2} \&Translation\+Vector)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_aceb7b649f9d26fdcac597d231d8054a8}{Translation\+Matrix} (float X, float Y)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix from 2 parameters. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_abaa5cfdac45bc7ce9a61ede3a55891b3}{Scaling\+Matrix} (\hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3} \&Scale\+Vector)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a4321c0bb6cdb696d83f44226e2a99324}{Scaling\+Matrix} (\hyperlink{structae_core_1_1ae_vector2}{ae\+Vector2} \&Scale\+Vector)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_ac4c3497053ca4456e6ae86e3583ee3fa}{Scaling\+Matrix} (float Scale\+Factor)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a scale factor. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a02fe9054e3f64428feeadea3973364f6}{Scaling\+Matrix} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from 2 scale factors. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a9034112410e48d7eda9b692b869fe817}{RotationX} (float theta)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix from an angle to rotate on the X axis. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a204bdb33efb9ad0e790bb046f354e021}{RotationY} (float theta)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix from an angle to rotate on the Y axis. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3} \hyperlink{structae_core_1_1ae_matrix3_a1bdcfb36a05ecc7abe36351777c5c789}{RotationZ} (float theta)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix from an angle to rotate on the Z axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>float {\bfseries m\_f00}\\
+\>\>float {\bfseries m\_f01}\\
+\>\>float {\bfseries m\_f02}\\
+\>\>float {\bfseries m\_f10}\\
+\>\>float {\bfseries m\_f11}\\
+\>\>float {\bfseries m\_f12}\\
+\>\>float {\bfseries m\_f20}\\
+\>\>float {\bfseries m\_f21}\\
+\>\>float {\bfseries m\_f22}\\
+\>\} \hypertarget{unionae_core_1_1ae_matrix3_1_1_0D18_ab58290075c4ed32c535331fe616e26ab}{}\label{unionae_core_1_1ae_matrix3_1_1_0D18_ab58290075c4ed32c535331fe616e26ab}
+\\
+\>\>\>{\em A structure meant to save the matrix as individual values. }\\
+\>float \hyperlink{structae_core_1_1ae_matrix3_ab9d323ce0dcb61f884fb57b6beabca41}{v} \mbox{[}9\mbox{]}\\
+\>\>\>{\em A 9 times float array. }\\
+\>float \hyperlink{structae_core_1_1ae_matrix3_ae173adde44ccb0c95e59894f60cbb4ec}{m} \mbox{[}3\mbox{]}\mbox{[}3\mbox{]}\\
+\>\>\>{\em A 3x3 float array. }\\
+\}; \hypertarget{structae_core_1_1ae_matrix3_a12e362ddd217f4268441d31750b88774}{}\label{structae_core_1_1ae_matrix3_a12e362ddd217f4268441d31750b88774}
+\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Is the union between individual values and their array and matrix form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure is a 3x3 matrix of float values. 
+
+\begin{DoxyAuthor}{Author}
+Alvaro Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/05/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Adjunct@{Adjunct}}
+\index{Adjunct@{Adjunct}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Adjunct()}{Adjunct()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Adjunct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structae_core_1_1ae_matrix3_a5a5977b809c70665b8ae74ec2478b0ab}{}\label{structae_core_1_1ae_matrix3_a5a5977b809c70665b8ae74ec2478b0ab}
+
+
+Obtains the adjunct matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Cofactor@{Cofactor}}
+\index{Cofactor@{Cofactor}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Cofactor()}{Cofactor()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Cofactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structae_core_1_1ae_matrix3_aff995dc5d1f6fea6c9fb79901e552806}{}\label{structae_core_1_1ae_matrix3_aff995dc5d1f6fea6c9fb79901e552806}
+
+
+Obtains the cofactor matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Cramer@{Cramer}}
+\index{Cramer@{Cramer}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Cramer(ae\+Vector3 \&\+Reference\+Vector)}{Cramer(aeVector3 &ReferenceVector)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+Vector3} ae\+Core\+::ae\+Matrix3\+::\+Cramer (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Vector3} \&}]{Reference\+Vector}
+\end{DoxyParamCaption}
+)}\hypertarget{structae_core_1_1ae_matrix3_ae2c041d8f63ffe9790c8ffe7fa07a39a}{}\label{structae_core_1_1ae_matrix3_ae2c041d8f63ffe9790c8ffe7fa07a39a}
+
+
+Uses Cramer\textquotesingle{}s rule for the solution of an equation system. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Reference\+Vector} & The reference vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_vector3}{ae\+Vector3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Det@{Det}}
+\index{Det@{Det}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Det()}{Det()}}]{\setlength{\rightskip}{0pt plus 5cm}float ae\+Core\+::ae\+Matrix3\+::\+Det (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structae_core_1_1ae_matrix3_ae4c2757efb47769dbeb24e65db2ceea4}{}\label{structae_core_1_1ae_matrix3_ae4c2757efb47769dbeb24e65db2ceea4}
+
+
+Obtains the determinant of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Identity@{Identity}}
+\index{Identity@{Identity}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Identity()}{Identity()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_ab6a48e3b08b761ac11aedcdd706fd846}{}\label{structae_core_1_1ae_matrix3_ab6a48e3b08b761ac11aedcdd706fd846}
+
+
+Returns an identity matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Inverse()}{Inverse()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Inverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structae_core_1_1ae_matrix3_a3cd375176637d7da7262a7627eac1cdd}{}\label{structae_core_1_1ae_matrix3_a3cd375176637d7da7262a7627eac1cdd}
+
+
+Obtains the transposed matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!RotationX@{RotationX}}
+\index{RotationX@{RotationX}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Rotation\+X(float theta)}{RotationX(float theta)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+RotationX (
+\begin{DoxyParamCaption}
+\item[{float}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_a9034112410e48d7eda9b692b869fe817}{}\label{structae_core_1_1ae_matrix3_a9034112410e48d7eda9b692b869fe817}
+
+
+Creates a rotation matrix from an angle to rotate on the X axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & The radians of rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!RotationY@{RotationY}}
+\index{RotationY@{RotationY}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Rotation\+Y(float theta)}{RotationY(float theta)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+RotationY (
+\begin{DoxyParamCaption}
+\item[{float}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_a204bdb33efb9ad0e790bb046f354e021}{}\label{structae_core_1_1ae_matrix3_a204bdb33efb9ad0e790bb046f354e021}
+
+
+Creates a rotation matrix from an angle to rotate on the Y axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & The radians of rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!RotationZ@{RotationZ}}
+\index{RotationZ@{RotationZ}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Rotation\+Z(float theta)}{RotationZ(float theta)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+RotationZ (
+\begin{DoxyParamCaption}
+\item[{float}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_a1bdcfb36a05ecc7abe36351777c5c789}{}\label{structae_core_1_1ae_matrix3_a1bdcfb36a05ecc7abe36351777c5c789}
+
+
+Creates a rotation matrix from an angle to rotate on the Z axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & The radians of rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(ae\+Vector3 \&\+Scale\+Vector)}{ScalingMatrix(aeVector3 &ScaleVector)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Vector3} \&}]{Scale\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_abaa5cfdac45bc7ce9a61ede3a55891b3}{}\label{structae_core_1_1ae_matrix3_abaa5cfdac45bc7ce9a61ede3a55891b3}
+
+
+Creates a scaling matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Scale\+Vector} & The scale factor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(ae\+Vector2 \&\+Scale\+Vector)}{ScalingMatrix(aeVector2 &ScaleVector)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Vector2} \&}]{Scale\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_a4321c0bb6cdb696d83f44226e2a99324}{}\label{structae_core_1_1ae_matrix3_a4321c0bb6cdb696d83f44226e2a99324}
+
+
+Creates a scaling matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Scale\+Vector} & The scale factor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(float Scale\+Factor)}{ScalingMatrix(float ScaleFactor)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{Scale\+Factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_ac4c3497053ca4456e6ae86e3583ee3fa}{}\label{structae_core_1_1ae_matrix3_ac4c3497053ca4456e6ae86e3583ee3fa}
+
+
+Creates a scaling matrix from a scale factor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scale\+Factor} & The scale factor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(float x, float y)}{ScalingMatrix(float x, float y)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_a02fe9054e3f64428feeadea3973364f6}{}\label{structae_core_1_1ae_matrix3_a02fe9054e3f64428feeadea3973364f6}
+
+
+Creates a scaling matrix from 2 scale factors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Translation\+Matrix@{Translation\+Matrix}}
+\index{Translation\+Matrix@{Translation\+Matrix}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Translation\+Matrix(ae\+Vector3 \&\+Translation\+Vector)}{TranslationMatrix(aeVector3 &TranslationVector)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Vector3} \&}]{Translation\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_a334964d8152fe8e1b65efcb60d7c8846}{}\label{structae_core_1_1ae_matrix3_a334964d8152fe8e1b65efcb60d7c8846}
+
+
+Creates a translation matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Translation\+Vector} & The translation vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Translation\+Matrix@{Translation\+Matrix}}
+\index{Translation\+Matrix@{Translation\+Matrix}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Translation\+Matrix(ae\+Vector2 \&\+Translation\+Vector)}{TranslationMatrix(aeVector2 &TranslationVector)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Vector2} \&}]{Translation\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_a46258dc1190c86544355a8dcb1685105}{}\label{structae_core_1_1ae_matrix3_a46258dc1190c86544355a8dcb1685105}
+
+
+Creates a translation matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Translation\+Vector} & The translation vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Translation\+Matrix@{Translation\+Matrix}}
+\index{Translation\+Matrix@{Translation\+Matrix}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Translation\+Matrix(float X, float Y)}{TranslationMatrix(float X, float Y)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{X, }
+\item[{float}]{Y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_aceb7b649f9d26fdcac597d231d8054a8}{}\label{structae_core_1_1ae_matrix3_aceb7b649f9d26fdcac597d231d8054a8}
+
+
+Creates a translation matrix from 2 parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & The X coordinate. \\
+\hline
+{\em Y} & The Y coordinate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Transpose()}{Transpose()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structae_core_1_1ae_matrix3_a05be8551f23506aa3eb5856e9a84b0dd}{}\label{structae_core_1_1ae_matrix3_a05be8551f23506aa3eb5856e9a84b0dd}
+
+
+Obtain the transposed matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}!Zero@{Zero}}
+\index{Zero@{Zero}!ae\+Core\+::ae\+Matrix3@{ae\+Core\+::ae\+Matrix3}}
+\subsubsection[{\texorpdfstring{Zero()}{Zero()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Matrix3} ae\+Core\+::ae\+Matrix3\+::\+Zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structae_core_1_1ae_matrix3_a029f4b68fa7e2901ed65fb0d64e64a18}{}\label{structae_core_1_1ae_matrix3_a029f4b68fa7e2901ed65fb0d64e64a18}
+
+
+Returns an empty matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structae_core_1_1ae_matrix3}{ae\+Matrix3}. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Math/Matrix3.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Math/Matrix3.\+cpp\end{DoxyCompactItemize}

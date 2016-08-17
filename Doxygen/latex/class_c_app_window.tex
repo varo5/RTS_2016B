@@ -1,0 +1,123 @@
+\hypertarget{class_c_app_window}{}\section{C\+App\+Window Class Reference}
+\label{class_c_app_window}\index{C\+App\+Window@{C\+App\+Window}}
+
+
+This class purpose is to create a client window where the entire program will display.  
+
+
+
+
+{\ttfamily \#include $<$App\+Window.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_app_window_a257df117378cd56d3b1e710f107e65c0}{C\+App\+Window} ()\hypertarget{class_c_app_window_a257df117378cd56d3b1e710f107e65c0}{}\label{class_c_app_window_a257df117378cd56d3b1e710f107e65c0}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_app_window_a3d361db3bd1bfaa9de28ea28b96b36f7}{$\sim$\+C\+App\+Window} ()\hypertarget{class_c_app_window_a3d361db3bd1bfaa9de28ea28b96b36f7}{}\label{class_c_app_window_a3d361db3bd1bfaa9de28ea28b96b36f7}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_app_window_aeeebd33128f0c18ec365a97f44dd862f}{Init} (char $\ast$psz\+Window\+Name, int X, int Y, int Width, int Height, int Window\+Flag)
+\begin{DoxyCompactList}\small\item\em S. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_app_window_a00fa690eee9d0a55b16324df322c6e4f}{Render} ()
+\begin{DoxyCompactList}\small\item\em Renders this object. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_app_window_aa0899521440dc79a025f79c3ceb1536d}{Destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ {\bfseries m\+\_\+p\+S\+D\+L\+Window}\hypertarget{class_c_app_window_a7b3a3f8854153b38ea8d1cb1b83a40e2}{}\label{class_c_app_window_a7b3a3f8854153b38ea8d1cb1b83a40e2}
+
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries m\+\_\+p\+Renderer}\hypertarget{class_c_app_window_a40ff7c5f72af93012a5f3b57c2e4416f}{}\label{class_c_app_window_a40ff7c5f72af93012a5f3b57c2e4416f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class purpose is to create a client window where the entire program will display. 
+
+\subsection{Member Function Documentation}
+\index{C\+App\+Window@{C\+App\+Window}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!C\+App\+Window@{C\+App\+Window}}
+\subsubsection[{\texorpdfstring{Destroy()}{Destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+App\+Window\+::\+Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_app_window_aa0899521440dc79a025f79c3ceb1536d}{}\label{class_c_app_window_aa0899521440dc79a025f79c3ceb1536d}
+
+
+Destroys this object. 
+
+Closes the S\+DL window and cleans up the source. \index{C\+App\+Window@{C\+App\+Window}!Init@{Init}}
+\index{Init@{Init}!C\+App\+Window@{C\+App\+Window}}
+\subsubsection[{\texorpdfstring{Init(char $\ast$psz\+Window\+Name, int X, int Y, int Width, int Height, int Window\+Flag)}{Init(char *pszWindowName, int X, int Y, int Width, int Height, int WindowFlag)}}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+App\+Window\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{psz\+Window\+Name, }
+\item[{int}]{X, }
+\item[{int}]{Y, }
+\item[{int}]{Width, }
+\item[{int}]{Height, }
+\item[{int}]{Window\+Flag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_app_window_aeeebd33128f0c18ec365a97f44dd862f}{}\label{class_c_app_window_aeeebd33128f0c18ec365a97f44dd862f}
+
+
+S. 
+
+Starts S\+DL and creates a window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em psz\+Window\+Name} & If non-\/null, name of the window. \\
+\hline
+ & {\em X} & The X coordinate. \\
+\hline
+ & {\em Y} & The Y coordinate. \\
+\hline
+ & {\em Width} & The width. \\
+\hline
+ & {\em Height} & The height. \\
+\hline
+ & {\em Window\+Flag} & The window flag.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails.
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em psz\+Window\+Name} & The window\textquotesingle{}s name. \\
+\hline
+ & {\em X} & The X coordinate. \\
+\hline
+ & {\em Y} & The Y coordinate. \\
+\hline
+ & {\em Width} & The width. \\
+\hline
+ & {\em Height} & The height. \\
+\hline
+ & {\em Window\+Flag} & The window\textquotesingle{}s creation flag.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\index{C\+App\+Window@{C\+App\+Window}!Render@{Render}}
+\index{Render@{Render}!C\+App\+Window@{C\+App\+Window}}
+\subsubsection[{\texorpdfstring{Render()}{Render()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+App\+Window\+::\+Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_app_window_a00fa690eee9d0a55b16324df322c6e4f}{}\label{class_c_app_window_a00fa690eee9d0a55b16324df322c6e4f}
+
+
+Renders this object. 
+
+Renders into the created window. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Graphics/\hyperlink{_app_window_8h}{App\+Window.\+h}\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Graphics/\hyperlink{_app_window_8cpp}{App\+Window.\+cpp}\end{DoxyCompactItemize}

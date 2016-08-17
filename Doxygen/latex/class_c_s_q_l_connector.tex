@@ -1,0 +1,106 @@
+\hypertarget{class_c_s_q_l_connector}{}\section{C\+S\+Q\+L\+Connector Class Reference}
+\label{class_c_s_q_l_connector}\index{C\+S\+Q\+L\+Connector@{C\+S\+Q\+L\+Connector}}
+
+
+A S\+QL connector. This class purpose is to create a connection to the database using S\+QL commands.  
+
+
+
+
+{\ttfamily \#include $<$S\+Q\+L\+Connector.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_s_q_l_connector_a83834029ef01048d11ac157785c2d404}{Open\+Database} (const char $\ast$file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Receives the file path or file name in case in the same carpet, opens the connection to the database to start making query requests. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_s_q_l_connector_a7cbbbc490b80b31f48c24ecb2da08162}{Close\+Database} ()\hypertarget{class_c_s_q_l_connector_a7cbbbc490b80b31f48c24ecb2da08162}{}\label{class_c_s_q_l_connector_a7cbbbc490b80b31f48c24ecb2da08162}
+
+\begin{DoxyCompactList}\small\item\em Closes the connection to the database. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_s_q_l_connector_a4f644628dcae2d9953744663540db506}{Query\+Database} (const char $\ast$sql\+\_\+query, int($\ast$Query\+Callback)(void $\ast$, int, char $\ast$$\ast$, char $\ast$$\ast$), void $\ast$Non\+Static\+Object)
+\begin{DoxyCompactList}\small\item\em Executes a query request of a list and passes along a function that executes per line of the list. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_s_q_l_connector_af41ad8861139b9008d856c4b384bbc5d}{Exec\+Statement} (const char $\ast$sql\+\_\+query, int Size)
+\begin{DoxyCompactList}\small\item\em Executes any kind of query request, it receives the command and the length in characters of the command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A S\+QL connector. This class purpose is to create a connection to the database using S\+QL commands. 
+
+\begin{DoxyAuthor}{Author}
+Alvaro Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/05/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\+S\+Q\+L\+Connector@{C\+S\+Q\+L\+Connector}!Exec\+Statement@{Exec\+Statement}}
+\index{Exec\+Statement@{Exec\+Statement}!C\+S\+Q\+L\+Connector@{C\+S\+Q\+L\+Connector}}
+\subsubsection[{\texorpdfstring{Exec\+Statement(const char $\ast$sql\+\_\+query, int Size)}{ExecStatement(const char *sql_query, int Size)}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+S\+Q\+L\+Connector\+::\+Exec\+Statement (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sql\+\_\+query, }
+\item[{int}]{Size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_s_q_l_connector_af41ad8861139b9008d856c4b384bbc5d}{}\label{class_c_s_q_l_connector_af41ad8861139b9008d856c4b384bbc5d}
+
+
+Executes any kind of query request, it receives the command and the length in characters of the command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql\+\_\+query} & The S\+QL query. \\
+\hline
+{\em Size} & The size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+\index{C\+S\+Q\+L\+Connector@{C\+S\+Q\+L\+Connector}!Open\+Database@{Open\+Database}}
+\index{Open\+Database@{Open\+Database}!C\+S\+Q\+L\+Connector@{C\+S\+Q\+L\+Connector}}
+\subsubsection[{\texorpdfstring{Open\+Database(const char $\ast$file\+\_\+name)}{OpenDatabase(const char *file_name)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+S\+Q\+L\+Connector\+::\+Open\+Database (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_s_q_l_connector_a83834029ef01048d11ac157785c2d404}{}\label{class_c_s_q_l_connector_a83834029ef01048d11ac157785c2d404}
+
+
+Receives the file path or file name in case in the same carpet, opens the connection to the database to start making query requests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & Name of the file. \\
+\hline
+\end{DoxyParams}
+\index{C\+S\+Q\+L\+Connector@{C\+S\+Q\+L\+Connector}!Query\+Database@{Query\+Database}}
+\index{Query\+Database@{Query\+Database}!C\+S\+Q\+L\+Connector@{C\+S\+Q\+L\+Connector}}
+\subsubsection[{\texorpdfstring{Query\+Database(const char $\ast$sql\+\_\+query, int($\ast$\+Query\+Callback)(void $\ast$, int, char $\ast$$\ast$, char $\ast$$\ast$), void $\ast$\+Non\+Static\+Object)}{QueryDatabase(const char *sql_query, int(*QueryCallback)(void *, int, char **, char **), void *NonStaticObject)}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+S\+Q\+L\+Connector\+::\+Query\+Database (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sql\+\_\+query, }
+\item[{int($\ast$)(void $\ast$, int, char $\ast$$\ast$, char $\ast$$\ast$)}]{Query\+Callback, }
+\item[{void $\ast$}]{Non\+Static\+Object}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_s_q_l_connector_a4f644628dcae2d9953744663540db506}{}\label{class_c_s_q_l_connector_a4f644628dcae2d9953744663540db506}
+
+
+Executes a query request of a list and passes along a function that executes per line of the list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em sql\+\_\+query} & The S\+QL query. \\
+\hline
+\mbox{\tt in,out}  & {\em Query\+Callback} & If non-\/null, the query callback. \\
+\hline
+\mbox{\tt in,out}  & {\em Non\+Static\+Object} & If non-\/null, the non static object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The database. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+S\+Q\+L/\hyperlink{_s_q_l_connector_8h}{S\+Q\+L\+Connector.\+h}\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+S\+Q\+L/\hyperlink{_s_q_l_connector_8cpp}{S\+Q\+L\+Connector.\+cpp}\end{DoxyCompactItemize}

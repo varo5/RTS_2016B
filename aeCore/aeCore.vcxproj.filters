@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{16f264f8-8c03-4f18-8876-43f1eabffba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{2706d470-4ea2-4d1d-ba5d-9c8c82609f5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EvenSystem">
+      <UniqueIdentifier>{cbd43ffa-3f16-48c8-9313-e1f007a2d4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Storage">
+      <UniqueIdentifier>{b40e1b08-8053-4a43-b5db-d543b7883ef8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graphics\AppWindow.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderer.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Sprite.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="aeCoreStd.h" />
+    <ClInclude Include="BasicClasses.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformDefinitions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSystem\Inputs.h">
+      <Filter>Source Files\EvenSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSystem\EventsSystem.h">
+      <Filter>Source Files\EvenSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector2.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector3.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector4.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix2.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix3.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix4.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSystem\Clock.h">
+      <Filter>Source Files\EvenSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PlatformMath.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Perlin.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\RandomNumberGenerator.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Storage\SQLConnector.h">
+      <Filter>Source Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="dll_definition.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Graphics\AppWindow.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Sprite.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSystem\Inputs.cpp">
+      <Filter>Source Files\EvenSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSystem\EventsSystem.cpp">
+      <Filter>Source Files\EvenSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector3.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector4.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector2.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Matrix2.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Matrix3.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Matrix4.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSystem\Clock.cpp">
+      <Filter>Source Files\EvenSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\PlatformMath.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Perlin.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\RandomNumberGenerator.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Storage\SQLConnector.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

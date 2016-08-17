@@ -1,0 +1,131 @@
+\hypertarget{classae_core_1_1ae_event_system}{}\section{ae\+Core\+:\+:ae\+Event\+System Class Reference}
+\label{classae_core_1_1ae_event_system}\index{ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}}
+
+
+A event system.  
+
+
+
+
+{\ttfamily \#include $<$Event\+System.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classae_core_1_1ae_event_system_ad1c23fc489280b2545f831875d13855c}{Init} (\hyperlink{structae_core_1_1ae_events_handler}{ae\+Events\+Handler} $\ast$p\+Handler)
+\begin{DoxyCompactList}\small\item\em Initialize with the given handler. \end{DoxyCompactList}\item 
+static void \hyperlink{classae_core_1_1ae_event_system_a0550d20c311d01832b9c048dbd83245d}{Post\+Event} (\hyperlink{structae_core_1_1ae_event}{ae\+Event} \&Event)
+\begin{DoxyCompactList}\small\item\em Posts an event. \end{DoxyCompactList}\item 
+static int \hyperlink{classae_core_1_1ae_event_system_abde1be2ec7ef77a05256e5f50092047c}{Poll\+Event} (\hyperlink{structae_core_1_1ae_event}{ae\+Event} $\ast$Event)
+\begin{DoxyCompactList}\small\item\em Poll event. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_event}{ae\+Event} $\ast$ \hyperlink{classae_core_1_1ae_event_system_a6d180c51301f1f5e7a66958696c1fb5d}{Peep\+Event} ()
+\begin{DoxyCompactList}\small\item\em Peep event. \end{DoxyCompactList}\item 
+static \hyperlink{classae_core_1_1ae_timer}{ae\+Timer} \& \hyperlink{classae_core_1_1ae_event_system_aec274a337e502a3216e294f93d512bfb}{Get\+Timer} ()
+\begin{DoxyCompactList}\small\item\em Gets the timer. \end{DoxyCompactList}\item 
+static \hyperlink{structae_core_1_1ae_inputs}{ae\+Inputs} \& \hyperlink{classae_core_1_1ae_event_system_a3befebc0c070a681bd8a91346006507e}{Get\+Inputs} ()
+\begin{DoxyCompactList}\small\item\em Gets the inputs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A event system. 
+
+\subsection{Member Function Documentation}
+\index{ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}!Get\+Inputs@{Get\+Inputs}}
+\index{Get\+Inputs@{Get\+Inputs}!ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}}
+\subsubsection[{\texorpdfstring{Get\+Inputs()}{GetInputs()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+Inputs} \& ae\+Event\+System\+::\+Get\+Inputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_core_1_1ae_event_system_a3befebc0c070a681bd8a91346006507e}{}\label{classae_core_1_1ae_event_system_a3befebc0c070a681bd8a91346006507e}
+
+
+Gets the inputs. 
+
+\begin{DoxyReturn}{Returns}
+The inputs. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}!Get\+Timer@{Get\+Timer}}
+\index{Get\+Timer@{Get\+Timer}!ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}}
+\subsubsection[{\texorpdfstring{Get\+Timer()}{GetTimer()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+Timer} \& ae\+Event\+System\+::\+Get\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_core_1_1ae_event_system_aec274a337e502a3216e294f93d512bfb}{}\label{classae_core_1_1ae_event_system_aec274a337e502a3216e294f93d512bfb}
+
+
+Gets the timer. 
+
+\begin{DoxyReturn}{Returns}
+The timer. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}!Init@{Init}}
+\index{Init@{Init}!ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}}
+\subsubsection[{\texorpdfstring{Init(ae\+Events\+Handler $\ast$p\+Handler)}{Init(aeEventsHandler *pHandler)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Event\+System\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Events\+Handler} $\ast$}]{p\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_core_1_1ae_event_system_ad1c23fc489280b2545f831875d13855c}{}\label{classae_core_1_1ae_event_system_ad1c23fc489280b2545f831875d13855c}
+
+
+Initialize with the given handler. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Handler} & If non-\/null, the handler. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}!Peep\+Event@{Peep\+Event}}
+\index{Peep\+Event@{Peep\+Event}!ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}}
+\subsubsection[{\texorpdfstring{Peep\+Event()}{PeepEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ae\+Event} $\ast$ ae\+Event\+System\+::\+Peep\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_core_1_1ae_event_system_a6d180c51301f1f5e7a66958696c1fb5d}{}\label{classae_core_1_1ae_event_system_a6d180c51301f1f5e7a66958696c1fb5d}
+
+
+Peep event. 
+
+\begin{DoxyReturn}{Returns}
+null if it fails, else a pointer to an \hyperlink{structae_core_1_1ae_event}{ae\+Event}. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}!Poll\+Event@{Poll\+Event}}
+\index{Poll\+Event@{Poll\+Event}!ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}}
+\subsubsection[{\texorpdfstring{Poll\+Event(ae\+Event $\ast$\+Event)}{PollEvent(aeEvent *Event)}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Event\+System\+::\+Poll\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Event} $\ast$}]{Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_core_1_1ae_event_system_abde1be2ec7ef77a05256e5f50092047c}{}\label{classae_core_1_1ae_event_system_abde1be2ec7ef77a05256e5f50092047c}
+
+
+Poll event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Event} & If non-\/null, the event.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}!Post\+Event@{Post\+Event}}
+\index{Post\+Event@{Post\+Event}!ae\+Core\+::ae\+Event\+System@{ae\+Core\+::ae\+Event\+System}}
+\subsubsection[{\texorpdfstring{Post\+Event(ae\+Event \&\+Event)}{PostEvent(aeEvent &Event)}}]{\setlength{\rightskip}{0pt plus 5cm}static void ae\+Event\+System\+::\+Post\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Event} \&}]{Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_core_1_1ae_event_system_a0550d20c311d01832b9c048dbd83245d}{}\label{classae_core_1_1ae_event_system_a0550d20c311d01832b9c048dbd83245d}
+
+
+Posts an event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Event} & The event. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Event\+System/\+Event\+System Canvas/Event\+System.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Event\+System/\+Event\+System Canvas/Event\+System.\+cpp\end{DoxyCompactItemize}

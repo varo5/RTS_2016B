@@ -1,0 +1,106 @@
+\hypertarget{class_c_state}{}\section{C\+State Class Reference}
+\label{class_c_state}\index{C\+State@{C\+State}}
+Inheritance diagram for C\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{class_c_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_state_a220fab97e545680a7237dbb0d04ba037}{Init} (\hyperlink{classae_state_machine_script}{ae\+State\+Machine\+Script} $\ast$p\+Script)=0
+\begin{DoxyCompactList}\small\item\em Initializes the with the given state machine script. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_state_ab51ebc6c91699f2b1a3b49e77fba9ebf}{Destroy} ()\hypertarget{class_c_state_ab51ebc6c91699f2b1a3b49e77fba9ebf}{}\label{class_c_state_ab51ebc6c91699f2b1a3b49e77fba9ebf}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_state_a9d687e06b17b821703332fa3d4ea8bcf}{On\+Update} (float f\+Delta, \hyperlink{classae_base_class}{ae\+Base\+Class} $\ast$p\+Object)=0
+\begin{DoxyCompactList}\small\item\em Executes the update action. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_state_aa243e28819ea28e4499a37ce88905f5a}{On\+Enter} ()=0\hypertarget{class_c_state_aa243e28819ea28e4499a37ce88905f5a}{}\label{class_c_state_aa243e28819ea28e4499a37ce88905f5a}
+
+\begin{DoxyCompactList}\small\item\em Executes the enter action. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_state_ad44fb6c87328ce8429f0a11fcb1546c9}{On\+Exit} ()=0\hypertarget{class_c_state_ad44fb6c87328ce8429f0a11fcb1546c9}{}\label{class_c_state_ad44fb6c87328ce8429f0a11fcb1546c9}
+
+\begin{DoxyCompactList}\small\item\em Executes the exit action. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_state_ab3ac73ec432c327da36cdaaabeb2ac76}{operator==} (int State\+ID)
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries m\+\_\+n\+State\+ID}\hypertarget{class_c_state_a7a5e683c31758ad8648f4e238b1d615b}{}\label{class_c_state_a7a5e683c31758ad8648f4e238b1d615b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{C\+State@{C\+State}!Init@{Init}}
+\index{Init@{Init}!C\+State@{C\+State}}
+\subsubsection[{\texorpdfstring{Init(ae\+State\+Machine\+Script $\ast$p\+Script)=0}{Init(aeStateMachineScript *pScript)=0}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+State\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+State\+Machine\+Script} $\ast$}]{p\+Script}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_c_state_a220fab97e545680a7237dbb0d04ba037}{}\label{class_c_state_a220fab97e545680a7237dbb0d04ba037}
+
+
+Initializes the with the given state machine script. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Script} & If non-\/null, the script. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_c_attack_ab01b39ae23ea81ebff5c8373cbec4908}{C\+Attack}, \hyperlink{class_c_death_a3cabf498e0212ec61fe3575a75cc72ca}{C\+Death}, \hyperlink{class_c_idle_a5f5632a117a51e37511142dffcea561e}{C\+Idle}, \hyperlink{class_c_move___to_a1fdf0a3aaa63c1f1eebb51664d00a01f}{C\+Move\+\_\+\+To}, \hyperlink{class_c_attack_a_state_aed0917a7321472f3b1756236355dfc9a}{C\+Attack\+A\+State}, \hyperlink{class_c_death_a_state_a408f2b12e1cdb9f74704a23900480883}{C\+Death\+A\+State}, \hyperlink{class_c_idle_a_state_a241993e2f04379b3027657011eed870b}{C\+Idle\+A\+State}, and \hyperlink{class_c_move_to_a_state_ac0d824abba75c038600b4a6dc6a9d1c6}{C\+Move\+To\+A\+State}.
+
+\index{C\+State@{C\+State}!On\+Update@{On\+Update}}
+\index{On\+Update@{On\+Update}!C\+State@{C\+State}}
+\subsubsection[{\texorpdfstring{On\+Update(float f\+Delta, ae\+Base\+Class $\ast$p\+Object)=0}{OnUpdate(float fDelta, aeBaseClass *pObject)=0}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+State\+::\+On\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta, }
+\item[{{\bf ae\+Base\+Class} $\ast$}]{p\+Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_c_state_a9d687e06b17b821703332fa3d4ea8bcf}{}\label{class_c_state_a9d687e06b17b821703332fa3d4ea8bcf}
+
+
+Executes the update action. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em f\+Delta} & The delta. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+Object} & If non-\/null, the object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_c_attack_a31becaa6458236fc037b022896dea8d2}{C\+Attack}, \hyperlink{class_c_death_a23bc4e0cc320b368cf103547532ffee9}{C\+Death}, \hyperlink{class_c_idle_a32a095912ae94e7a9bcdfc8d3d3191db}{C\+Idle}, \hyperlink{class_c_move___to_aff66ed974bd3a4924b5bb35966d81300}{C\+Move\+\_\+\+To}, \hyperlink{class_c_attack_a_state_adf86654143ca6f2fb44b1a2ea7346123}{C\+Attack\+A\+State}, \hyperlink{class_c_death_a_state_ab2365bfffb1f627393e90e138e33bdaf}{C\+Death\+A\+State}, \hyperlink{class_c_idle_a_state_aa68dafffda29e2bce8b37a79a515e353}{C\+Idle\+A\+State}, and \hyperlink{class_c_move_to_a_state_a282f85cf10e81a233afbe9885a1a1d6e}{C\+Move\+To\+A\+State}.
+
+\index{C\+State@{C\+State}!operator==@{operator==}}
+\index{operator==@{operator==}!C\+State@{C\+State}}
+\subsubsection[{\texorpdfstring{operator==(int State\+I\+D)}{operator==(int StateID)}}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+State\+::operator== (
+\begin{DoxyParamCaption}
+\item[{int}]{State\+ID}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_state_ab3ac73ec432c327da36cdaaabeb2ac76}{}\label{class_c_state_ab3ac73ec432c327da36cdaaabeb2ac76}
+
+
+Equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em State\+ID} & Identifier for the state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are considered equivalent. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/State.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/State.\+cpp\end{DoxyCompactItemize}

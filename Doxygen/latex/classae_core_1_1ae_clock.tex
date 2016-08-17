@@ -1,0 +1,163 @@
+\hypertarget{classae_core_1_1ae_clock}{}\section{ae\+Core\+:\+:ae\+Clock Class Reference}
+\label{classae_core_1_1ae_clock}\index{ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}}
+
+
+A high resolution timer.  
+
+
+
+
+{\ttfamily \#include $<$Clock.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classae_core_1_1ae_clock_acce423a302fdb8c3cbbdc9f16cc92b4d}{ae\+Clock} ()\hypertarget{classae_core_1_1ae_clock_acce423a302fdb8c3cbbdc9f16cc92b4d}{}\label{classae_core_1_1ae_clock_acce423a302fdb8c3cbbdc9f16cc92b4d}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classae_core_1_1ae_clock_ab5fb0b048af4531eb109d5e20759bdf0}{$\sim$ae\+Clock} ()\hypertarget{classae_core_1_1ae_clock_ab5fb0b048af4531eb109d5e20759bdf0}{}\label{classae_core_1_1ae_clock_ab5fb0b048af4531eb109d5e20759bdf0}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classae_core_1_1ae_clock_a43da19cb58c81e07cddb5097a191748d}{Init} ()
+\begin{DoxyCompactList}\small\item\em Gets 0 if it was initialized correctly, otherwise, it will get an error number. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_clock_a87f4a727d750d3cfbbad04317ac0d0d2}{Destroy} ()\hypertarget{classae_core_1_1ae_clock_a87f4a727d750d3cfbbad04317ac0d0d2}{}\label{classae_core_1_1ae_clock_a87f4a727d750d3cfbbad04317ac0d0d2}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_clock_a3c9c48beb78aae34dbe6b1c84a5e08cf}{Update} ()\hypertarget{classae_core_1_1ae_clock_a3c9c48beb78aae34dbe6b1c84a5e08cf}{}\label{classae_core_1_1ae_clock_a3c9c48beb78aae34dbe6b1c84a5e08cf}
+
+\begin{DoxyCompactList}\small\item\em Updates the delta time since last update and adds it up to the total time. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Virtual\+Time\+Scale} (float New\+Time\+Scale)\hypertarget{classae_core_1_1ae_clock_a1686e1930401b233c111c053ffbb86b9}{}\label{classae_core_1_1ae_clock_a1686e1930401b233c111c053ffbb86b9}
+
+\item 
+float \hyperlink{classae_core_1_1ae_clock_af5107b6562e3e41188c7ccc612e4ce02}{Virtual\+Time} ()
+\begin{DoxyCompactList}\small\item\em Returns the time since Init affected by the time scale. \end{DoxyCompactList}\item 
+float \hyperlink{classae_core_1_1ae_clock_a74aea87d4d9e4677b71e01f15b8ec4c4}{Real\+Time} ()
+\begin{DoxyCompactList}\small\item\em Returns the time since Init. \end{DoxyCompactList}\item 
+float \hyperlink{classae_core_1_1ae_clock_abdece9ee5808544bfc1702971ec93f06}{Virtual\+Delta\+Time} ()
+\begin{DoxyCompactList}\small\item\em Returns the delta time between update calls affected by the time scale. \end{DoxyCompactList}\item 
+float \hyperlink{classae_core_1_1ae_clock_a33b092b1400916479afb3bd2d815e227}{Real\+Delta\+Time} ()
+\begin{DoxyCompactList}\small\item\em R\+Returns the delta time between update calls. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_clock_a67f071560800444211da74c195fbcf77}{Set\+Timer} (float Time, \hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} ID)
+\begin{DoxyCompactList}\small\item\em Sets a timer. \end{DoxyCompactList}\item 
+bool \hyperlink{classae_core_1_1ae_clock_a01f37c5f4c2ec3902f9fffedb1841a09}{Poll\+Events} (\hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} $\ast$ID)
+\begin{DoxyCompactList}\small\item\em Poll events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A high resolution timer. 
+
+\subsection{Member Function Documentation}
+\index{ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}!Init@{Init}}
+\index{Init@{Init}!ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}}
+\subsubsection[{\texorpdfstring{Init()}{Init()}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Core\+::ae\+Clock\+::\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_clock_a43da19cb58c81e07cddb5097a191748d}{}\label{classae_core_1_1ae_clock_a43da19cb58c81e07cddb5097a191748d}
+
+
+Gets 0 if it was initialized correctly, otherwise, it will get an error number. 
+
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}!Poll\+Events@{Poll\+Events}}
+\index{Poll\+Events@{Poll\+Events}!ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}}
+\subsubsection[{\texorpdfstring{Poll\+Events(uint8 $\ast$\+I\+D)}{PollEvents(uint8 *ID)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ae\+Core\+::ae\+Clock\+::\+Poll\+Events (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8} $\ast$}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_clock_a01f37c5f4c2ec3902f9fffedb1841a09}{}\label{classae_core_1_1ae_clock_a01f37c5f4c2ec3902f9fffedb1841a09}
+
+
+Poll events. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em ID} & If non-\/null, the identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}!Real\+Delta\+Time@{Real\+Delta\+Time}}
+\index{Real\+Delta\+Time@{Real\+Delta\+Time}!ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}}
+\subsubsection[{\texorpdfstring{Real\+Delta\+Time()}{RealDeltaTime()}}]{\setlength{\rightskip}{0pt plus 5cm}float ae\+Core\+::ae\+Clock\+::\+Real\+Delta\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_clock_a33b092b1400916479afb3bd2d815e227}{}\label{classae_core_1_1ae_clock_a33b092b1400916479afb3bd2d815e227}
+
+
+R\+Returns the delta time between update calls. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}!Real\+Time@{Real\+Time}}
+\index{Real\+Time@{Real\+Time}!ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}}
+\subsubsection[{\texorpdfstring{Real\+Time()}{RealTime()}}]{\setlength{\rightskip}{0pt plus 5cm}float ae\+Core\+::ae\+Clock\+::\+Real\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_clock_a74aea87d4d9e4677b71e01f15b8ec4c4}{}\label{classae_core_1_1ae_clock_a74aea87d4d9e4677b71e01f15b8ec4c4}
+
+
+Returns the time since Init. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}!Set\+Timer@{Set\+Timer}}
+\index{Set\+Timer@{Set\+Timer}!ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}}
+\subsubsection[{\texorpdfstring{Set\+Timer(float Time, uint8 I\+D)}{SetTimer(float Time, uint8 ID)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Clock\+::\+Set\+Timer (
+\begin{DoxyParamCaption}
+\item[{float}]{Time, }
+\item[{{\bf uint8}}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_clock_a67f071560800444211da74c195fbcf77}{}\label{classae_core_1_1ae_clock_a67f071560800444211da74c195fbcf77}
+
+
+Sets a timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Time} & The time. \\
+\hline
+{\em ID} & The identifier. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}!Virtual\+Delta\+Time@{Virtual\+Delta\+Time}}
+\index{Virtual\+Delta\+Time@{Virtual\+Delta\+Time}!ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}}
+\subsubsection[{\texorpdfstring{Virtual\+Delta\+Time()}{VirtualDeltaTime()}}]{\setlength{\rightskip}{0pt plus 5cm}float ae\+Core\+::ae\+Clock\+::\+Virtual\+Delta\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_clock_abdece9ee5808544bfc1702971ec93f06}{}\label{classae_core_1_1ae_clock_abdece9ee5808544bfc1702971ec93f06}
+
+
+Returns the delta time between update calls affected by the time scale. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}!Virtual\+Time@{Virtual\+Time}}
+\index{Virtual\+Time@{Virtual\+Time}!ae\+Core\+::ae\+Clock@{ae\+Core\+::ae\+Clock}}
+\subsubsection[{\texorpdfstring{Virtual\+Time()}{VirtualTime()}}]{\setlength{\rightskip}{0pt plus 5cm}float ae\+Core\+::ae\+Clock\+::\+Virtual\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_clock_af5107b6562e3e41188c7ccc612e4ce02}{}\label{classae_core_1_1ae_clock_af5107b6562e3e41188c7ccc612e4ce02}
+
+
+Returns the time since Init affected by the time scale. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Event\+System/Clock.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Event\+System/Clock.\+cpp\end{DoxyCompactItemize}

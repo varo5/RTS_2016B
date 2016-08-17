@@ -1,0 +1,216 @@
+\hypertarget{classae_influence_calculator}{}\section{ae\+Influence\+Calculator Class Reference}
+\label{classae_influence_calculator}\index{ae\+Influence\+Calculator@{ae\+Influence\+Calculator}}
+Inheritance diagram for ae\+Influence\+Calculator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classae_influence_calculator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries ae\+Influence\+Calculator} (\hyperlink{classae_tiled_map}{ae\+Tiled\+Map} $\ast$p\+Map)\hypertarget{classae_influence_calculator_aef49d51bfbef33de2603e69a2dac091c}{}\label{classae_influence_calculator_aef49d51bfbef33de2603e69a2dac091c}
+
+\item 
+virtual int \hyperlink{classae_influence_calculator_ab2607b3e3750770bb23d7e8c4610a49c}{Init} (\hyperlink{classae_base_class}{ae\+Base\+Class} $\ast$p\+Parent)
+\begin{DoxyCompactList}\small\item\em Initializes with the given parent pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_influence_calculator_a83e784eea5912b82a7ebfe80373f6c2e}{Destroy} ()\hypertarget{classae_influence_calculator_a83e784eea5912b82a7ebfe80373f6c2e}{}\label{classae_influence_calculator_a83e784eea5912b82a7ebfe80373f6c2e}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_influence_calculator_af1e3be3558a8e0e0638959ca41734abd}{Update} (float f\+Delta)
+\begin{DoxyCompactList}\small\item\em Updates the given f\+Delta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_influence_calculator_a9c48a833f9f81303ec212a9a17d83920}{Render} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Renders the given Renderer pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_influence_calculator_a78c17fcba2c67a0e62edd2b8a123a825}{Reset} ()\hypertarget{classae_influence_calculator_a78c17fcba2c67a0e62edd2b8a123a825}{}\label{classae_influence_calculator_a78c17fcba2c67a0e62edd2b8a123a825}
+
+\begin{DoxyCompactList}\small\item\em Resets this object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_influence_calculator_aa581fbf63f74dc501a366ac264c2f12d}{Set\+Influence\+Points} (\hyperlink{structae_influence_point}{ae\+Influence\+Point} $\ast$Points, int size)
+\begin{DoxyCompactList}\small\item\em Sets influence points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries m\+\_\+f\+Momentum}\hypertarget{classae_influence_calculator_a11f861aacb6c3a58c23b1fa8eabbbc4b}{}\label{classae_influence_calculator_a11f861aacb6c3a58c23b1fa8eabbbc4b}
+
+\item 
+float {\bfseries m\+\_\+f\+Decay}\hypertarget{classae_influence_calculator_adde84abe917bba5fcfe453fda73571a6}{}\label{classae_influence_calculator_adde84abe917bba5fcfe453fda73571a6}
+
+\item 
+float {\bfseries m\+\_\+f\+Max\+Inf}\hypertarget{classae_influence_calculator_a617f4f4dded2b0078a200907b8101bde}{}\label{classae_influence_calculator_a617f4f4dded2b0078a200907b8101bde}
+
+\item 
+float {\bfseries m\+\_\+f\+Min\+Inf}\hypertarget{classae_influence_calculator_a9d3ddc8723c25d95407c74647e3e8287}{}\label{classae_influence_calculator_a9d3ddc8723c25d95407c74647e3e8287}
+
+\item 
+float {\bfseries m\+\_\+\+Inf}\hypertarget{classae_influence_calculator_ad41edf8a9a2708f63bd38c211b67736c}{}\label{classae_influence_calculator_ad41edf8a9a2708f63bd38c211b67736c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classae_influence_calculator_a8f31c5a25ca68ef970247f608bb51917}{Visit\+Grid\+Node} (\hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y)
+\begin{DoxyCompactList}\small\item\em Marks a node as visited. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_influence_calculator_ab542ea1dd26801211d06e77ba078ebe2}{Set\+Final\+Node} (\hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y)
+\begin{DoxyCompactList}\small\item\em Sets final node. \end{DoxyCompactList}\item 
+virtual Walk\+State\+ID {\bfseries Give\+A\+Step} (int32 x, int32 y)\hypertarget{classae_influence_calculator_a3195d218f0580918600336418df7daed}{}\label{classae_influence_calculator_a3195d218f0580918600336418df7daed}
+
+\item 
+virtual Walk\+State\+ID \hyperlink{classae_influence_calculator_aff6d5b8b52fb73a4c87a3b311adc6245}{Give\+A\+Step} ()
+\begin{DoxyCompactList}\small\item\em Give a step. \end{DoxyCompactList}\item 
+float {\bfseries lerp} (float Start, float End, float Porcentage)\hypertarget{classae_influence_calculator_a2319a79402f14228159d40380ff9e3b2}{}\label{classae_influence_calculator_a2319a79402f14228159d40380ff9e3b2}
+
+\item 
+float {\bfseries Dist} (int x, int y)\hypertarget{classae_influence_calculator_aef42a7d51c210b1ace9861975a5785ac}{}\label{classae_influence_calculator_aef42a7d51c210b1ace9861975a5785ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{ae\+Influence\+Calculator@{ae\+Influence\+Calculator}!Give\+A\+Step@{Give\+A\+Step}}
+\index{Give\+A\+Step@{Give\+A\+Step}!ae\+Influence\+Calculator@{ae\+Influence\+Calculator}}
+\subsubsection[{\texorpdfstring{Give\+A\+Step()}{GiveAStep()}}]{\setlength{\rightskip}{0pt plus 5cm}Walk\+State\+ID ae\+Influence\+Calculator\+::\+Give\+A\+Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classae_influence_calculator_aff6d5b8b52fb73a4c87a3b311adc6245}{}\label{classae_influence_calculator_aff6d5b8b52fb73a4c87a3b311adc6245}
+
+
+Give a step. 
+
+\begin{DoxyReturn}{Returns}
+A Walk\+State\+ID. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classae_path_finder_a49332ee3be744cac1ece9ffd503ca218}{ae\+Path\+Finder}.
+
+\index{ae\+Influence\+Calculator@{ae\+Influence\+Calculator}!Init@{Init}}
+\index{Init@{Init}!ae\+Influence\+Calculator@{ae\+Influence\+Calculator}}
+\subsubsection[{\texorpdfstring{Init(ae\+Base\+Class $\ast$p\+Parent)}{Init(aeBaseClass *pParent)}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Influence\+Calculator\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Base\+Class} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_influence_calculator_ab2607b3e3750770bb23d7e8c4610a49c}{}\label{classae_influence_calculator_ab2607b3e3750770bb23d7e8c4610a49c}
+
+
+Initializes with the given parent pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Parent} & If non-\/null, the parent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classae_path_finder_a3395375f3de8f3f55d7b780ff6815806}{ae\+Path\+Finder}.
+
+\index{ae\+Influence\+Calculator@{ae\+Influence\+Calculator}!Render@{Render}}
+\index{Render@{Render}!ae\+Influence\+Calculator@{ae\+Influence\+Calculator}}
+\subsubsection[{\texorpdfstring{Render(ae\+Renderer $\ast$p\+Renderer)}{Render(aeRenderer *pRenderer)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Influence\+Calculator\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_influence_calculator_a9c48a833f9f81303ec212a9a17d83920}{}\label{classae_influence_calculator_a9c48a833f9f81303ec212a9a17d83920}
+
+
+Renders the given Renderer pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classae_add_on_ab6bed56009b9c92df8ae017a27587dc3}{ae\+Add\+On}.
+
+\index{ae\+Influence\+Calculator@{ae\+Influence\+Calculator}!Set\+Final\+Node@{Set\+Final\+Node}}
+\index{Set\+Final\+Node@{Set\+Final\+Node}!ae\+Influence\+Calculator@{ae\+Influence\+Calculator}}
+\subsubsection[{\texorpdfstring{Set\+Final\+Node(int32 x, int32 y)}{SetFinalNode(int32 x, int32 y)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Influence\+Calculator\+::\+Set\+Final\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{x, }
+\item[{{\bf int32}}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classae_influence_calculator_ab542ea1dd26801211d06e77ba078ebe2}{}\label{classae_influence_calculator_ab542ea1dd26801211d06e77ba078ebe2}
+
+
+Sets final node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Influence\+Calculator@{ae\+Influence\+Calculator}!Set\+Influence\+Points@{Set\+Influence\+Points}}
+\index{Set\+Influence\+Points@{Set\+Influence\+Points}!ae\+Influence\+Calculator@{ae\+Influence\+Calculator}}
+\subsubsection[{\texorpdfstring{Set\+Influence\+Points(ae\+Influence\+Point $\ast$\+Points, int size)}{SetInfluencePoints(aeInfluencePoint *Points, int size)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Influence\+Calculator\+::\+Set\+Influence\+Points (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Influence\+Point} $\ast$}]{Points, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_influence_calculator_aa581fbf63f74dc501a366ac264c2f12d}{}\label{classae_influence_calculator_aa581fbf63f74dc501a366ac264c2f12d}
+
+
+Sets influence points. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Points} & If non-\/null, the points. \\
+\hline
+ & {\em size} & The size. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Influence\+Calculator@{ae\+Influence\+Calculator}!Update@{Update}}
+\index{Update@{Update}!ae\+Influence\+Calculator@{ae\+Influence\+Calculator}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)}{Update(float fDelta)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Influence\+Calculator\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_influence_calculator_af1e3be3558a8e0e0638959ca41734abd}{}\label{classae_influence_calculator_af1e3be3558a8e0e0638959ca41734abd}
+
+
+Updates the given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_add_on_a51caa4b8680206495ea671e71991e231}{ae\+Add\+On}.
+
+\index{ae\+Influence\+Calculator@{ae\+Influence\+Calculator}!Visit\+Grid\+Node@{Visit\+Grid\+Node}}
+\index{Visit\+Grid\+Node@{Visit\+Grid\+Node}!ae\+Influence\+Calculator@{ae\+Influence\+Calculator}}
+\subsubsection[{\texorpdfstring{Visit\+Grid\+Node(int32 x, int32 y)}{VisitGridNode(int32 x, int32 y)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Influence\+Calculator\+::\+Visit\+Grid\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{x, }
+\item[{{\bf int32}}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classae_influence_calculator_a8f31c5a25ca68ef970247f608bb51917}{}\label{classae_influence_calculator_a8f31c5a25ca68ef970247f608bb51917}
+
+
+Marks a node as visited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_path_finder_a4ccfa19ff344b9f4827dbeab18c4efab}{ae\+Path\+Finder}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Influence\+Calculator.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Influence\+Calculator.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\hypertarget{classae_game_object}{}\section{ae\+Game\+Object Class Reference}
+\label{classae_game_object}\index{ae\+Game\+Object@{ae\+Game\+Object}}
+
+
+A game object.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Object.\+h$>$}
+
+Inheritance diagram for ae\+Game\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classae_game_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classae_game_object_ab4e04a67ee1f5d7a23966792577534e6}{Init} ()
+\begin{DoxyCompactList}\small\item\em Initializes this object, returns 0 in case of a correct initialization. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_game_object_ab43b31f1179579df835873e60ae84f32}{Update} (float f\+Delta)
+\begin{DoxyCompactList}\small\item\em Updates given f\+Delta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_game_object_ae2ab1d6a65f6008766faa8295affc9fe}{Render} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Renders this object given its given renderer pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_game_object_af7faadfae20c3d83d521b7e1b4e4b06b}{Destroy} ()\hypertarget{classae_game_object_af7faadfae20c3d83d521b7e1b4e4b06b}{}\label{classae_game_object_af7faadfae20c3d83d521b7e1b4e4b06b}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structae_transform}{ae\+Transform} {\bfseries Transform}\hypertarget{classae_game_object_a89138ab3368a2fc33260fbdb38cca3f1}{}\label{classae_game_object_a89138ab3368a2fc33260fbdb38cca3f1}
+
+\item 
+ae\+String {\bfseries Name}\hypertarget{classae_game_object_a4b63043d812d56ae14101029c524642d}{}\label{classae_game_object_a4b63043d812d56ae14101029c524642d}
+
+\item 
+ae\+String {\bfseries Tag}\hypertarget{classae_game_object_a255311c9e0d138c0407736f8108386c3}{}\label{classae_game_object_a255311c9e0d138c0407736f8108386c3}
+
+\item 
+\hyperlink{_add_on_8h_a0f4072611b509766afe7bb36d570ac80}{ae\+Add\+Ons} {\bfseries Add\+Ons}\hypertarget{classae_game_object_a843f81854501b0b04f7777675f195db9}{}\label{classae_game_object_a843f81854501b0b04f7777675f195db9}
+
+\item 
+ae\+Children {\bfseries Children}\hypertarget{classae_game_object_ad0b7749e7572798c319b9be4ffac757d}{}\label{classae_game_object_ad0b7749e7572798c319b9be4ffac757d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A game object. 
+
+\subsection{Member Function Documentation}
+\index{ae\+Game\+Object@{ae\+Game\+Object}!Init@{Init}}
+\index{Init@{Init}!ae\+Game\+Object@{ae\+Game\+Object}}
+\subsubsection[{\texorpdfstring{Init()}{Init()}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Game\+Object\+::\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_game_object_ab4e04a67ee1f5d7a23966792577534e6}{}\label{classae_game_object_ab4e04a67ee1f5d7a23966792577534e6}
+
+
+Initializes this object, returns 0 in case of a correct initialization. 
+
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+\index{ae\+Game\+Object@{ae\+Game\+Object}!Render@{Render}}
+\index{Render@{Render}!ae\+Game\+Object@{ae\+Game\+Object}}
+\subsubsection[{\texorpdfstring{Render(ae\+Renderer $\ast$p\+Renderer)}{Render(aeRenderer *pRenderer)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Game\+Object\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_game_object_ae2ab1d6a65f6008766faa8295affc9fe}{}\label{classae_game_object_ae2ab1d6a65f6008766faa8295affc9fe}
+
+
+Renders this object given its given renderer pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classae_tiled_map_a3f0816ebe094c6a1308524936d6c926e}{ae\+Tiled\+Map}.
+
+\index{ae\+Game\+Object@{ae\+Game\+Object}!Update@{Update}}
+\index{Update@{Update}!ae\+Game\+Object@{ae\+Game\+Object}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)}{Update(float fDelta)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Game\+Object\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_game_object_ab43b31f1179579df835873e60ae84f32}{}\label{classae_game_object_ab43b31f1179579df835873e60ae84f32}
+
+
+Updates given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classae_tiled_map_a96e6f64deda9d9d02fef3cd173e900a8}{ae\+Tiled\+Map}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Game\+Object.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Game\+Object.\+cpp\end{DoxyCompactItemize}

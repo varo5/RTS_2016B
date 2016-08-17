@@ -1,0 +1,195 @@
+\hypertarget{classae_tiled_map}{}\section{ae\+Tiled\+Map Class Reference}
+\label{classae_tiled_map}\index{ae\+Tiled\+Map@{ae\+Tiled\+Map}}
+Inheritance diagram for ae\+Tiled\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classae_tiled_map}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classae_tiled_map_1_1ae_map_tile}{ae\+Map\+Tile}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Init} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer, Presets\+List $\ast$p\+Presets)\hypertarget{classae_tiled_map_a3e7d015f09c6cfca2a9f72f8fef9c2a4}{}\label{classae_tiled_map_a3e7d015f09c6cfca2a9f72f8fef9c2a4}
+
+\item 
+void \hyperlink{classae_tiled_map_a905504860f36560db80a307fcd3398b7}{Destroy} ()\hypertarget{classae_tiled_map_a905504860f36560db80a307fcd3398b7}{}\label{classae_tiled_map_a905504860f36560db80a307fcd3398b7}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+void \hyperlink{classae_tiled_map_a96e6f64deda9d9d02fef3cd173e900a8}{Update} (float f\+Delta)
+\begin{DoxyCompactList}\small\item\em Updates given f\+Delta. \end{DoxyCompactList}\item 
+void \hyperlink{classae_tiled_map_a3f0816ebe094c6a1308524936d6c926e}{Render} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Renders this object given its given renderer pointer. \end{DoxyCompactList}\item 
+int32 {\bfseries Get\+Map\+Size} () const \hypertarget{classae_tiled_map_afcb55146c076d64a9b2f21f07fbebea4}{}\label{classae_tiled_map_afcb55146c076d64a9b2f21f07fbebea4}
+
+\item 
+\hyperlink{namespaceae_core_ad0f2d0ae721a7f0afb159366dcc2da9c}{int16} {\bfseries Get\+Cost} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y) const \hypertarget{classae_tiled_map_a9bc8dfe7b53c912d85d108bcbc303e32}{}\label{classae_tiled_map_a9bc8dfe7b53c912d85d108bcbc303e32}
+
+\item 
+void {\bfseries Set\+Cost} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y, const \hyperlink{namespaceae_core_ad0f2d0ae721a7f0afb159366dcc2da9c}{int16} Cost)\hypertarget{classae_tiled_map_a976e05f55d5f65ec74b052926aac2e52}{}\label{classae_tiled_map_a976e05f55d5f65ec74b052926aac2e52}
+
+\item 
+\hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} {\bfseries Get\+Layer1} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const int y) const \hypertarget{classae_tiled_map_ac670a8ca6fc5a14e2f8d45a1ffef14a2}{}\label{classae_tiled_map_ac670a8ca6fc5a14e2f8d45a1ffef14a2}
+
+\item 
+void {\bfseries Set\+Layer1} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y, const \hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} Layer1\+ID)\hypertarget{classae_tiled_map_afb62dba53150e670788065f472081d13}{}\label{classae_tiled_map_afb62dba53150e670788065f472081d13}
+
+\item 
+\hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} {\bfseries Get\+Layer2} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const int y) const \hypertarget{classae_tiled_map_acc9f05b12b8a2e570b184c87a58bdc10}{}\label{classae_tiled_map_acc9f05b12b8a2e570b184c87a58bdc10}
+
+\item 
+void {\bfseries Set\+Layer2} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y, const \hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} Layer2\+ID)\hypertarget{classae_tiled_map_a1f7cfb290930d7b3df0c38f353ba9fdc}{}\label{classae_tiled_map_a1f7cfb290930d7b3df0c38f353ba9fdc}
+
+\item 
+\hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} {\bfseries Get\+Layer3} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const int y) const \hypertarget{classae_tiled_map_a70e7122adc6c87b5017f3ff4af4b37f6}{}\label{classae_tiled_map_a70e7122adc6c87b5017f3ff4af4b37f6}
+
+\item 
+void {\bfseries Set\+Layer3} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y, const \hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} Layer3\+ID)\hypertarget{classae_tiled_map_a2e398db234d564da4c23ca788a4b9213}{}\label{classae_tiled_map_a2e398db234d564da4c23ca788a4b9213}
+
+\item 
+\hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} {\bfseries Get\+Layer4} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const int y) const \hypertarget{classae_tiled_map_a167fd038a487acb3a3399655aaa9166d}{}\label{classae_tiled_map_a167fd038a487acb3a3399655aaa9166d}
+
+\item 
+void {\bfseries Set\+Layer4} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y, const \hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} Layer4\+ID)\hypertarget{classae_tiled_map_aadf5b09bfa3e89af39365953a3bdc2d3}{}\label{classae_tiled_map_aadf5b09bfa3e89af39365953a3bdc2d3}
+
+\item 
+\hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} {\bfseries Get\+Layer5} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const int y) const \hypertarget{classae_tiled_map_aee47578443d133aa85c47faa029338e1}{}\label{classae_tiled_map_aee47578443d133aa85c47faa029338e1}
+
+\item 
+void {\bfseries Set\+Layer5} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y, const \hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{uint8} Layer5\+ID)\hypertarget{classae_tiled_map_a98a3fb8227506b4374b411fd258d0e4e}{}\label{classae_tiled_map_a98a3fb8227506b4374b411fd258d0e4e}
+
+\item 
+float {\bfseries Get\+Influence} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const int y) const \hypertarget{classae_tiled_map_a40b31b58e772fc57ded4a397197cd550}{}\label{classae_tiled_map_a40b31b58e772fc57ded4a397197cd550}
+
+\item 
+void {\bfseries Set\+Influence} (const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, const \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y, const float Influence)\hypertarget{classae_tiled_map_aaaec14e8d52ceac9a69eb0d0db4ea940}{}\label{classae_tiled_map_aaaec14e8d52ceac9a69eb0d0db4ea940}
+
+\item 
+void {\bfseries Show\+Grid} (bool \hyperlink{_base_class_8h_aded8224779c70fab5084220935d672bba46a2a41cc6e552044816a2d04634545d}{State})\hypertarget{classae_tiled_map_a258662b085cfddb882576c85effbfca9}{}\label{classae_tiled_map_a258662b085cfddb882576c85effbfca9}
+
+\item 
+void {\bfseries Set\+View} (bool Isometric)\hypertarget{classae_tiled_map_a3cde4546fc42a71eb713c39a1a98ea09}{}\label{classae_tiled_map_a3cde4546fc42a71eb713c39a1a98ea09}
+
+\item 
+void {\bfseries Set\+Path\+Finder} (int Path\+Finder)\hypertarget{classae_tiled_map_ae724a523cc32ad46822b51cc62a3b0e6}{}\label{classae_tiled_map_ae724a523cc32ad46822b51cc62a3b0e6}
+
+\item 
+void {\bfseries Camera\+Reference} (\hyperlink{classae_world}{ae\+World} $\ast$Camera)\hypertarget{classae_tiled_map_aa0db9965530414129013d0c698a2b13d}{}\label{classae_tiled_map_aa0db9965530414129013d0c698a2b13d}
+
+\item 
+void {\bfseries Update\+Render\+Texture} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer)\hypertarget{classae_tiled_map_a510e48b848df51bfcd3ea69d8bb5dab7}{}\label{classae_tiled_map_a510e48b848df51bfcd3ea69d8bb5dab7}
+
+\item 
+void {\bfseries Make\+Search} (\hyperlink{structae_core_1_1ae_point}{ae\+Point} Start\+Position, \hyperlink{structae_core_1_1ae_point}{ae\+Point} End\+Position)\hypertarget{classae_tiled_map_a5122122f68b1557224db6cc616bccd12}{}\label{classae_tiled_map_a5122122f68b1557224db6cc616bccd12}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Tile\+Map\+Creation} (void $\ast$data, int argument\+\_\+count, char $\ast$$\ast$argument\+\_\+values, char $\ast$$\ast$psz\+Col\+Name)\hypertarget{classae_tiled_map_aad3cfb01a53a5665f3d896ff336efcb8}{}\label{classae_tiled_map_aad3cfb01a53a5665f3d896ff336efcb8}
+
+\item 
+static int {\bfseries Influence\+Definition} (void $\ast$data, int argument\+\_\+count, char $\ast$$\ast$argument\+\_\+values, char $\ast$$\ast$psz\+Col\+Name)\hypertarget{classae_tiled_map_af68963b8610289c1182c572d2c544737}{}\label{classae_tiled_map_af68963b8610289c1182c572d2c544737}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Position\+Of\+Open\+Mask}\hypertarget{classae_tiled_map_a8dbef291dc8e226f273e07883d590c6a}{}\label{classae_tiled_map_a8dbef291dc8e226f273e07883d590c6a}
+
+\item 
+int {\bfseries Position\+Of\+Visited\+Mask}\hypertarget{classae_tiled_map_a793cdb801de57b17a9cdc24ccf976b0a}{}\label{classae_tiled_map_a793cdb801de57b17a9cdc24ccf976b0a}
+
+\item 
+int {\bfseries Position\+Of\+Influence\+Mask}\hypertarget{classae_tiled_map_ae586f5557fe67623df0f8994035d6dfd}{}\label{classae_tiled_map_ae586f5557fe67623df0f8994035d6dfd}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classae_tiled_map_1_1ae_map_tile}{ae\+Map\+Tile} $\ast$$\ast$ \hyperlink{classae_tiled_map_aacd425ffb4f463b3617337355aab2aba}{m\+\_\+pp\+Map\+Grid}\hypertarget{classae_tiled_map_aacd425ffb4f463b3617337355aab2aba}{}\label{classae_tiled_map_aacd425ffb4f463b3617337355aab2aba}
+
+\begin{DoxyCompactList}\small\item\em Map information. \end{DoxyCompactList}\item 
+int32 \hyperlink{classae_tiled_map_a5b729d615199651de4a16b80bca21581}{m\+\_\+n\+Map\+Size}\hypertarget{classae_tiled_map_a5b729d615199651de4a16b80bca21581}{}\label{classae_tiled_map_a5b729d615199651de4a16b80bca21581}
+
+\begin{DoxyCompactList}\small\item\em Map Size. \end{DoxyCompactList}\item 
+int32 \hyperlink{classae_tiled_map_a7b63c3c1824027d372e9b5b626e68163}{m\+\_\+n\+Tile\+SizeX}\hypertarget{classae_tiled_map_a7b63c3c1824027d372e9b5b626e68163}{}\label{classae_tiled_map_a7b63c3c1824027d372e9b5b626e68163}
+
+\begin{DoxyCompactList}\small\item\em The tile size in x. \end{DoxyCompactList}\item 
+int32 \hyperlink{classae_tiled_map_a419ddab268eb19a325969277aa152471}{m\+\_\+n\+Tile\+SizeY}\hypertarget{classae_tiled_map_a419ddab268eb19a325969277aa152471}{}\label{classae_tiled_map_a419ddab268eb19a325969277aa152471}
+
+\begin{DoxyCompactList}\small\item\em The tile size in y. \end{DoxyCompactList}\item 
+ae\+Point {\bfseries m\+\_\+\+Precalc\+Size}\hypertarget{classae_tiled_map_aa486053be2f9ac90fe3ddd819c93361a}{}\label{classae_tiled_map_aa486053be2f9ac90fe3ddd819c93361a}
+
+\item 
+\hyperlink{classae_world}{ae\+World} $\ast$ \hyperlink{classae_tiled_map_a5ca0d7e7e07f9af20a03844b2838fd9d}{m\+\_\+p\+Camera}\hypertarget{classae_tiled_map_a5ca0d7e7e07f9af20a03844b2838fd9d}{}\label{classae_tiled_map_a5ca0d7e7e07f9af20a03844b2838fd9d}
+
+\begin{DoxyCompactList}\small\item\em The camera. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classae_tile_type}{ae\+Tile\+Type} $\ast$ $>$ \hyperlink{classae_tiled_map_a09b498b021eb6ccdec0296355217b665}{m\+\_\+p\+Tile\+Types}\hypertarget{classae_tiled_map_a09b498b021eb6ccdec0296355217b665}{}\label{classae_tiled_map_a09b498b021eb6ccdec0296355217b665}
+
+\begin{DoxyCompactList}\small\item\em The presets for tile creation. \end{DoxyCompactList}\item 
+bool \hyperlink{classae_tiled_map_a88b87b8bc89f5768032ca6e33a82774a}{m\+\_\+b\+Show\+Grid}\hypertarget{classae_tiled_map_a88b87b8bc89f5768032ca6e33a82774a}{}\label{classae_tiled_map_a88b87b8bc89f5768032ca6e33a82774a}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate if the grid will be shown or not. \end{DoxyCompactList}\item 
+bool \hyperlink{classae_tiled_map_a705451931bd414b0d9b3d87164eae0fc}{m\+\_\+b\+Isometric}\hypertarget{classae_tiled_map_a705451931bd414b0d9b3d87164eae0fc}{}\label{classae_tiled_map_a705451931bd414b0d9b3d87164eae0fc}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate if is isometric or not. \end{DoxyCompactList}\item 
+bool {\bfseries m\+\_\+b\+Debug}\hypertarget{classae_tiled_map_a5eaca4b67487ab17c25d75527ed5e339}{}\label{classae_tiled_map_a5eaca4b67487ab17c25d75527ed5e339}
+
+\item 
+int {\bfseries m\+\_\+n\+Path\+Finder}\hypertarget{classae_tiled_map_ad47799807fc006d5ece12a1c2dbed7d8}{}\label{classae_tiled_map_ad47799807fc006d5ece12a1c2dbed7d8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{ae\+Tiled\+Map@{ae\+Tiled\+Map}!Render@{Render}}
+\index{Render@{Render}!ae\+Tiled\+Map@{ae\+Tiled\+Map}}
+\subsubsection[{\texorpdfstring{Render(ae\+Renderer $\ast$p\+Renderer)}{Render(aeRenderer *pRenderer)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Tiled\+Map\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_tiled_map_a3f0816ebe094c6a1308524936d6c926e}{}\label{classae_tiled_map_a3f0816ebe094c6a1308524936d6c926e}
+
+
+Renders this object given its given renderer pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classae_game_object_ae2ab1d6a65f6008766faa8295affc9fe}{ae\+Game\+Object}.
+
+\index{ae\+Tiled\+Map@{ae\+Tiled\+Map}!Update@{Update}}
+\index{Update@{Update}!ae\+Tiled\+Map@{ae\+Tiled\+Map}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)}{Update(float fDelta)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Tiled\+Map\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_tiled_map_a96e6f64deda9d9d02fef3cd173e900a8}{}\label{classae_tiled_map_a96e6f64deda9d9d02fef3cd173e900a8}
+
+
+Updates given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classae_game_object_ab43b31f1179579df835873e60ae84f32}{ae\+Game\+Object}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Tiled\+Map.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Tiled\+Map.\+cpp\end{DoxyCompactItemize}

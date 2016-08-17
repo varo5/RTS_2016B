@@ -1,0 +1,99 @@
+\hypertarget{classae_event_system}{}\section{ae\+Event\+System Class Reference}
+\label{classae_event_system}\index{ae\+Event\+System@{ae\+Event\+System}}
+
+
+A event system.  
+
+
+
+
+{\ttfamily \#include $<$Event\+System.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classae_event_system_ac7ee69d78817f709535299b0b5ba3305}{Init} (ae\+Events\+Handler $\ast$p\+Handler)
+\begin{DoxyCompactList}\small\item\em Initialize with the given handler. \end{DoxyCompactList}\item 
+static void {\bfseries Post\+Event} (ae\+Event $\ast$Event)\hypertarget{classae_event_system_a62ebd04bd3d6ed425cc4534fc48d27f9}{}\label{classae_event_system_a62ebd04bd3d6ed425cc4534fc48d27f9}
+
+\item 
+static int \hyperlink{classae_event_system_a46a6cdda7ea12599904e9e741bd534bc}{Poll\+Event} (ae\+Event $\ast$Event)
+\begin{DoxyCompactList}\small\item\em Poll event. \end{DoxyCompactList}\item 
+static ae\+Timer \& \hyperlink{classae_event_system_afd185e86cbef031867b4be5291812624}{Get\+Timer} ()
+\begin{DoxyCompactList}\small\item\em Gets the timer. \end{DoxyCompactList}\item 
+static ae\+Inputs \& \hyperlink{classae_event_system_ae05709e3c02317e800749c71d7cb3537}{Get\+Inputs} ()
+\begin{DoxyCompactList}\small\item\em Gets the inputs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A event system. 
+
+\subsection{Member Function Documentation}
+\index{ae\+Event\+System@{ae\+Event\+System}!Get\+Inputs@{Get\+Inputs}}
+\index{Get\+Inputs@{Get\+Inputs}!ae\+Event\+System@{ae\+Event\+System}}
+\subsubsection[{\texorpdfstring{Get\+Inputs()}{GetInputs()}}]{\setlength{\rightskip}{0pt plus 5cm}static ae\+Inputs \& ae\+Event\+System\+::\+Get\+Inputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_event_system_ae05709e3c02317e800749c71d7cb3537}{}\label{classae_event_system_ae05709e3c02317e800749c71d7cb3537}
+
+
+Gets the inputs. 
+
+\begin{DoxyReturn}{Returns}
+The inputs. 
+\end{DoxyReturn}
+\index{ae\+Event\+System@{ae\+Event\+System}!Get\+Timer@{Get\+Timer}}
+\index{Get\+Timer@{Get\+Timer}!ae\+Event\+System@{ae\+Event\+System}}
+\subsubsection[{\texorpdfstring{Get\+Timer()}{GetTimer()}}]{\setlength{\rightskip}{0pt plus 5cm}static ae\+Timer \& ae\+Event\+System\+::\+Get\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_event_system_afd185e86cbef031867b4be5291812624}{}\label{classae_event_system_afd185e86cbef031867b4be5291812624}
+
+
+Gets the timer. 
+
+\begin{DoxyReturn}{Returns}
+The timer. 
+\end{DoxyReturn}
+\index{ae\+Event\+System@{ae\+Event\+System}!Init@{Init}}
+\index{Init@{Init}!ae\+Event\+System@{ae\+Event\+System}}
+\subsubsection[{\texorpdfstring{Init(ae\+Events\+Handler $\ast$p\+Handler)}{Init(aeEventsHandler *pHandler)}}]{\setlength{\rightskip}{0pt plus 5cm}static void ae\+Event\+System\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{ae\+Events\+Handler $\ast$}]{p\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_event_system_ac7ee69d78817f709535299b0b5ba3305}{}\label{classae_event_system_ac7ee69d78817f709535299b0b5ba3305}
+
+
+Initialize with the given handler. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Handler} & If non-\/null, the handler. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Event\+System@{ae\+Event\+System}!Poll\+Event@{Poll\+Event}}
+\index{Poll\+Event@{Poll\+Event}!ae\+Event\+System@{ae\+Event\+System}}
+\subsubsection[{\texorpdfstring{Poll\+Event(ae\+Event $\ast$\+Event)}{PollEvent(aeEvent *Event)}}]{\setlength{\rightskip}{0pt plus 5cm}static int ae\+Event\+System\+::\+Poll\+Event (
+\begin{DoxyParamCaption}
+\item[{ae\+Event $\ast$}]{Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classae_event_system_a46a6cdda7ea12599904e9e741bd534bc}{}\label{classae_event_system_a46a6cdda7ea12599904e9e741bd534bc}
+
+
+Poll event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em Event} & If non-\/null, the event.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Event\+System.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\hypertarget{class_c_sprite_renderer}{}\section{C\+Sprite\+Renderer Class Reference}
+\label{class_c_sprite_renderer}\index{C\+Sprite\+Renderer@{C\+Sprite\+Renderer}}
+Inheritance diagram for C\+Sprite\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_c_sprite_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_sprite_renderer_aa65eb4db247d6c4683ba8ca599bb4418}{Init} (\hyperlink{class_c_base_class}{C\+Base\+Class} $\ast$p\+Parent)
+\begin{DoxyCompactList}\small\item\em Initializes with the given parent pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_sprite_renderer_a7923c1ef70f2f8adc172a94ce743e67b}{Update} (float f\+Delta)
+\begin{DoxyCompactList}\small\item\em Updates the given f\+Delta. \end{DoxyCompactList}\item 
+virtual void {\bfseries Render} (H\+DC \&hdc)\hypertarget{class_c_sprite_renderer_a3583a18e75292e9e192f3b943d4fdd07}{}\label{class_c_sprite_renderer_a3583a18e75292e9e192f3b943d4fdd07}
+
+\item 
+virtual void \hyperlink{class_c_sprite_renderer_aa9636c9265209438f35b944a2140357d}{Destroy} ()\hypertarget{class_c_sprite_renderer_aa9636c9265209438f35b944a2140357d}{}\label{class_c_sprite_renderer_aa9636c9265209438f35b944a2140357d}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+virtual void {\bfseries Set\+Object} (void $\ast$Object)\hypertarget{class_c_sprite_renderer_a0f28d0ef1f8d0fecf4e43d269344b574}{}\label{class_c_sprite_renderer_a0f28d0ef1f8d0fecf4e43d269344b574}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_transform}{C\+Transform} {\bfseries Transform}\hypertarget{class_c_sprite_renderer_ada57cb75acff5d13c87d4175ad8365dc}{}\label{class_c_sprite_renderer_ada57cb75acff5d13c87d4175ad8365dc}
+
+\item 
+int {\bfseries Order\+Of\+Render}\hypertarget{class_c_sprite_renderer_a7f5f8d13db54319d40a6365456534b31}{}\label{class_c_sprite_renderer_a7f5f8d13db54319d40a6365456534b31}
+
+\item 
+bool {\bfseries Transparent}\hypertarget{class_c_sprite_renderer_ac9af3336259b723afa0bbf656229fa90}{}\label{class_c_sprite_renderer_ac9af3336259b723afa0bbf656229fa90}
+
+\item 
+bool {\bfseries MirrorX}\hypertarget{class_c_sprite_renderer_ad32bb91df9e17d69298dd671a77b47a3}{}\label{class_c_sprite_renderer_ad32bb91df9e17d69298dd671a77b47a3}
+
+\item 
+bool {\bfseries MirrorY}\hypertarget{class_c_sprite_renderer_a2eb0afe3eac443d75f511eda8c80a1ef}{}\label{class_c_sprite_renderer_a2eb0afe3eac443d75f511eda8c80a1ef}
+
+\item 
+R\+E\+CT {\bfseries Render\+Rect}\hypertarget{class_c_sprite_renderer_ad061b59c18480492e87432b1b7578d0a}{}\label{class_c_sprite_renderer_ad061b59c18480492e87432b1b7578d0a}
+
+\item 
+R\+E\+CT {\bfseries Source\+Rect}\hypertarget{class_c_sprite_renderer_a540fe6fcd0ff6266902249ed4f43f05c}{}\label{class_c_sprite_renderer_a540fe6fcd0ff6266902249ed4f43f05c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{C\+Sprite\+Renderer@{C\+Sprite\+Renderer}!Init@{Init}}
+\index{Init@{Init}!C\+Sprite\+Renderer@{C\+Sprite\+Renderer}}
+\subsubsection[{\texorpdfstring{Init(\+C\+Base\+Class $\ast$p\+Parent)}{Init(CBaseClass *pParent)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Sprite\+Renderer\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Base\+Class} $\ast$}]{mp\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_sprite_renderer_aa65eb4db247d6c4683ba8ca599bb4418}{}\label{class_c_sprite_renderer_aa65eb4db247d6c4683ba8ca599bb4418}
+
+
+Initializes with the given parent pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Parent} & If non-\/null, the parent pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_scripts_a7f5c612a8704be665932d6f1830ad0fe}{C\+Scripts}.
+
+
+
+Reimplemented in \hyperlink{class_c_animation_renderer_a49f9d4fc805f0168c368a2cda7e8a236}{C\+Animation\+Renderer}.
+
+\index{C\+Sprite\+Renderer@{C\+Sprite\+Renderer}!Update@{Update}}
+\index{Update@{Update}!C\+Sprite\+Renderer@{C\+Sprite\+Renderer}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)}{Update(float fDelta)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Sprite\+Renderer\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_sprite_renderer_a7923c1ef70f2f8adc172a94ce743e67b}{}\label{class_c_sprite_renderer_a7923c1ef70f2f8adc172a94ce743e67b}
+
+
+Updates the given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta time. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_scripts_ad7567e93972e760eb0d307ad263923bb}{C\+Scripts}.
+
+
+
+Reimplemented in \hyperlink{class_c_animation_renderer_a2ac2237cb706d2f6d45a88a86543e008}{C\+Animation\+Renderer}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/\+Add\+Ons/\+Scripts/Sprite\+Renderer.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/\+Add\+Ons/\+Scripts/Sprite\+Renderer.\+cpp\end{DoxyCompactItemize}

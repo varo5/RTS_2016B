@@ -1,0 +1,154 @@
+\hypertarget{classae_a_star_path_finder}{}\section{ae\+A\+Star\+Path\+Finder Class Reference}
+\label{classae_a_star_path_finder}\index{ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}}
+Inheritance diagram for ae\+A\+Star\+Path\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classae_a_star_path_finder}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structae_a_star_path_finder_1_1_node_dist}{Node\+Dist}
+\item 
+struct \hyperlink{structae_a_star_path_finder_1_1_tile_compare}{Tile\+Compare}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries ae\+A\+Star\+Path\+Finder} (\hyperlink{classae_tiled_map}{ae\+Tiled\+Map} $\ast$p\+Map)\hypertarget{classae_a_star_path_finder_ab91a80de31e37c0fb9a062b800e12568}{}\label{classae_a_star_path_finder_ab91a80de31e37c0fb9a062b800e12568}
+
+\item 
+virtual int \hyperlink{classae_a_star_path_finder_ad8de2ad34565b3870ab6ed8c7235cd71}{Init} (\hyperlink{classae_base_class}{ae\+Base\+Class} $\ast$p\+Parent)
+\begin{DoxyCompactList}\small\item\em Initializes with the given parent pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_a_star_path_finder_a54e53b0396e46112c69b03a34eaf3900}{Destroy} ()\hypertarget{classae_a_star_path_finder_a54e53b0396e46112c69b03a34eaf3900}{}\label{classae_a_star_path_finder_a54e53b0396e46112c69b03a34eaf3900}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_a_star_path_finder_a21c5d9395cfb810272c89310d037fe15}{Update} (float f\+Delta)
+\begin{DoxyCompactList}\small\item\em Updates the given f\+Delta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_a_star_path_finder_abfe51663cc9eb452b02b80f335d1c7b0}{Render} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Renders the given Renderer pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_a_star_path_finder_a863caf99db47beef104b3315dde43a45}{Reset} ()\hypertarget{classae_a_star_path_finder_a863caf99db47beef104b3315dde43a45}{}\label{classae_a_star_path_finder_a863caf99db47beef104b3315dde43a45}
+
+\begin{DoxyCompactList}\small\item\em Resets this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classae_a_star_path_finder_a3263c66da32aea8e2f6567754110c63c}{Visit\+Grid\+Node} (\hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} x, \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{int32} y)
+\begin{DoxyCompactList}\small\item\em Marks a node as visited. \end{DoxyCompactList}\item 
+virtual Walk\+State\+ID \hyperlink{classae_a_star_path_finder_a3a23dcf11eccaf75a71179c602ebb1b0}{Give\+A\+Step} ()
+\begin{DoxyCompactList}\small\item\em Give a step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}!Give\+A\+Step@{Give\+A\+Step}}
+\index{Give\+A\+Step@{Give\+A\+Step}!ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Give\+A\+Step()}{GiveAStep()}}]{\setlength{\rightskip}{0pt plus 5cm}Walk\+State\+ID ae\+A\+Star\+Path\+Finder\+::\+Give\+A\+Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classae_a_star_path_finder_a3a23dcf11eccaf75a71179c602ebb1b0}{}\label{classae_a_star_path_finder_a3a23dcf11eccaf75a71179c602ebb1b0}
+
+
+Give a step. 
+
+\begin{DoxyReturn}{Returns}
+A Walk\+State\+ID. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classae_path_finder_a49332ee3be744cac1ece9ffd503ca218}{ae\+Path\+Finder}.
+
+\index{ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}!Init@{Init}}
+\index{Init@{Init}!ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Init(ae\+Base\+Class $\ast$p\+Parent)}{Init(aeBaseClass *pParent)}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+A\+Star\+Path\+Finder\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Base\+Class} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_a_star_path_finder_ad8de2ad34565b3870ab6ed8c7235cd71}{}\label{classae_a_star_path_finder_ad8de2ad34565b3870ab6ed8c7235cd71}
+
+
+Initializes with the given parent pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Parent} & If non-\/null, the parent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classae_path_finder_a3395375f3de8f3f55d7b780ff6815806}{ae\+Path\+Finder}.
+
+\index{ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}!Render@{Render}}
+\index{Render@{Render}!ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Render(ae\+Renderer $\ast$p\+Renderer)}{Render(aeRenderer *pRenderer)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+A\+Star\+Path\+Finder\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_a_star_path_finder_abfe51663cc9eb452b02b80f335d1c7b0}{}\label{classae_a_star_path_finder_abfe51663cc9eb452b02b80f335d1c7b0}
+
+
+Renders the given Renderer pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & If non-\/null, the renderer. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classae_add_on_ab6bed56009b9c92df8ae017a27587dc3}{ae\+Add\+On}.
+
+\index{ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}!Update@{Update}}
+\index{Update@{Update}!ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)}{Update(float fDelta)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+A\+Star\+Path\+Finder\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_a_star_path_finder_a21c5d9395cfb810272c89310d037fe15}{}\label{classae_a_star_path_finder_a21c5d9395cfb810272c89310d037fe15}
+
+
+Updates the given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_add_on_a51caa4b8680206495ea671e71991e231}{ae\+Add\+On}.
+
+\index{ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}!Visit\+Grid\+Node@{Visit\+Grid\+Node}}
+\index{Visit\+Grid\+Node@{Visit\+Grid\+Node}!ae\+A\+Star\+Path\+Finder@{ae\+A\+Star\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Visit\+Grid\+Node(int32 x, int32 y)}{VisitGridNode(int32 x, int32 y)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+A\+Star\+Path\+Finder\+::\+Visit\+Grid\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{x, }
+\item[{{\bf int32}}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classae_a_star_path_finder_a3263c66da32aea8e2f6567754110c63c}{}\label{classae_a_star_path_finder_a3263c66da32aea8e2f6567754110c63c}
+
+
+Marks a node as visited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_path_finder_a4ccfa19ff344b9f4827dbeab18c4efab}{ae\+Path\+Finder}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/A\+Star.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/A\+Star.\+cpp\end{DoxyCompactItemize}

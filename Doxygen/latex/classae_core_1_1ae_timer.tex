@@ -1,0 +1,88 @@
+\hypertarget{classae_core_1_1ae_timer}{}\section{ae\+Core\+:\+:ae\+Timer Class Reference}
+\label{classae_core_1_1ae_timer}\index{ae\+Core\+::ae\+Timer@{ae\+Core\+::ae\+Timer}}
+
+
+A high resolution timer.  
+
+
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classae_core_1_1ae_timer_af5b631c937f1b71ca2ead2ebc6dd0f62}{ae\+Timer} ()\hypertarget{classae_core_1_1ae_timer_af5b631c937f1b71ca2ead2ebc6dd0f62}{}\label{classae_core_1_1ae_timer_af5b631c937f1b71ca2ead2ebc6dd0f62}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classae_core_1_1ae_timer_a6b6d3c48c0b1163b7fda736fbc79963c}{$\sim$ae\+Timer} ()\hypertarget{classae_core_1_1ae_timer_a6b6d3c48c0b1163b7fda736fbc79963c}{}\label{classae_core_1_1ae_timer_a6b6d3c48c0b1163b7fda736fbc79963c}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_timer_a6a2353d54db148d81681e5dc2fdd73f9}{Init} ()\hypertarget{classae_core_1_1ae_timer_a6a2353d54db148d81681e5dc2fdd73f9}{}\label{classae_core_1_1ae_timer_a6a2353d54db148d81681e5dc2fdd73f9}
+
+\begin{DoxyCompactList}\small\item\em Initializes the timer. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_timer_a5b5ca15b825508452ea829047a89c498}{Update} ()\hypertarget{classae_core_1_1ae_timer_a5b5ca15b825508452ea829047a89c498}{}\label{classae_core_1_1ae_timer_a5b5ca15b825508452ea829047a89c498}
+
+\begin{DoxyCompactList}\small\item\em Updates the delta time since last update and adds it up to the total time. \end{DoxyCompactList}\item 
+void \hyperlink{classae_core_1_1ae_timer_a503cbb05a1187baf75a351afe8cccbd8}{Set\+Time\+Scale} (float New\+Time\+Scale)
+\begin{DoxyCompactList}\small\item\em Sets the time scale, for which it will multiply the delta time every update. In case of receiving a negative number, it will set the time scale to zero. \end{DoxyCompactList}\item 
+float \hyperlink{classae_core_1_1ae_timer_aad6fa0eb72208904ac5b1db941b9e0f1}{Time} ()
+\begin{DoxyCompactList}\small\item\em Returns the time since Init. \end{DoxyCompactList}\item 
+float \hyperlink{classae_core_1_1ae_timer_a9b7dc0621c92fc9ea7c1284a1ad49d95}{delta\+Time} ()
+\begin{DoxyCompactList}\small\item\em Returns the delta time between update calls. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A high resolution timer. 
+
+\subsection{Member Function Documentation}
+\index{ae\+Core\+::ae\+Timer@{ae\+Core\+::ae\+Timer}!delta\+Time@{delta\+Time}}
+\index{delta\+Time@{delta\+Time}!ae\+Core\+::ae\+Timer@{ae\+Core\+::ae\+Timer}}
+\subsubsection[{\texorpdfstring{delta\+Time()}{deltaTime()}}]{\setlength{\rightskip}{0pt plus 5cm}float ae\+Core\+::ae\+Timer\+::delta\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_timer_a9b7dc0621c92fc9ea7c1284a1ad49d95}{}\label{classae_core_1_1ae_timer_a9b7dc0621c92fc9ea7c1284a1ad49d95}
+
+
+Returns the delta time between update calls. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+\index{ae\+Core\+::ae\+Timer@{ae\+Core\+::ae\+Timer}!Set\+Time\+Scale@{Set\+Time\+Scale}}
+\index{Set\+Time\+Scale@{Set\+Time\+Scale}!ae\+Core\+::ae\+Timer@{ae\+Core\+::ae\+Timer}}
+\subsubsection[{\texorpdfstring{Set\+Time\+Scale(float New\+Time\+Scale)}{SetTimeScale(float NewTimeScale)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Core\+::ae\+Timer\+::\+Set\+Time\+Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{New\+Time\+Scale}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_timer_a503cbb05a1187baf75a351afe8cccbd8}{}\label{classae_core_1_1ae_timer_a503cbb05a1187baf75a351afe8cccbd8}
+
+
+Sets the time scale, for which it will multiply the delta time every update. In case of receiving a negative number, it will set the time scale to zero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Time\+Scale} & The new time scale. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Core\+::ae\+Timer@{ae\+Core\+::ae\+Timer}!Time@{Time}}
+\index{Time@{Time}!ae\+Core\+::ae\+Timer@{ae\+Core\+::ae\+Timer}}
+\subsubsection[{\texorpdfstring{Time()}{Time()}}]{\setlength{\rightskip}{0pt plus 5cm}float ae\+Core\+::ae\+Timer\+::\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_core_1_1ae_timer_aad6fa0eb72208904ac5b1db941b9e0f1}{}\label{classae_core_1_1ae_timer_aad6fa0eb72208904ac5b1db941b9e0f1}
+
+
+Returns the time since Init. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Event\+System/Timer.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Event\+System/Timer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{class_c_sprite}{}\section{C\+Sprite Class Reference}
+\label{class_c_sprite}\index{C\+Sprite@{C\+Sprite}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Free} ()\hypertarget{class_c_sprite_aed204a19bd691cab7650b79c15671b3c}{}\label{class_c_sprite_aed204a19bd691cab7650b79c15671b3c}
+
+\item 
+void {\bfseries Load\+Bitmap\+From\+File} (char $\ast$psz\+File\+Name, \hyperlink{class_c_renderer}{C\+Renderer} $\ast$p\+Renderer)\hypertarget{class_c_sprite_a99bdfc8b270cf125536499087c2c32e6}{}\label{class_c_sprite_a99bdfc8b270cf125536499087c2c32e6}
+
+\item 
+void {\bfseries Render} (\hyperlink{class_c_renderer}{C\+Renderer} \&Renderer, int x, int y, int w, int h, bool MirrorX, bool MirrorY, int SourceX, int SourceY, int SourceW, int SourceH, \hyperlink{struct_c_r_g_b_quad}{C\+R\+G\+B\+Quad} rgb\+Color)\hypertarget{class_c_sprite_a2db097e840ad48379ce9b6a766db44af}{}\label{class_c_sprite_a2db097e840ad48379ce9b6a766db44af}
+
+\item 
+void {\bfseries Render} (\hyperlink{class_c_renderer}{C\+Renderer} \&Renderer, int x, int y, int w, int h, bool MirrorX, bool MirrorY, int SourceX, int SourceY, int SourceW, int SourceH)\hypertarget{class_c_sprite_aa9c3650801bd2cd9c6f8fe873eb8e7c9}{}\label{class_c_sprite_aa9c3650801bd2cd9c6f8fe873eb8e7c9}
+
+\item 
+void $\ast$ {\bfseries Change\+Colors} (\hyperlink{struct_c_r_g_b_quad}{C\+R\+G\+B\+Quad} Color1, \hyperlink{struct_c_r_g_b_quad}{C\+R\+G\+B\+Quad} Color2)\hypertarget{class_c_sprite_a230cfd8de09f908a6ea13606295f9e3d}{}\label{class_c_sprite_a230cfd8de09f908a6ea13606295f9e3d}
+
+\item 
+\hyperlink{struct_c_rect}{C\+Rect} {\bfseries Get\+Source\+Rect} ()\hypertarget{class_c_sprite_a7101772fb9b2635f33e191b0c10d3319}{}\label{class_c_sprite_a7101772fb9b2635f33e191b0c10d3319}
+
+\item 
+int {\bfseries Height} ()\hypertarget{class_c_sprite_a90ef6f07dd9cace5c8ad5e9581aba2ac}{}\label{class_c_sprite_a90ef6f07dd9cace5c8ad5e9581aba2ac}
+
+\item 
+int {\bfseries Width} ()\hypertarget{class_c_sprite_ac1ccfd1392a07e66673de1e2c35104a0}{}\label{class_c_sprite_ac1ccfd1392a07e66673de1e2c35104a0}
+
+\item 
+void {\bfseries operator=} (\hyperlink{class_c_sprite}{C\+Sprite} \&Other)\hypertarget{class_c_sprite_a21407e6a129b42655692559fb197ec94}{}\label{class_c_sprite_a21407e6a129b42655692559fb197ec94}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Draw\+On\+Sprite} (\hyperlink{class_c_sprite}{C\+Sprite} \&Sprite\+Dst, int x, int y, int w, int h, bool MirrorX, bool MirrorY, \hyperlink{class_c_sprite}{C\+Sprite} \&Sprite\+Src, int SourceX, int SourceY, int SourceW, int SourceH, \hyperlink{struct_c_r_g_b_quad}{C\+R\+G\+B\+Quad} rgb\+Color)\hypertarget{class_c_sprite_a93dc7c6ee5c8910e34d99bd44c1454c7}{}\label{class_c_sprite_a93dc7c6ee5c8910e34d99bd44c1454c7}
+
+\item 
+static void {\bfseries Draw\+On\+Sprite} (\hyperlink{class_c_sprite}{C\+Sprite} \&Sprite\+Dst, int x, int y, int w, int h, bool MirrorX, bool MirrorY, \hyperlink{class_c_sprite}{C\+Sprite} \&Sprite\+Src, int SourceX, int SourceY, int SourceW, int SourceH)\hypertarget{class_c_sprite_a19565c7fe7ed82fdb3e80477e2694a23}{}\label{class_c_sprite_a19565c7fe7ed82fdb3e80477e2694a23}
+
+\item 
+static \hyperlink{class_c_sprite}{C\+Sprite} {\bfseries Create\+Sprite} (char $\ast$psz\+File\+Name, \hyperlink{class_c_renderer}{C\+Renderer} $\ast$p\+Renderer)\hypertarget{class_c_sprite_a6fee2249b5b4d5632ea339ce45a2d427}{}\label{class_c_sprite_a6fee2249b5b4d5632ea339ce45a2d427}
+
+\item 
+static \hyperlink{class_c_sprite}{C\+Sprite} {\bfseries Replace\+Color} (\hyperlink{class_c_sprite}{C\+Sprite} Source, \hyperlink{struct_c_r_g_b_quad}{C\+R\+G\+B\+Quad} old\+Color, \hyperlink{struct_c_r_g_b_quad}{C\+R\+G\+B\+Quad} new\+Color)\hypertarget{class_c_sprite_ab4c05e3ebbbe12444170e721f386165c}{}\label{class_c_sprite_ab4c05e3ebbbe12444170e721f386165c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries Name}\hypertarget{class_c_sprite_a8b0b928d672c11342a8381d065c99a27}{}\label{class_c_sprite_a8b0b928d672c11342a8381d065c99a27}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Graphics/Sprite.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Graphics/Sprite.\+cpp\end{DoxyCompactItemize}

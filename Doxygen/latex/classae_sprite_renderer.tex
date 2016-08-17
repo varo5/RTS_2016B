@@ -1,0 +1,111 @@
+\hypertarget{classae_sprite_renderer}{}\section{ae\+Sprite\+Renderer Class Reference}
+\label{classae_sprite_renderer}\index{ae\+Sprite\+Renderer@{ae\+Sprite\+Renderer}}
+Inheritance diagram for ae\+Sprite\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classae_sprite_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classae_sprite_renderer_a97a72a34026e64766a0ab4840376cd76}{Init} (\hyperlink{classae_base_class}{ae\+Base\+Class} $\ast$p\+Parent)
+\begin{DoxyCompactList}\small\item\em Initializes with the given parent pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_sprite_renderer_a65ea9a0ad3452271d2d5b8c140a7eff7}{Update} (float f\+Delta)
+\begin{DoxyCompactList}\small\item\em Updates the given f\+Delta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_sprite_renderer_a1583eea9478f23549cf9355091542d6a}{Render} (\hyperlink{classae_core_1_1ae_renderer}{ae\+Renderer} $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Paints on the given renderer pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_sprite_renderer_acba90289bfe989eda9480258fc679400}{Destroy} ()\hypertarget{classae_sprite_renderer_acba90289bfe989eda9480258fc679400}{}\label{classae_sprite_renderer_acba90289bfe989eda9480258fc679400}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+virtual void {\bfseries Set\+Object} (void $\ast$Object)\hypertarget{classae_sprite_renderer_a398961d623fbcd4428a4f8ad815cf0b8}{}\label{classae_sprite_renderer_a398961d623fbcd4428a4f8ad815cf0b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Order\+Of\+Render}\hypertarget{classae_sprite_renderer_a8bd696b830181ba037adec7e828113a8}{}\label{classae_sprite_renderer_a8bd696b830181ba037adec7e828113a8}
+
+\item 
+bool {\bfseries MirrorX}\hypertarget{classae_sprite_renderer_ac8b2f24ff43bb93147073667349543ac}{}\label{classae_sprite_renderer_ac8b2f24ff43bb93147073667349543ac}
+
+\item 
+bool {\bfseries MirrorY}\hypertarget{classae_sprite_renderer_a31d66d0f5d6c282e2a96641fa64a5f99}{}\label{classae_sprite_renderer_a31d66d0f5d6c282e2a96641fa64a5f99}
+
+\item 
+ae\+Rect {\bfseries Render\+Rect}\hypertarget{classae_sprite_renderer_aabc1c57ae8819179dec0d55cee701b2e}{}\label{classae_sprite_renderer_aabc1c57ae8819179dec0d55cee701b2e}
+
+\item 
+ae\+Rect {\bfseries Source\+Rect}\hypertarget{classae_sprite_renderer_a796771afd1c08345e69f753e93da0b35}{}\label{classae_sprite_renderer_a796771afd1c08345e69f753e93da0b35}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{ae\+Sprite\+Renderer@{ae\+Sprite\+Renderer}!Init@{Init}}
+\index{Init@{Init}!ae\+Sprite\+Renderer@{ae\+Sprite\+Renderer}}
+\subsubsection[{\texorpdfstring{Init(ae\+Base\+Class $\ast$p\+Parent)}{Init(aeBaseClass *pParent)}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Sprite\+Renderer\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Base\+Class} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_sprite_renderer_a97a72a34026e64766a0ab4840376cd76}{}\label{classae_sprite_renderer_a97a72a34026e64766a0ab4840376cd76}
+
+
+Initializes with the given parent pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Parent} & If non-\/null, the parent pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_add_on_a0730c1446e548031f9a4e98435a54675}{ae\+Add\+On}.
+
+\index{ae\+Sprite\+Renderer@{ae\+Sprite\+Renderer}!Render@{Render}}
+\index{Render@{Render}!ae\+Sprite\+Renderer@{ae\+Sprite\+Renderer}}
+\subsubsection[{\texorpdfstring{Render(ae\+Renderer $\ast$p\+Renderer)}{Render(aeRenderer *pRenderer)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Sprite\+Renderer\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Renderer} $\ast$}]{p\+Renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_sprite_renderer_a1583eea9478f23549cf9355091542d6a}{}\label{classae_sprite_renderer_a1583eea9478f23549cf9355091542d6a}
+
+
+Paints on the given renderer pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Renderer} & The renderer pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classae_add_on_ab6bed56009b9c92df8ae017a27587dc3}{ae\+Add\+On}.
+
+\index{ae\+Sprite\+Renderer@{ae\+Sprite\+Renderer}!Update@{Update}}
+\index{Update@{Update}!ae\+Sprite\+Renderer@{ae\+Sprite\+Renderer}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)}{Update(float fDelta)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Sprite\+Renderer\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_sprite_renderer_a65ea9a0ad3452271d2d5b8c140a7eff7}{}\label{classae_sprite_renderer_a65ea9a0ad3452271d2d5b8c140a7eff7}
+
+
+Updates the given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta time. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_add_on_a51caa4b8680206495ea671e71991e231}{ae\+Add\+On}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Sprite\+Renderer.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Sprite\+Renderer.\+cpp\end{DoxyCompactItemize}

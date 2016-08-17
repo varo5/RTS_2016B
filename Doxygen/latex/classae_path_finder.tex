@@ -1,0 +1,291 @@
+\hypertarget{classae_path_finder}{}\section{ae\+Path\+Finder Class Reference}
+\label{classae_path_finder}\index{ae\+Path\+Finder@{ae\+Path\+Finder}}
+
+
+A path finder algorithm for the ae\+Tile\+Map Class.  
+
+
+
+
+{\ttfamily \#include $<$Path\+Finder.\+h$>$}
+
+Inheritance diagram for ae\+Path\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.240741cm]{classae_path_finder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries ae\+Path\+Finder} (\hyperlink{classae_tiled_map}{ae\+Tiled\+Map} $\ast$p\+Map)\hypertarget{classae_path_finder_a7904f541e7bb5b0ca238bf166ca43625}{}\label{classae_path_finder_a7904f541e7bb5b0ca238bf166ca43625}
+
+\item 
+virtual int \hyperlink{classae_path_finder_a3395375f3de8f3f55d7b780ff6815806}{Init} (\hyperlink{classae_base_class}{ae\+Base\+Class} $\ast$p\+Parent)
+\begin{DoxyCompactList}\small\item\em Initializes with the given parent pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_path_finder_a4964df1caa03a0ea9b9c000248bc5ecd}{Reset} ()=0\hypertarget{classae_path_finder_a4964df1caa03a0ea9b9c000248bc5ecd}{}\label{classae_path_finder_a4964df1caa03a0ea9b9c000248bc5ecd}
+
+\begin{DoxyCompactList}\small\item\em Resets this object. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classae_path_finder_a76dad98c8f1c7b3be8688d549fc2fbaf}{Weighted\+Graph\+Supported} ()
+\begin{DoxyCompactList}\small\item\em Determines if the pathfinder is weighted graph supported. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classae_path_finder_a07e505593b1af2c3c35854e8d8b21708}{Heuristics\+Supported} ()
+\begin{DoxyCompactList}\small\item\em Determines if the pathfinder is heuristics supported. \end{DoxyCompactList}\item 
+int \hyperlink{classae_path_finder_a6f6d0af491e9a4ee7fa59999d2bfe24a}{Get\+State} ()
+\begin{DoxyCompactList}\small\item\em Gets the state. \end{DoxyCompactList}\item 
+void \hyperlink{classae_path_finder_a14af2094678cc4c41726e7fa3aadcc22}{Debug\+Mode} (bool \hyperlink{_base_class_8h_aded8224779c70fab5084220935d672bba46a2a41cc6e552044816a2d04634545d}{State})
+\begin{DoxyCompactList}\small\item\em Turns on or off the debug mode. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classae_path_finder_a0acb8baba84dacf01734583b258ed89a}{Set\+Start\+Position} (\hyperlink{structae_core_1_1ae_point}{ae\+Point} Start\+Position)
+\begin{DoxyCompactList}\small\item\em Sets start position. \end{DoxyCompactList}\item 
+void \hyperlink{classae_path_finder_a40cc0daab301f20f1f297d95452ff416}{Set\+End\+Position} (\hyperlink{structae_core_1_1ae_point}{ae\+Point} End\+Position)
+\begin{DoxyCompactList}\small\item\em Sets end position. \end{DoxyCompactList}\item 
+void \hyperlink{classae_path_finder_ae3087e7f5c1ef96f1c9f0b3674d93983}{Make\+Search} (\hyperlink{structae_core_1_1ae_point}{ae\+Point} Start\+Position, \hyperlink{structae_core_1_1ae_point}{ae\+Point} End\+Position)
+\begin{DoxyCompactList}\small\item\em Makes a search. \end{DoxyCompactList}\item 
+\hyperlink{structae_core_1_1ae_point}{ae\+Point} \hyperlink{classae_path_finder_a2b20c5c33afbc05c813f60a57be42a39}{Get\+Start\+Position} ()
+\begin{DoxyCompactList}\small\item\em Gets start position. \end{DoxyCompactList}\item 
+\hyperlink{structae_core_1_1ae_point}{ae\+Point} \hyperlink{classae_path_finder_a5c5719d519644c25f31bd4edd266383a}{Get\+End\+Position} ()
+\begin{DoxyCompactList}\small\item\em Gets end position. \end{DoxyCompactList}\item 
+uint8 {\bfseries Get\+ID} ()\hypertarget{classae_path_finder_a444cf0bde9683c6df8645df9223e6d26}{}\label{classae_path_finder_a444cf0bde9683c6df8645df9223e6d26}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classae_path_finder_a4ccfa19ff344b9f4827dbeab18c4efab}{Visit\+Grid\+Node} (int32 x, int32 y)=0
+\begin{DoxyCompactList}\small\item\em Marks a node as visited. \end{DoxyCompactList}\item 
+virtual Walk\+State\+ID \hyperlink{classae_path_finder_a49332ee3be744cac1ece9ffd503ca218}{Give\+A\+Step} ()=0
+\begin{DoxyCompactList}\small\item\em Give a step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ae\+Point {\bfseries m\+\_\+\+Start}\hypertarget{classae_path_finder_a304ea1f079d92518e005a934cfec231a}{}\label{classae_path_finder_a304ea1f079d92518e005a934cfec231a}
+
+\item 
+ae\+Point {\bfseries m\+\_\+\+End}\hypertarget{classae_path_finder_af43d9dcda8dd8c7565237871f8ab58da}{}\label{classae_path_finder_af43d9dcda8dd8c7565237871f8ab58da}
+
+\item 
+Walk\+State\+ID {\bfseries m\+\_\+\+State}\hypertarget{classae_path_finder_a631071ea16c073ac8fff48524ff8b2a5}{}\label{classae_path_finder_a631071ea16c073ac8fff48524ff8b2a5}
+
+\item 
+bool {\bfseries m\+\_\+b\+Debug}\hypertarget{classae_path_finder_a478b1d877cd84d6d0d9454634686c28a}{}\label{classae_path_finder_a478b1d877cd84d6d0d9454634686c28a}
+
+\item 
+uint8 {\bfseries m\+\_\+\+ID}\hypertarget{classae_path_finder_a9c4a1b7645a15f6df70b5f9a9e6fc8ef}{}\label{classae_path_finder_a9c4a1b7645a15f6df70b5f9a9e6fc8ef}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A path finder algorithm for the ae\+Tile\+Map Class. 
+
+\subsection{Member Function Documentation}
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Debug\+Mode@{Debug\+Mode}}
+\index{Debug\+Mode@{Debug\+Mode}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Debug\+Mode(bool State)}{DebugMode(bool State)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Path\+Finder\+::\+Debug\+Mode (
+\begin{DoxyParamCaption}
+\item[{bool}]{State}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_path_finder_a14af2094678cc4c41726e7fa3aadcc22}{}\label{classae_path_finder_a14af2094678cc4c41726e7fa3aadcc22}
+
+
+Turns on or off the debug mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em State} & true to state. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Get\+End\+Position@{Get\+End\+Position}}
+\index{Get\+End\+Position@{Get\+End\+Position}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Get\+End\+Position()}{GetEndPosition()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+Point} ae\+Path\+Finder\+::\+Get\+End\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_path_finder_a5c5719d519644c25f31bd4edd266383a}{}\label{classae_path_finder_a5c5719d519644c25f31bd4edd266383a}
+
+
+Gets end position. 
+
+\begin{DoxyReturn}{Returns}
+The end position. 
+\end{DoxyReturn}
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Get\+Start\+Position@{Get\+Start\+Position}}
+\index{Get\+Start\+Position@{Get\+Start\+Position}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Get\+Start\+Position()}{GetStartPosition()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ae\+Point} ae\+Path\+Finder\+::\+Get\+Start\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_path_finder_a2b20c5c33afbc05c813f60a57be42a39}{}\label{classae_path_finder_a2b20c5c33afbc05c813f60a57be42a39}
+
+
+Gets start position. 
+
+\begin{DoxyReturn}{Returns}
+The start position. 
+\end{DoxyReturn}
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Get\+State@{Get\+State}}
+\index{Get\+State@{Get\+State}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Get\+State()}{GetState()}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Path\+Finder\+::\+Get\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_path_finder_a6f6d0af491e9a4ee7fa59999d2bfe24a}{}\label{classae_path_finder_a6f6d0af491e9a4ee7fa59999d2bfe24a}
+
+
+Gets the state. 
+
+\begin{DoxyReturn}{Returns}
+The state. 
+\end{DoxyReturn}
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Give\+A\+Step@{Give\+A\+Step}}
+\index{Give\+A\+Step@{Give\+A\+Step}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Give\+A\+Step()=0}{GiveAStep()=0}}]{\setlength{\rightskip}{0pt plus 5cm}Walk\+State\+ID ae\+Path\+Finder\+::\+Give\+A\+Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classae_path_finder_a49332ee3be744cac1ece9ffd503ca218}{}\label{classae_path_finder_a49332ee3be744cac1ece9ffd503ca218}
+
+
+Give a step. 
+
+\begin{DoxyReturn}{Returns}
+A Walk\+State\+ID. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classae_influence_calculator_aff6d5b8b52fb73a4c87a3b311adc6245}{ae\+Influence\+Calculator}, \hyperlink{classae_bst_f_s_path_finder_a172082a7d5f6de9d5163991c076455ca}{ae\+Bst\+F\+S\+Path\+Finder}, \hyperlink{classae_b_f_s_path_finder_a92b13a108bd1151d796dba5a3426704c}{ae\+B\+F\+S\+Path\+Finder}, \hyperlink{classae_a_star_path_finder_a3a23dcf11eccaf75a71179c602ebb1b0}{ae\+A\+Star\+Path\+Finder}, \hyperlink{classae_dijkstra_path_finder_a14ca862aa79790d77d1df8d54f99aa39}{ae\+Dijkstra\+Path\+Finder}, and \hyperlink{classae_d_f_s_path_finder_a752e123b4e24cf7af2f11a3077ace616}{ae\+D\+F\+S\+Path\+Finder}.
+
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Heuristics\+Supported@{Heuristics\+Supported}}
+\index{Heuristics\+Supported@{Heuristics\+Supported}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Heuristics\+Supported()}{HeuristicsSupported()}}]{\setlength{\rightskip}{0pt plus 5cm}bool ae\+Path\+Finder\+::\+Heuristics\+Supported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_path_finder_a07e505593b1af2c3c35854e8d8b21708}{}\label{classae_path_finder_a07e505593b1af2c3c35854e8d8b21708}
+
+
+Determines if the pathfinder is heuristics supported. 
+
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Init@{Init}}
+\index{Init@{Init}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Init(ae\+Base\+Class $\ast$p\+Parent)}{Init(aeBaseClass *pParent)}}]{\setlength{\rightskip}{0pt plus 5cm}int ae\+Path\+Finder\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Base\+Class} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_path_finder_a3395375f3de8f3f55d7b780ff6815806}{}\label{classae_path_finder_a3395375f3de8f3f55d7b780ff6815806}
+
+
+Initializes with the given parent pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Parent} & If non-\/null, the parent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classae_add_on_a0730c1446e548031f9a4e98435a54675}{ae\+Add\+On}.
+
+
+
+Reimplemented in \hyperlink{classae_a_star_path_finder_ad8de2ad34565b3870ab6ed8c7235cd71}{ae\+A\+Star\+Path\+Finder}, \hyperlink{classae_dijkstra_path_finder_a0cc9454fad1387bba68f879afb1f2526}{ae\+Dijkstra\+Path\+Finder}, \hyperlink{classae_bst_f_s_path_finder_a83e0028b1394744dc56b703532a88b40}{ae\+Bst\+F\+S\+Path\+Finder}, \hyperlink{classae_b_f_s_path_finder_a23a16f3e98f5c9fc3a6f56a26a7bf170}{ae\+B\+F\+S\+Path\+Finder}, \hyperlink{classae_influence_calculator_ab2607b3e3750770bb23d7e8c4610a49c}{ae\+Influence\+Calculator}, and \hyperlink{classae_d_f_s_path_finder_a520c7725e3322b43fd7320da622c1b75}{ae\+D\+F\+S\+Path\+Finder}.
+
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Make\+Search@{Make\+Search}}
+\index{Make\+Search@{Make\+Search}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Make\+Search(ae\+Point Start\+Position, ae\+Point End\+Position)}{MakeSearch(aePoint StartPosition, aePoint EndPosition)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Path\+Finder\+::\+Make\+Search (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Point}}]{Start\+Position, }
+\item[{{\bf ae\+Point}}]{End\+Position}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_path_finder_ae3087e7f5c1ef96f1c9f0b3674d93983}{}\label{classae_path_finder_ae3087e7f5c1ef96f1c9f0b3674d93983}
+
+
+Makes a search. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Start\+Position} & The start position. \\
+\hline
+{\em End\+Position} & The end position. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Set\+End\+Position@{Set\+End\+Position}}
+\index{Set\+End\+Position@{Set\+End\+Position}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Set\+End\+Position(ae\+Point End\+Position)}{SetEndPosition(aePoint EndPosition)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Path\+Finder\+::\+Set\+End\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Point}}]{End\+Position}
+\end{DoxyParamCaption}
+)}\hypertarget{classae_path_finder_a40cc0daab301f20f1f297d95452ff416}{}\label{classae_path_finder_a40cc0daab301f20f1f297d95452ff416}
+
+
+Sets end position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em End\+Position} & The end position. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Set\+Start\+Position@{Set\+Start\+Position}}
+\index{Set\+Start\+Position@{Set\+Start\+Position}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Set\+Start\+Position(ae\+Point Start\+Position)}{SetStartPosition(aePoint StartPosition)}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Path\+Finder\+::\+Set\+Start\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Point}}]{Start\+Position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_path_finder_a0acb8baba84dacf01734583b258ed89a}{}\label{classae_path_finder_a0acb8baba84dacf01734583b258ed89a}
+
+
+Sets start position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Start\+Position} & The start position. \\
+\hline
+\end{DoxyParams}
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Visit\+Grid\+Node@{Visit\+Grid\+Node}}
+\index{Visit\+Grid\+Node@{Visit\+Grid\+Node}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Visit\+Grid\+Node(int32 x, int32 y)=0}{VisitGridNode(int32 x, int32 y)=0}}]{\setlength{\rightskip}{0pt plus 5cm}void ae\+Path\+Finder\+::\+Visit\+Grid\+Node (
+\begin{DoxyParamCaption}
+\item[{int32}]{x, }
+\item[{int32}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classae_path_finder_a4ccfa19ff344b9f4827dbeab18c4efab}{}\label{classae_path_finder_a4ccfa19ff344b9f4827dbeab18c4efab}
+
+
+Marks a node as visited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classae_influence_calculator_a8f31c5a25ca68ef970247f608bb51917}{ae\+Influence\+Calculator}, \hyperlink{classae_a_star_path_finder_a3263c66da32aea8e2f6567754110c63c}{ae\+A\+Star\+Path\+Finder}, \hyperlink{classae_dijkstra_path_finder_a06cbc7f3215eb10e66bffc69cd051dae}{ae\+Dijkstra\+Path\+Finder}, \hyperlink{classae_bst_f_s_path_finder_ae46add3c2ab1986423288bde7f92bcf0}{ae\+Bst\+F\+S\+Path\+Finder}, \hyperlink{classae_b_f_s_path_finder_a92683a0590099c03c5a0527fc7d11ae0}{ae\+B\+F\+S\+Path\+Finder}, and \hyperlink{classae_d_f_s_path_finder_a9a15c735ca42c68cb129641d79579be2}{ae\+D\+F\+S\+Path\+Finder}.
+
+\index{ae\+Path\+Finder@{ae\+Path\+Finder}!Weighted\+Graph\+Supported@{Weighted\+Graph\+Supported}}
+\index{Weighted\+Graph\+Supported@{Weighted\+Graph\+Supported}!ae\+Path\+Finder@{ae\+Path\+Finder}}
+\subsubsection[{\texorpdfstring{Weighted\+Graph\+Supported()}{WeightedGraphSupported()}}]{\setlength{\rightskip}{0pt plus 5cm}bool ae\+Path\+Finder\+::\+Weighted\+Graph\+Supported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classae_path_finder_a76dad98c8f1c7b3be8688d549fc2fbaf}{}\label{classae_path_finder_a76dad98c8f1c7b3be8688d549fc2fbaf}
+
+
+Determines if the pathfinder is weighted graph supported. 
+
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/\hyperlink{_path_finder_8h}{Path\+Finder.\+h}\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/\hyperlink{_path_finder_8cpp}{Path\+Finder.\+cpp}\end{DoxyCompactItemize}

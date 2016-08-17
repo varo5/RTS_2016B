@@ -1,0 +1,148 @@
+\hypertarget{_platform_definitions_8h}{}\section{C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Platform\+Definitions.h File Reference}
+\label{_platform_definitions_8h}\index{C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Platform\+Definitions.\+h@{C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/ae\+Core/\+Platform\+Definitions.\+h}}
+
+
+Declares the platform definitions class.  
+
+
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$Windows.\+h$>$}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceae_core}{ae\+Core}
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries A\+E\+\_\+\+N\+EW}~new\hypertarget{_platform_definitions_8h_ad17739ebb0dda7ac9e1ab418ca6d4d04}{}\label{_platform_definitions_8h_ad17739ebb0dda7ac9e1ab418ca6d4d04}
+
+\item 
+\#define {\bfseries A\+E\+\_\+\+D\+E\+L\+E\+TE}~delete\hypertarget{_platform_definitions_8h_a1a276b0d1caf7e0aaeb4ec958d6cd914}{}\label{_platform_definitions_8h_a1a276b0d1caf7e0aaeb4ec958d6cd914}
+
+\item 
+\#define {\bfseries A\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY}~delete \mbox{[}$\,$\mbox{]}\hypertarget{_platform_definitions_8h_aaca30fb182eae0a9e544bc750656a13a}{}\label{_platform_definitions_8h_aaca30fb182eae0a9e544bc750656a13a}
+
+\item 
+\#define \hyperlink{_platform_definitions_8h_a4b8b2bed986c06c207ebac140ba65a7a}{S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE}(x)~if(x) A\+E\+\_\+\+D\+E\+L\+E\+TE x; x=N\+U\+LL;
+\begin{DoxyCompactList}\small\item\em A macro that defines safe delete. \end{DoxyCompactList}\item 
+\#define \hyperlink{_platform_definitions_8h_a529602a5e4c2f9ba2c721ce9aefaddf7}{S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY}(x)~if (x) A\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY x; x=N\+U\+LL;
+\begin{DoxyCompactList}\small\item\em A macro that defines safe delete array. \end{DoxyCompactList}\item 
+\#define \hyperlink{_platform_definitions_8h_a2bc549675ca29f733709b4656d22d52a}{S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE}(x)~if(x) x-\/$>$Release(); x=N\+U\+LL;
+\begin{DoxyCompactList}\small\item\em A macro that defines safe release. \end{DoxyCompactList}\item 
+\#define \hyperlink{_platform_definitions_8h_a469d1831fb34f756ff24a620c13569b7}{D\+L\+L\+\_\+\+C\+O\+N\+F\+IG}~\+\_\+declspec(dllimport)
+\begin{DoxyCompactList}\small\item\em A macro that defines D\+LL configuration. \end{DoxyCompactList}\item 
+\#define {\bfseries C\+O\+S\+\_\+\+P\+I\+\_\+\+Q\+U\+A\+R\+T\+ER}~0.\+707106f;\hypertarget{_platform_definitions_8h_a8b848ff8bdf624ab0b3d6eb1502bdb40}{}\label{_platform_definitions_8h_a8b848ff8bdf624ab0b3d6eb1502bdb40}
+
+\item 
+\#define {\bfseries P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+T\+C\+H\+A\+R\+\_\+\+I\+S\+\_\+1\+\_\+\+B\+Y\+TE}~1\hypertarget{_platform_definitions_8h_aebae3c097b3a8ba61322087ac36824b9}{}\label{_platform_definitions_8h_aebae3c097b3a8ba61322087ac36824b9}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \hyperlink{namespaceae_core_aa13093dc911869e5b24942552898f01f}{ae\+Core\+::uint8}\hypertarget{namespaceae_core_aa13093dc911869e5b24942552898f01f}{}\label{namespaceae_core_aa13093dc911869e5b24942552898f01f}
+
+\begin{DoxyCompactList}\small\item\em 8-\/bit unsigned. \end{DoxyCompactList}\item 
+typedef unsigned short int \hyperlink{namespaceae_core_a1f9c426e6389a4ee13ee36ad25ec447d}{ae\+Core\+::uint16}\hypertarget{namespaceae_core_a1f9c426e6389a4ee13ee36ad25ec447d}{}\label{namespaceae_core_a1f9c426e6389a4ee13ee36ad25ec447d}
+
+\begin{DoxyCompactList}\small\item\em 16-\/bit unsigned. \end{DoxyCompactList}\item 
+typedef unsigned int \hyperlink{namespaceae_core_a7c60db1df33203b8e0e5e1db4129fa8d}{ae\+Core\+::uint32}\hypertarget{namespaceae_core_a7c60db1df33203b8e0e5e1db4129fa8d}{}\label{namespaceae_core_a7c60db1df33203b8e0e5e1db4129fa8d}
+
+\begin{DoxyCompactList}\small\item\em 32-\/bit unsigned. \end{DoxyCompactList}\item 
+typedef unsigned long long \hyperlink{namespaceae_core_a695dfc70e47466c7c04f8e058bd94fe9}{ae\+Core\+::uint64}\hypertarget{namespaceae_core_a695dfc70e47466c7c04f8e058bd94fe9}{}\label{namespaceae_core_a695dfc70e47466c7c04f8e058bd94fe9}
+
+\begin{DoxyCompactList}\small\item\em 64-\/bit unsigned. \end{DoxyCompactList}\item 
+typedef signed char \hyperlink{namespaceae_core_a91f573d8dc4c97ec3528c9d40720afd6}{ae\+Core\+::int8}\hypertarget{namespaceae_core_a91f573d8dc4c97ec3528c9d40720afd6}{}\label{namespaceae_core_a91f573d8dc4c97ec3528c9d40720afd6}
+
+\begin{DoxyCompactList}\small\item\em 8-\/bit signed. \end{DoxyCompactList}\item 
+typedef signed short int \hyperlink{namespaceae_core_ad0f2d0ae721a7f0afb159366dcc2da9c}{ae\+Core\+::int16}\hypertarget{namespaceae_core_ad0f2d0ae721a7f0afb159366dcc2da9c}{}\label{namespaceae_core_ad0f2d0ae721a7f0afb159366dcc2da9c}
+
+\begin{DoxyCompactList}\small\item\em 16-\/bit signed. \end{DoxyCompactList}\item 
+typedef signed int \hyperlink{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{ae\+Core\+::int32}\hypertarget{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}{}\label{namespaceae_core_a862bc39eb87cfabca273f49e2a920129}
+
+\begin{DoxyCompactList}\small\item\em 32-\/bit signed. \end{DoxyCompactList}\item 
+typedef signed long long \hyperlink{namespaceae_core_aa97dc55535090f470938e38f4c1592b5}{ae\+Core\+::int64}\hypertarget{namespaceae_core_aa97dc55535090f470938e38f4c1592b5}{}\label{namespaceae_core_aa97dc55535090f470938e38f4c1592b5}
+
+\begin{DoxyCompactList}\small\item\em 64-\/bit signed. \end{DoxyCompactList}\item 
+typedef char \hyperlink{namespaceae_core_a33e0245ce11ed6c2fb08d03f342d07e6}{ae\+Core\+::\+A\+N\+S\+I\+C\+H\+AR}\hypertarget{namespaceae_core_a33e0245ce11ed6c2fb08d03f342d07e6}{}\label{namespaceae_core_a33e0245ce11ed6c2fb08d03f342d07e6}
+
+\begin{DoxyCompactList}\small\item\em An A\+N\+SI char, normally signed. \end{DoxyCompactList}\item 
+typedef wchar\+\_\+t \hyperlink{namespaceae_core_af3736ff30e300b0b87681b5e1d11d1fd}{ae\+Core\+::\+U\+N\+I\+C\+H\+AR}\hypertarget{namespaceae_core_af3736ff30e300b0b87681b5e1d11d1fd}{}\label{namespaceae_core_af3736ff30e300b0b87681b5e1d11d1fd}
+
+\begin{DoxyCompactList}\small\item\em A U\+N\+I\+C\+O\+DE char, normally signed. \end{DoxyCompactList}\item 
+typedef char \hyperlink{namespaceae_core_a052c557709e5ab43db521b23085fd916}{ae\+Core\+::\+T\+C\+H\+AR}\hypertarget{namespaceae_core_a052c557709e5ab43db521b23085fd916}{}\label{namespaceae_core_a052c557709e5ab43db521b23085fd916}
+
+\begin{DoxyCompactList}\small\item\em Defines T\+C\+H\+AR as a wide char. \end{DoxyCompactList}\item 
+typedef std\+::string \hyperlink{namespaceae_core_ad6f85aacc0d1fdd85e458e2413e60010}{ae\+Core\+::ae\+String}\hypertarget{namespaceae_core_ad6f85aacc0d1fdd85e458e2413e60010}{}\label{namespaceae_core_ad6f85aacc0d1fdd85e458e2413e60010}
+
+\begin{DoxyCompactList}\small\item\em Defines the type ae\+String. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Declares the platform definitions class. 
+
+
+
+\subsection{Macro Definition Documentation}
+\index{Platform\+Definitions.\+h@{Platform\+Definitions.\+h}!D\+L\+L\+\_\+\+C\+O\+N\+F\+IG@{D\+L\+L\+\_\+\+C\+O\+N\+F\+IG}}
+\index{D\+L\+L\+\_\+\+C\+O\+N\+F\+IG@{D\+L\+L\+\_\+\+C\+O\+N\+F\+IG}!Platform\+Definitions.\+h@{Platform\+Definitions.\+h}}
+\subsubsection[{\texorpdfstring{D\+L\+L\+\_\+\+C\+O\+N\+F\+IG}{DLL_CONFIG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+L\+L\+\_\+\+C\+O\+N\+F\+IG~\+\_\+declspec(dllimport)}\hypertarget{_platform_definitions_8h_a469d1831fb34f756ff24a620c13569b7}{}\label{_platform_definitions_8h_a469d1831fb34f756ff24a620c13569b7}
+
+
+A macro that defines D\+LL configuration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dllimport} & The dllimport. \\
+\hline
+\end{DoxyParams}
+\index{Platform\+Definitions.\+h@{Platform\+Definitions.\+h}!S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE@{S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE}}
+\index{S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE@{S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE}!Platform\+Definitions.\+h@{Platform\+Definitions.\+h}}
+\subsubsection[{\texorpdfstring{S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE}{SAFE_DELETE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~if(x) A\+E\+\_\+\+D\+E\+L\+E\+TE x; x=N\+U\+LL;}\hypertarget{_platform_definitions_8h_a4b8b2bed986c06c207ebac140ba65a7a}{}\label{_platform_definitions_8h_a4b8b2bed986c06c207ebac140ba65a7a}
+
+
+A macro that defines safe delete. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The void to process. \\
+\hline
+\end{DoxyParams}
+\index{Platform\+Definitions.\+h@{Platform\+Definitions.\+h}!S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY@{S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY}}
+\index{S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY@{S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY}!Platform\+Definitions.\+h@{Platform\+Definitions.\+h}}
+\subsubsection[{\texorpdfstring{S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY}{SAFE_DELETE_ARRAY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~if (x) A\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY x; x=N\+U\+LL;}\hypertarget{_platform_definitions_8h_a529602a5e4c2f9ba2c721ce9aefaddf7}{}\label{_platform_definitions_8h_a529602a5e4c2f9ba2c721ce9aefaddf7}
+
+
+A macro that defines safe delete array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The void to process. \\
+\hline
+\end{DoxyParams}
+\index{Platform\+Definitions.\+h@{Platform\+Definitions.\+h}!S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE@{S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE}}
+\index{S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE@{S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE}!Platform\+Definitions.\+h@{Platform\+Definitions.\+h}}
+\subsubsection[{\texorpdfstring{S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE}{SAFE_RELEASE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~if(x) x-\/$>$Release(); x=N\+U\+LL;}\hypertarget{_platform_definitions_8h_a2bc549675ca29f733709b4656d22d52a}{}\label{_platform_definitions_8h_a2bc549675ca29f733709b4656d22d52a}
+
+
+A macro that defines safe release. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The void to process. \\
+\hline
+\end{DoxyParams}

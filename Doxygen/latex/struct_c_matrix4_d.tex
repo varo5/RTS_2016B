@@ -1,0 +1,518 @@
+\hypertarget{struct_c_matrix4_d}{}\section{C\+Matrix4D Struct Reference}
+\label{struct_c_matrix4_d}\index{C\+Matrix4D@{C\+Matrix4D}}
+
+
+This structure is a 4x4 matrix of float values.  
+
+
+
+
+{\ttfamily \#include $<$Matrix4\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C\+Matrix4D} (const \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \&M)\hypertarget{struct_c_matrix4_d_a44bfdaf73313da7ada7eccffdc186186}{}\label{struct_c_matrix4_d_a44bfdaf73313da7ada7eccffdc186186}
+
+\item 
+{\bfseries C\+Matrix4D} (float \+\_\+00, float \+\_\+01=0, float \+\_\+02=0, float \+\_\+03=0, float \+\_\+10=0, float \+\_\+11=1, float \+\_\+12=0, float \+\_\+13=0, float \+\_\+20=0, float \+\_\+21=0, float \+\_\+22=1, float \+\_\+23=0, float \+\_\+30=0, float \+\_\+31=0, float \+\_\+32=0, float \+\_\+33=1)\hypertarget{struct_c_matrix4_d_a1b815cfad92b3df7201475c9d6858887}{}\label{struct_c_matrix4_d_a1b815cfad92b3df7201475c9d6858887}
+
+\item 
+void {\bfseries Set\+Col} (\hyperlink{struct_c_vector4_d}{C\+Vector4D} \&V, int n\+Col)\hypertarget{struct_c_matrix4_d_aa2c2522c59b52421f22d1d48beabb1ed}{}\label{struct_c_matrix4_d_aa2c2522c59b52421f22d1d48beabb1ed}
+
+\item 
+void {\bfseries Set\+Row} (\hyperlink{struct_c_vector4_d}{C\+Vector4D} \&V, int n\+Row)\hypertarget{struct_c_matrix4_d_a6f1fd92a2079a61de43afd8ea0746c39}{}\label{struct_c_matrix4_d_a6f1fd92a2079a61de43afd8ea0746c39}
+
+\item 
+\hyperlink{struct_c_vector4_d}{C\+Vector4D} {\bfseries Get\+Col} (int n\+Col)\hypertarget{struct_c_matrix4_d_a4861c5e053c169c9ffc299e15b6d1de3}{}\label{struct_c_matrix4_d_a4861c5e053c169c9ffc299e15b6d1de3}
+
+\item 
+\hyperlink{struct_c_vector4_d}{C\+Vector4D} {\bfseries Get\+Row} (int n\+Row)\hypertarget{struct_c_matrix4_d_ad3ad1b5fbf9bba47f7fac93ba854b4b5}{}\label{struct_c_matrix4_d_ad3ad1b5fbf9bba47f7fac93ba854b4b5}
+
+\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} {\bfseries operator+} (\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \&M)\hypertarget{struct_c_matrix4_d_adac8a4cd8234a0dc41baf89aec66c6ac}{}\label{struct_c_matrix4_d_adac8a4cd8234a0dc41baf89aec66c6ac}
+
+\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} {\bfseries operator-\/} (\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \&M)\hypertarget{struct_c_matrix4_d_a81a1e250654bb0d2946ea0a09468417e}{}\label{struct_c_matrix4_d_a81a1e250654bb0d2946ea0a09468417e}
+
+\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} {\bfseries operator$\ast$} (\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \&M)\hypertarget{struct_c_matrix4_d_a8961640c6e48ffb3bdfedc0cdb54e5e1}{}\label{struct_c_matrix4_d_a8961640c6e48ffb3bdfedc0cdb54e5e1}
+
+\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} {\bfseries operator$\ast$} (float s)\hypertarget{struct_c_matrix4_d_ae94ab9e76f23d24760718e2f2169ed13}{}\label{struct_c_matrix4_d_ae94ab9e76f23d24760718e2f2169ed13}
+
+\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} {\bfseries operator/} (float s)\hypertarget{struct_c_matrix4_d_a6b095aae091fbbece3ec7d986518f1e9}{}\label{struct_c_matrix4_d_a6b095aae091fbbece3ec7d986518f1e9}
+
+\item 
+\hyperlink{struct_c_vector4_d}{C\+Vector4D} {\bfseries operator$\ast$} (\hyperlink{struct_c_vector4_d}{C\+Vector4D} \&V)\hypertarget{struct_c_matrix4_d_ac71a41fd1ef62811a4e84b618050799b}{}\label{struct_c_matrix4_d_ac71a41fd1ef62811a4e84b618050799b}
+
+\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \& {\bfseries operator+=} (\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \&A)\hypertarget{struct_c_matrix4_d_a5ed9a0fcc351ae1002c38a22af028b17}{}\label{struct_c_matrix4_d_a5ed9a0fcc351ae1002c38a22af028b17}
+
+\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \& {\bfseries operator-\/=} (\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \&A)\hypertarget{struct_c_matrix4_d_a1563fa9f882439633b1398a159e9b672}{}\label{struct_c_matrix4_d_a1563fa9f882439633b1398a159e9b672}
+
+\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \& {\bfseries operator$\ast$=} (\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \&A)\hypertarget{struct_c_matrix4_d_a66eef41fe30f07bb5d86cdc4cf9030f4}{}\label{struct_c_matrix4_d_a66eef41fe30f07bb5d86cdc4cf9030f4}
+
+\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \& {\bfseries operator$\ast$=} (float s)\hypertarget{struct_c_matrix4_d_a2806e51ddcefb3984fec727567477ecd}{}\label{struct_c_matrix4_d_a2806e51ddcefb3984fec727567477ecd}
+
+\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \& {\bfseries operator/=} (float s)\hypertarget{struct_c_matrix4_d_ac3b7313c360926315b366947afebe5c5}{}\label{struct_c_matrix4_d_ac3b7313c360926315b366947afebe5c5}
+
+\item 
+float \hyperlink{struct_c_matrix4_d_ac70341a7aa1ab9245e0619e1a808a5dd}{Det} ()
+\begin{DoxyCompactList}\small\item\em Obtains the determinant of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_vector4_d}{C\+Vector4D} \hyperlink{struct_c_matrix4_d_a5892af1d0feb465cd69084826e2734ce}{Cramer} (\hyperlink{struct_c_vector4_d}{C\+Vector4D} \&V)
+\begin{DoxyCompactList}\small\item\em Uses Cramer\textquotesingle{}s rule for the solution of an equation system. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_ad1d96ed5ff11c4bce0bd720dd22479ee}{Transpose} ()
+\begin{DoxyCompactList}\small\item\em Obtain the transposed matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_af02075b9d6c2624a6000ea88bd927a88}{Cofactor} ()
+\begin{DoxyCompactList}\small\item\em Obtains the cofactor matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_aa9c5a92e19a304a60437ffc1c3bcafe7}{Adjunct} ()
+\begin{DoxyCompactList}\small\item\em Obtains the adjunct matrix of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_a2c9c0311057eb2aba291aec801c8d7d6}{Inverse} ()
+\begin{DoxyCompactList}\small\item\em Obtains the transposed matrix of this matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_ad069fb805c96e3ebdc914c3e1c026c67}{Zero} ()
+\begin{DoxyCompactList}\small\item\em Returns an empty matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_ac8e163b22f750c4f78339597a80a9e64}{Identity} ()
+\begin{DoxyCompactList}\small\item\em Returns an identity matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_ae89a34e96d041aaa490eac268db93156}{Translation\+Matrix} (\hyperlink{struct_c_vector4_d}{C\+Vector4D} \&V)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_a528beee99ad4077a770fb83d847889ff}{Translation\+Matrix} (\hyperlink{struct_c_vector3_d}{C\+Vector3D} \&V)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_a7fe6f132f93c21958a5df8516e3f7195}{Translation\+Matrix} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&V)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_a78e8e4e5886a36e75f6784c5a08be665}{Translation\+Matrix} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix from 3 parameters. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_a6b519efa74b6134f712a69a2ec471fb9}{Scaling\+Matrix} (float Scale\+Factor)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a scale factor. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_a54fdd06d47f8da9560f07c52750ee17a}{Scaling\+Matrix} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from 3 scale factors. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_acd16f0ebee9562660416714af6982f10}{Scaling\+Matrix} (\hyperlink{struct_c_vector4_d}{C\+Vector4D} \&V)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_a7db2989eb1047f1ac1d25c6489b6c662}{Scaling\+Matrix} (\hyperlink{struct_c_vector3_d}{C\+Vector3D} \&V)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_aa0b0e0aa3867f6169d245643360feb27}{Scaling\+Matrix} (\hyperlink{struct_c_vector2_d}{C\+Vector2D} \&V)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix from a vector. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_a5bd01169974b8a228202f40bcb691a0f}{RotationX} (float theta)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix from an angle to rotate on the X axis. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_aa064ea29a986a87412ee90202fbb90fe}{RotationY} (float theta)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix from an angle to rotate on the Y axis. \end{DoxyCompactList}\item 
+static \hyperlink{struct_c_matrix4_d}{C\+Matrix4D} \hyperlink{struct_c_matrix4_d_acad3bc9ba0a3f581795d01cc43a6e91a}{RotationZ} (float theta)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix from an angle to rotate on the Z axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>float {\bfseries m\_f00}\\
+\>\>float {\bfseries m\_f01}\\
+\>\>float {\bfseries m\_f02}\\
+\>\>float {\bfseries m\_f03}\\
+\>\>float {\bfseries m\_f10}\\
+\>\>float {\bfseries m\_f11}\\
+\>\>float {\bfseries m\_f12}\\
+\>\>float {\bfseries m\_f13}\\
+\>\>float {\bfseries m\_f20}\\
+\>\>float {\bfseries m\_f21}\\
+\>\>float {\bfseries m\_f22}\\
+\>\>float {\bfseries m\_f23}\\
+\>\>float {\bfseries m\_f30}\\
+\>\>float {\bfseries m\_f31}\\
+\>\>float {\bfseries m\_f32}\\
+\>\>float {\bfseries m\_f33}\\
+\>\} \hypertarget{union_c_matrix4_d_1_1_0D20_a0dc014bcfa4df41dd92e5436a177b88f}{}\label{union_c_matrix4_d_1_1_0D20_a0dc014bcfa4df41dd92e5436a177b88f}
+\\
+\>\>\>{\em A structure meant to save the matrix as individual values. }\\
+\>float \hyperlink{struct_c_matrix4_d_a5282265aec60764274223dd1048291a8}{m} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\\
+\>\>\>{\em A 4x4 float array. }\\
+\>float \hyperlink{struct_c_matrix4_d_ad23af3220f665b7b42ad5c43dc3b25af}{v} \mbox{[}16\mbox{]}\\
+\>\>\>{\em A 16 times float array. }\\
+\}; \hypertarget{struct_c_matrix4_d_a3a5b199820c53251fe5739e72780e6da}{}\label{struct_c_matrix4_d_a3a5b199820c53251fe5739e72780e6da}
+\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Is the union between individual values and their array and matrix form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure is a 4x4 matrix of float values. 
+
+\begin{DoxyAuthor}{Author}
+Alvaro Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/05/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\+Matrix4D@{C\+Matrix4D}!Adjunct@{Adjunct}}
+\index{Adjunct@{Adjunct}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Adjunct()}{Adjunct()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Adjunct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix4_d_aa9c5a92e19a304a60437ffc1c3bcafe7}{}\label{struct_c_matrix4_d_aa9c5a92e19a304a60437ffc1c3bcafe7}
+
+
+Obtains the adjunct matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Cofactor@{Cofactor}}
+\index{Cofactor@{Cofactor}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Cofactor()}{Cofactor()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Cofactor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix4_d_af02075b9d6c2624a6000ea88bd927a88}{}\label{struct_c_matrix4_d_af02075b9d6c2624a6000ea88bd927a88}
+
+
+Obtains the cofactor matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Cramer@{Cramer}}
+\index{Cramer@{Cramer}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Cramer(\+C\+Vector4\+D \&\+V)}{Cramer(CVector4D &V)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vector4D} C\+Matrix4\+D\+::\+Cramer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector4D} \&}]{V}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix4_d_a5892af1d0feb465cd69084826e2734ce}{}\label{struct_c_matrix4_d_a5892af1d0feb465cd69084826e2734ce}
+
+
+Uses Cramer\textquotesingle{}s rule for the solution of an equation system. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em V} & The \hyperlink{struct_c_vector4_d}{C\+Vector4D} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_vector4_d}{C\+Vector4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Det@{Det}}
+\index{Det@{Det}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Det()}{Det()}}]{\setlength{\rightskip}{0pt plus 5cm}float C\+Matrix4\+D\+::\+Det (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix4_d_ac70341a7aa1ab9245e0619e1a808a5dd}{}\label{struct_c_matrix4_d_ac70341a7aa1ab9245e0619e1a808a5dd}
+
+
+Obtains the determinant of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Identity@{Identity}}
+\index{Identity@{Identity}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Identity()}{Identity()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Identity (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_ac8e163b22f750c4f78339597a80a9e64}{}\label{struct_c_matrix4_d_ac8e163b22f750c4f78339597a80a9e64}
+
+
+Returns an identity matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Inverse()}{Inverse()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Inverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix4_d_a2c9c0311057eb2aba291aec801c8d7d6}{}\label{struct_c_matrix4_d_a2c9c0311057eb2aba291aec801c8d7d6}
+
+
+Obtains the transposed matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!RotationX@{RotationX}}
+\index{RotationX@{RotationX}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Rotation\+X(float theta)}{RotationX(float theta)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+RotationX (
+\begin{DoxyParamCaption}
+\item[{float}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_a5bd01169974b8a228202f40bcb691a0f}{}\label{struct_c_matrix4_d_a5bd01169974b8a228202f40bcb691a0f}
+
+
+Creates a rotation matrix from an angle to rotate on the X axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & The theta.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!RotationY@{RotationY}}
+\index{RotationY@{RotationY}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Rotation\+Y(float theta)}{RotationY(float theta)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+RotationY (
+\begin{DoxyParamCaption}
+\item[{float}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_aa064ea29a986a87412ee90202fbb90fe}{}\label{struct_c_matrix4_d_aa064ea29a986a87412ee90202fbb90fe}
+
+
+Creates a rotation matrix from an angle to rotate on the Y axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & The theta.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!RotationZ@{RotationZ}}
+\index{RotationZ@{RotationZ}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Rotation\+Z(float theta)}{RotationZ(float theta)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+RotationZ (
+\begin{DoxyParamCaption}
+\item[{float}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_acad3bc9ba0a3f581795d01cc43a6e91a}{}\label{struct_c_matrix4_d_acad3bc9ba0a3f581795d01cc43a6e91a}
+
+
+Creates a rotation matrix from an angle to rotate on the Z axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & The theta.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(float Scale\+Factor)}{ScalingMatrix(float ScaleFactor)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{Scale\+Factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_a6b519efa74b6134f712a69a2ec471fb9}{}\label{struct_c_matrix4_d_a6b519efa74b6134f712a69a2ec471fb9}
+
+
+Creates a scaling matrix from a scale factor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scale\+Factor} & The scale factor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(float x, float y, float z)}{ScalingMatrix(float x, float y, float z)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_a54fdd06d47f8da9560f07c52750ee17a}{}\label{struct_c_matrix4_d_a54fdd06d47f8da9560f07c52750ee17a}
+
+
+Creates a scaling matrix from 3 scale factors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+{\em z} & The z coordinate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(\+C\+Vector4\+D \&\+V)}{ScalingMatrix(CVector4D &V)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector4D} \&}]{V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_acd16f0ebee9562660416714af6982f10}{}\label{struct_c_matrix4_d_acd16f0ebee9562660416714af6982f10}
+
+
+Creates a scaling matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em V} & The \hyperlink{struct_c_vector4_d}{C\+Vector4D} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(\+C\+Vector3\+D \&\+V)}{ScalingMatrix(CVector3D &V)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector3D} \&}]{V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_a7db2989eb1047f1ac1d25c6489b6c662}{}\label{struct_c_matrix4_d_a7db2989eb1047f1ac1d25c6489b6c662}
+
+
+Creates a scaling matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em V} & The \hyperlink{struct_c_vector3_d}{C\+Vector3D} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Scaling\+Matrix@{Scaling\+Matrix}}
+\index{Scaling\+Matrix@{Scaling\+Matrix}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Scaling\+Matrix(\+C\+Vector2\+D \&\+V)}{ScalingMatrix(CVector2D &V)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector2D} \&}]{V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_aa0b0e0aa3867f6169d245643360feb27}{}\label{struct_c_matrix4_d_aa0b0e0aa3867f6169d245643360feb27}
+
+
+Creates a scaling matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em V} & The \hyperlink{struct_c_vector2_d}{C\+Vector2D} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Translation\+Matrix@{Translation\+Matrix}}
+\index{Translation\+Matrix@{Translation\+Matrix}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Translation\+Matrix(\+C\+Vector4\+D \&\+V)}{TranslationMatrix(CVector4D &V)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector4D} \&}]{V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_ae89a34e96d041aaa490eac268db93156}{}\label{struct_c_matrix4_d_ae89a34e96d041aaa490eac268db93156}
+
+
+Creates a translation matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em V} & The \hyperlink{struct_c_vector4_d}{C\+Vector4D} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Translation\+Matrix@{Translation\+Matrix}}
+\index{Translation\+Matrix@{Translation\+Matrix}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Translation\+Matrix(\+C\+Vector3\+D \&\+V)}{TranslationMatrix(CVector3D &V)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector3D} \&}]{V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_a528beee99ad4077a770fb83d847889ff}{}\label{struct_c_matrix4_d_a528beee99ad4077a770fb83d847889ff}
+
+
+Creates a translation matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em V} & The \hyperlink{struct_c_vector3_d}{C\+Vector3D} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Translation\+Matrix@{Translation\+Matrix}}
+\index{Translation\+Matrix@{Translation\+Matrix}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Translation\+Matrix(\+C\+Vector2\+D \&\+V)}{TranslationMatrix(CVector2D &V)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Vector2D} \&}]{V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_a7fe6f132f93c21958a5df8516e3f7195}{}\label{struct_c_matrix4_d_a7fe6f132f93c21958a5df8516e3f7195}
+
+
+Creates a translation matrix from a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em V} & The \hyperlink{struct_c_vector2_d}{C\+Vector2D} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Translation\+Matrix@{Translation\+Matrix}}
+\index{Translation\+Matrix@{Translation\+Matrix}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Translation\+Matrix(float x, float y, float z)}{TranslationMatrix(float x, float y, float z)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_a78e8e4e5886a36e75f6784c5a08be665}{}\label{struct_c_matrix4_d_a78e8e4e5886a36e75f6784c5a08be665}
+
+
+Creates a translation matrix from 3 parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+{\em z} & The z coordinate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Transpose()}{Transpose()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_c_matrix4_d_ad1d96ed5ff11c4bce0bd720dd22479ee}{}\label{struct_c_matrix4_d_ad1d96ed5ff11c4bce0bd720dd22479ee}
+
+
+Obtain the transposed matrix of this matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+\index{C\+Matrix4D@{C\+Matrix4D}!Zero@{Zero}}
+\index{Zero@{Zero}!C\+Matrix4D@{C\+Matrix4D}}
+\subsubsection[{\texorpdfstring{Zero()}{Zero()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Matrix4D} C\+Matrix4\+D\+::\+Zero (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{struct_c_matrix4_d_ad069fb805c96e3ebdc914c3e1c026c67}{}\label{struct_c_matrix4_d_ad069fb805c96e3ebdc914c3e1c026c67}
+
+
+Returns an empty matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_c_matrix4_d}{C\+Matrix4D}. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Math/Matrix4\+D.\+h\end{DoxyCompactItemize}

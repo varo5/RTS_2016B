@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{ea4ce39a-a712-43f0-ba08-83fe10a0e595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{63129301-952a-4363-b929-3360f1436cec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\State Machines">
+      <UniqueIdentifier>{a508509d-a766-40fb-acd5-a8941e50c6fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\State Machines\States">
+      <UniqueIdentifier>{d60a2937-3aaa-49c0-acea-d4c2640a66e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\State Machine">
+      <UniqueIdentifier>{de0b82db-b0d3-4915-b443-9fd40d24267f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\State Machine\States">
+      <UniqueIdentifier>{b0333d31-31b6-42a4-b6e8-a5faf0965eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Basics">
+      <UniqueIdentifier>{b4488998-5c1a-4197-9fe6-b0a0ef0de6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Basics">
+      <UniqueIdentifier>{6dea4896-63f9-4cb0-8c30-a2eb9f14b869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Scripts">
+      <UniqueIdentifier>{1a3a6dc0-77a1-42a9-a82b-4c3308da9112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Awesomium">
+      <UniqueIdentifier>{6fdcb1a6-30d9-4d98-9688-b5a748c175d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\World.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Animation.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\AnimationRenderer.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\SpriteRenderer.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UnitType.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Attack.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\AttackAState.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Death.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DeathAState.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Idle.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\IdleAState.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Move_To.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MoveToAState.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StateMachine.h">
+      <Filter>Header Files\Game\State Machines</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\AnimationStateMachine.h">
+      <Filter>Header Files\Game\State Machines</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\AddOn.h">
+      <Filter>Header Files\Game\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\AnimationState.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameObject.h">
+      <Filter>Header Files\Game\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\BaseClass.h">
+      <Filter>Header Files\Game\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Presets.h">
+      <Filter>Header Files\Game\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\State.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UnitState.h">
+      <Filter>Header Files\Game\State Machines\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Transform.h">
+      <Filter>Header Files\Game\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scripts.h">
+      <Filter>Header Files\Game\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Unit.h">
+      <Filter>Header Files\Game\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StateMachineScript.h">
+      <Filter>Header Files\Game\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\EnumDeclarations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UnitStateMachine.h">
+      <Filter>Header Files\Game\State Machines</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TiledMap.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UserScript.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\App.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PathFinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MapTileNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TileType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GUIObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ButtonScript.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DepthFirstSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\BreadthFirstSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\BestFirstSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Dijkstra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\AStar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\InfluenceCalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Awesomium\WebManager.h">
+      <Filter>Header Files\Awesomium</Filter>
+    </ClInclude>
+    <ClInclude Include="Awesomium\method_dispatcher.h">
+      <Filter>Header Files\Awesomium</Filter>
+    </ClInclude>
+    <ClInclude Include="Awesomium\js_delegate.h">
+      <Filter>Header Files\Awesomium</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTS_AE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\World.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Animation.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\AnimationRenderer.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\SpriteRenderer.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Unit.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Attack.cpp">
+      <Filter>Source Files\Game\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\AttackAState.cpp">
+      <Filter>Source Files\Game\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\AnimationState.cpp">
+      <Filter>Source Files\Game\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\AnimationStateMachine.cpp">
+      <Filter>Source Files\Game\State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\StateMachine.cpp">
+      <Filter>Source Files\Game\State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MoveToAState.cpp">
+      <Filter>Source Files\Game\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Move_To.cpp">
+      <Filter>Source Files\Game\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\IdleAState.cpp">
+      <Filter>Source Files\Game\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Idle.cpp">
+      <Filter>Source Files\Game\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Death.cpp">
+      <Filter>Source Files\Game\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DeathAState.cpp">
+      <Filter>Source Files\Game\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameObject.cpp">
+      <Filter>Source Files\Game\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scripts.cpp">
+      <Filter>Source Files\Game\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UnitStateMachine.cpp">
+      <Filter>Source Files\Game\State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UserScript.cpp">
+      <Filter>Source Files\Game\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UnitType.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\State.cpp">
+      <Filter>Source Files\Game\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Presets.cpp">
+      <Filter>Source Files\Game\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Transform.cpp">
+      <Filter>Source Files\Game\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\BaseClass.cpp">
+      <Filter>Source Files\Game\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TiledMap.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\AddOn.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PathFinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MapTileNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TileType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GUIObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\ButtonScript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DepthFirstSearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\BreadthFirstSearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\BestFirstSearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Dijkstra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\AStar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\InfluenceCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Awesomium\WebManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

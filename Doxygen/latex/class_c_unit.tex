@@ -1,0 +1,158 @@
+\hypertarget{class_c_unit}{}\section{C\+Unit Class Reference}
+\label{class_c_unit}\index{C\+Unit@{C\+Unit}}
+Inheritance diagram for C\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_c_unit}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_unit_a092b74e62d924b87deead104dbc08e01}{Init} (\hyperlink{classae_base_class}{ae\+Base\+Class} $\ast$p\+Parent)
+\begin{DoxyCompactList}\small\item\em Initializes with the given parent pointer. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_unit_a2514b846a8c131c1120e34f0ded85dbf}{Destroy} ()\hypertarget{class_c_unit_a2514b846a8c131c1120e34f0ded85dbf}{}\label{class_c_unit_a2514b846a8c131c1120e34f0ded85dbf}
+
+\begin{DoxyCompactList}\small\item\em Destroys this object. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_unit_a5f46103027aaf83b2b47c0711640bd69}{Update} (float f\+Delta)
+\begin{DoxyCompactList}\small\item\em Updates the given f\+Delta. \end{DoxyCompactList}\item 
+void {\bfseries Move} (float f\+Delta)\hypertarget{class_c_unit_a4e77567811440d81879017d674e904e8}{}\label{class_c_unit_a4e77567811440d81879017d674e904e8}
+
+\item 
+void {\bfseries Get\+Hit} (float Damage)\hypertarget{class_c_unit_a434bb669567483c048cbfe66324f4335}{}\label{class_c_unit_a434bb669567483c048cbfe66324f4335}
+
+\item 
+void {\bfseries Set\+Units\+Around} (std\+::list$<$ \hyperlink{classae_game_object}{ae\+Game\+Object} $\ast$ $>$ $\ast$Game\+Objects)\hypertarget{class_c_unit_a1e91791fd7fafc99c57397d830361107}{}\label{class_c_unit_a1e91791fd7fafc99c57397d830361107}
+
+\item 
+std\+::vector$<$ \hyperlink{class_c_unit}{C\+Unit} $\ast$ $>$ $\ast$ {\bfseries Get\+Enemies\+Around} (float Range)\hypertarget{class_c_unit_aae47c49c723b853fa91d6eebf3fee383}{}\label{class_c_unit_aae47c49c723b853fa91d6eebf3fee383}
+
+\item 
+bool {\bfseries Can\+Attack} ()\hypertarget{class_c_unit_a5b2ba24542238e487709b97217bbe795}{}\label{class_c_unit_a5b2ba24542238e487709b97217bbe795}
+
+\item 
+bool {\bfseries Can\+Build} ()\hypertarget{class_c_unit_a7da13aa6c27ff5d58b8a3a0e09015399}{}\label{class_c_unit_a7da13aa6c27ff5d58b8a3a0e09015399}
+
+\item 
+bool {\bfseries Enemies\+Around} (float Range)\hypertarget{class_c_unit_a14f8774cd7b83229f5c42e011e21ed5b}{}\label{class_c_unit_a14f8774cd7b83229f5c42e011e21ed5b}
+
+\item 
+bool {\bfseries Is\+Alive} ()\hypertarget{class_c_unit_a30840ce3e2b06428cc0bf428abb7d93a}{}\label{class_c_unit_a30840ce3e2b06428cc0bf428abb7d93a}
+
+\item 
+bool {\bfseries In\+Range} ()\hypertarget{class_c_unit_adb0734a36b67cd52091826a59e42e727}{}\label{class_c_unit_adb0734a36b67cd52091826a59e42e727}
+
+\item 
+bool {\bfseries Can\+Hit} ()\hypertarget{class_c_unit_a5b6d95188479a7870f31693899bcc5fb}{}\label{class_c_unit_a5b6d95188479a7870f31693899bcc5fb}
+
+\item 
+bool {\bfseries In\+Range} (ae\+Vector2 Point)\hypertarget{class_c_unit_a03c20f26680053ed8a9c34259d795244}{}\label{class_c_unit_a03c20f26680053ed8a9c34259d795244}
+
+\item 
+float {\bfseries Distance} (\hyperlink{structae_core_1_1ae_vector2}{ae\+Vector2} Position)\hypertarget{class_c_unit_a7452044a1e387744d251ecc1ce4ae7d5}{}\label{class_c_unit_a7452044a1e387744d251ecc1ce4ae7d5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries m\+\_\+n\+Team\+\_\+\+ID}\hypertarget{class_c_unit_ad4179f0926726019c01d3fe5175f11a6}{}\label{class_c_unit_ad4179f0926726019c01d3fe5175f11a6}
+
+\item 
+int {\bfseries m\+\_\+n\+HP}\hypertarget{class_c_unit_a4571992ad0eead29b2756bbbc972329a}{}\label{class_c_unit_a4571992ad0eead29b2756bbbc972329a}
+
+\item 
+int {\bfseries m\+\_\+n\+Current\+State}\hypertarget{class_c_unit_a865ab7d150521795b4afc54c6a41bf15}{}\label{class_c_unit_a865ab7d150521795b4afc54c6a41bf15}
+
+\item 
+bool {\bfseries m\+\_\+b\+Can\+Hit}\hypertarget{class_c_unit_ad4b9588b1ece5becfd76c7d276217c0a}{}\label{class_c_unit_ad4b9588b1ece5becfd76c7d276217c0a}
+
+\item 
+bool {\bfseries m\+\_\+b\+Walking}\hypertarget{class_c_unit_a9b096857bfc004e99ed5e7a7dcf939ad}{}\label{class_c_unit_a9b096857bfc004e99ed5e7a7dcf939ad}
+
+\item 
+float {\bfseries m\+\_\+f\+Attack\+Timer}\hypertarget{class_c_unit_abc542bcc38ee093a145e2d555ba778d9}{}\label{class_c_unit_abc542bcc38ee093a145e2d555ba778d9}
+
+\item 
+float {\bfseries m\+\_\+f\+Curren\+Time}\hypertarget{class_c_unit_a06e062cd8ba920782c1d3d38faeb1041}{}\label{class_c_unit_a06e062cd8ba920782c1d3d38faeb1041}
+
+\item 
+\hyperlink{classae_unit_type}{ae\+Unit\+Type} $\ast$ {\bfseries m\+\_\+p\+Base\+Unit}\hypertarget{class_c_unit_ae6ac33646d5fbebf6e70c3cfe62b41b3}{}\label{class_c_unit_ae6ac33646d5fbebf6e70c3cfe62b41b3}
+
+\item 
+ae\+Vector2 {\bfseries m\+\_\+v\+Position}\hypertarget{class_c_unit_a02a240e69ca2066d828800756bca65fe}{}\label{class_c_unit_a02a240e69ca2066d828800756bca65fe}
+
+\item 
+ae\+Vector2 {\bfseries m\+\_\+v\+Direction}\hypertarget{class_c_unit_a5eb6ec8f7407795f890867cffc1d8b19}{}\label{class_c_unit_a5eb6ec8f7407795f890867cffc1d8b19}
+
+\item 
+ae\+Vector2 {\bfseries m\+\_\+v\+Destination}\hypertarget{class_c_unit_a2b1f832849cabe95c3df784a221e7159}{}\label{class_c_unit_a2b1f832849cabe95c3df784a221e7159}
+
+\item 
+std\+::vector$<$ \hyperlink{class_c_unit}{C\+Unit} $\ast$ $>$ {\bfseries m\+\_\+a\+Units}\hypertarget{class_c_unit_a9aaee699a591a993100a8fbf89d3cf42}{}\label{class_c_unit_a9aaee699a591a993100a8fbf89d3cf42}
+
+\item 
+std\+::vector$<$ \hyperlink{class_c_unit}{C\+Unit} $\ast$ $>$ {\bfseries m\+\_\+a\+Enemies}\hypertarget{class_c_unit_a8e4e45d2e21d84f007cad5a54abe104e}{}\label{class_c_unit_a8e4e45d2e21d84f007cad5a54abe104e}
+
+\item 
+std\+::vector$<$ \hyperlink{classae_state_machine}{ae\+State\+Machine} $\ast$ $>$ $\ast$ {\bfseries m\+\_\+p\+State\+Machines}\hypertarget{class_c_unit_a7817e8f9d69101be377cc11d4b5eb97e}{}\label{class_c_unit_a7817e8f9d69101be377cc11d4b5eb97e}
+
+\item 
+\hyperlink{class_c_animation_renderer}{C\+Animation\+Renderer} $\ast$ {\bfseries m\+\_\+p\+Renderer}\hypertarget{class_c_unit_a201bc2b6370b906d4f594aae06cf7ab7}{}\label{class_c_unit_a201bc2b6370b906d4f594aae06cf7ab7}
+
+\item 
+\hyperlink{class_c_unit}{C\+Unit} $\ast$ {\bfseries m\+\_\+p\+Enemy}\hypertarget{class_c_unit_a84e2aece711dc1f5f04f1192108c93fd}{}\label{class_c_unit_a84e2aece711dc1f5f04f1192108c93fd}
+
+\item 
+\hyperlink{class_c_unit}{C\+Unit} $\ast$ {\bfseries m\+\_\+p\+Friend}\hypertarget{class_c_unit_a53e15ad7257e6778dc28988d694628d6}{}\label{class_c_unit_a53e15ad7257e6778dc28988d694628d6}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{C\+Unit@{C\+Unit}!Init@{Init}}
+\index{Init@{Init}!C\+Unit@{C\+Unit}}
+\subsubsection[{\texorpdfstring{Init(ae\+Base\+Class $\ast$p\+Parent)}{Init(aeBaseClass *pParent)}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Unit\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf ae\+Base\+Class} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_unit_a092b74e62d924b87deead104dbc08e01}{}\label{class_c_unit_a092b74e62d924b87deead104dbc08e01}
+
+
+Initializes with the given parent pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em p\+Parent} & If non-\/null, the parent pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_add_on_a0730c1446e548031f9a4e98435a54675}{ae\+Add\+On}.
+
+\index{C\+Unit@{C\+Unit}!Update@{Update}}
+\index{Update@{Update}!C\+Unit@{C\+Unit}}
+\subsubsection[{\texorpdfstring{Update(float f\+Delta)}{Update(float fDelta)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Unit\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_unit_a5f46103027aaf83b2b47c0711640bd69}{}\label{class_c_unit_a5f46103027aaf83b2b47c0711640bd69}
+
+
+Updates the given f\+Delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Delta} & The delta time. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classae_add_on_a51caa4b8680206495ea671e71991e231}{ae\+Add\+On}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Unit.\+h\item 
+C\+:/\+Users/\+Alvaro Estrada/\+Documents/\+Visual Studio 2015/\+Projects/\+R\+T\+S\+\_\+\+A\+E/\+R\+T\+S\+\_\+\+A\+E/\+Game/Unit.\+cpp\end{DoxyCompactItemize}
