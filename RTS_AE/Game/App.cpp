@@ -110,7 +110,7 @@ void aeApp::Update()
 				}				
 				case static_cast<uint8>(EventTypes::MouseClic) :
 				{
-					if (clickcounter > 0.2)
+					if (clickcounter > 0.2f)
 					{
 						clickcounter = 0;
 						aePoint MousePosition = aePoint{ ((aeMouseButtonEvent*)m_pEventManager)->x, ((aeMouseButtonEvent*)m_pEventManager)->y };

@@ -431,7 +431,9 @@ void aeTiledMap::MakeSearch(aePoint StartPosition, aePoint EndPosition)
 
 			EndPosition.x -= 1;
 			EndPosition.y -= 1;
-			((aePathFinder*)AddOns[m_nPathFinder])->MakeSearch(StartPosition, EndPosition);
+
+			if(EndPosition.x < m_nMapSize*m_nTileSizeX && EndPosition.y < m_nMapSize*m_nTileSizeY && StartPosition.x > 0 && StartPosition.y > 0)
+				((aePathFinder*)AddOns[m_nPathFinder])->MakeSearch(StartPosition, EndPosition);
 		}
 		else if (((aePathFinder*)AddOns[m_nPathFinder])->GetID() == 1)
 		{
