@@ -1,0 +1,30 @@
+.caser{
+	width: 80%;
+	margin: auto;
+	text-align: left;
+}
+
+#content{
+	width: 100%;
+}
+
+#line{
+	margin: auto;
+}
+
+ .wrapper{
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 150px;
+ }
+ .wrapper .selection{
+   width:150px;
+ }
+ 
+ .columnl{
+	float: left;
+	display:block;
+	width: 50%;
+	text-align: left;
+}

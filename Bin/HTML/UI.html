@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Editor</title>
+    <link rel="stylesheet" href="jqueryUI/jquery-ui.css">
+    <link rel="stylesheet" href="StyleSheet.css">
+
+    <script src="jqueryUI/external/jquery/jquery.js"></script>
+    <script src="jqueryUI/jquery-ui.js"></script>
+    <script src="UIScripts.js"></script>
+
+    <script>
+        $(function () {
+            $("#idAlgorithms").selectmenu({
+                change: function (event, ui) {
+                    UI.ChangePathfinding(idAlgorithms.value, idHeuristics.value);
+                }
+            });
+            $("#idHeuristics").selectmenu({
+                change: function (event, ui) {
+                    UI.ChangePathfinding(idAlgorithms.value, idHeuristics.value);
+                }
+            });
+
+            $( "#slider-range" ).slider({
+                range: true,
+                min: 0,
+                max: 100,
+                values: [ 33, 66 ],
+                slide: function( event, ui ) {
+                    $("#Water").val(" 0 - " + ui.values[0]);
+                    $("#Grass").val( ui.values[0] + " - " + ui.values[1]);
+                    $("#Desert").val(ui.values[1] + " - 100");
+                },
+                change: function(event,ui){
+                    UI.ChangeMapGenerator(ui.values[0], ui.values[1], $("#seed").value);
+                }
+            });
+
+            $("#Water").val( "0 - " + $("#slider-range").slider("values", 0));
+            $("#Grass").val( $("#slider-range").slider("values", 0) + " - " + $("#slider-range").slider("values", 1));
+            $("#Desert").val($("#slider-range").slider("values", 1) + " - 100");
+
+            $(function () {
+                $("#slider-range-min").slider({
+                    range: "min",
+                    value: 37,
+                    min: 0,
+                    max: 4294967295,
+                    slide: function (event, ui) {
+                        $("#seed").val(ui.value);
+                        
+                    },
+                    change: function (event, ui) {
+                        $("#seed").val(ui.value);
+                        console.log($("#slider-range").values[0] + ", " + $("#slider-range").values[1])
+                        UI.ChangeMapGenerator($("#slider-range").values[0], $("#slider-range").values[1], ui.value);
+                }
+                });
+                $("#seed").change(function () {
+                    var value = this.value;
+                    $("#slider-range-min").slider("value", parseInt(value));
+                })
+            });
+            
+        });
+    </script>
+
+</head>
+<body onload="toggle('Brush');">
+
+    <div id="wholeThing">
+        <div id="parent">
+            <button type="button" onclick="toggle('Brush');         UI.Brush();">Tile Brush</button>
+            <button type="button" onclick="toggle('MapGenerator');  UI.MapGenerator();">Map Generator</button>
+            <button type="button" onclick="toggle('Influence');     UI.Influence();">Influence Dropper</button>
+            <button type="button" onclick="toggle('Pathfinding');   UI.Pathfinding();">Pathfinding</button>
+        </div>
+
+        <div id="children">
+            <div id="MapGenerator">
+                <label for="MapGenerator">MapGenerator</label>
+                <hr>
+                <div>
+                    <button type="button" onclick="UI.Start();">Generate</button>
+                    <button type="button" onclick="UI.Stop();">Stop</button>
+                    <button type="button" onclick="UI.Reset();">Reset</button>
+                    <hr>
+                    <div>
+                        <label for="Water">Water:</label>
+                        <input type="text" id="Water" readonly style="border:0; color:#000000; font-weight:bold;"><br>
+                        <label for="Grass">Grass:</label>
+                        <input type="text" id="Grass" readonly style="border:0; color:#000000; font-weight:bold;"><br>
+                        <label for="Desert">Desert:</label>
+                        <input type="text" id="Desert" readonly style="border:0; color:#000000; font-weight:bold;"><br>
+                        <div id="slider-range"></div>
+                        <br>
+                        <label for="seed">Seed: </label>
+                        <input type="number" name="seed" id="seed">
+                        <div id="slider-range-min"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Brush">
+                <label for="Brush">Brush</label>
+                <hr>
+                <div>
+                    <button type="button" onclick="UI.Tile('Grass')">Grass</button>
+                    <button type="button" onclick="UI.Tile('Water')">Water</button>
+                    <button type="button" onclick="UI.Tile('Desert')">Desert</button>
+                </div>
+            </div>
+
+            <div id="Influence">
+                <label for="Influence">Influence</label>
+                <hr>
+                <div>
+                    <button type="button" onclick="UI.Start()">Start</button>
+                    <button type="button" onclick="UI.Stop()">Stop</button>
+                    <button type="button" onclick="UI.Reset()">Reset</button>
+                </div>
+            </div>
+
+            <div id="Pathfinding">
+                <label for="Pathfinding">Pathfinding</label>
+                <hr>
+                <button type="button" onclick="UI.Start()">Start</button>
+                <button type="button" onclick="UI.Stop()">Stop</button>
+                <button type="button" onclick="UI.Reset()">Reset</button>
+                <hr>
+                <div>
+                    <label for="Algorithms">Search Algorithm</label>
+                    <select id="idAlgorithms" name="Algorithms">
+                        <option selected="selected" value="1">Breadth First Search</option>
+                        <option value="0">Depth First Search</option>
+                        <option value="2">Best First Search</option>
+                        <option value="3">Dijkstra</option>
+                        <option value="4">A*</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Heuristics">Heuristisc</label>
+                    <select id="idHeuristics" name="Heuristics">
+                        <option selected="selected" value="0">None</option>
+                        <option value="1">Manhattan</option>
+                        <option value="2">Euclidean</option>
+                        <option value="3">Squared</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
